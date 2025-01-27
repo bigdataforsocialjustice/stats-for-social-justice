@@ -828,5 +828,25 @@
     "crumbs": [
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Infant Mortality Example</span>"
     ]
+  },
+  {
+    "objectID": "reading.html",
+    "href": "reading.html",
+    "title": "Required Course Materials",
+    "section": "",
+    "text": "Required Texts",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Required Course Materials</span>"
+    ]
+  },
+  {
+    "objectID": "reading.html#required-software",
+    "href": "reading.html#required-software",
+    "title": "Required Course Materials",
+    "section": "Required Software",
+    "text": "Required Software\n\nOpen Source Software\n\nJASP (Just Another Statistics Program)\n\nWe will use JASP to perform some analyses that SPSS does not. JASP is free, open source software available for both Mac, Linux and Windows platforms. To download this software please visit https://jasp-stats.org/download\n\n\n\nProcess for SPSS\n\nAn SPSS macro that runs dozens of mediation, moderation and conditional process models written by Andrew Hayes. Download the macro here https://www.processmacro.org/download.html and follow the installation instructions.\n\n\n\n\nProprietary\n\nSPSS",
+    "crumbs": [
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Required Course Materials</span>"
+    ]
   }
 ]
