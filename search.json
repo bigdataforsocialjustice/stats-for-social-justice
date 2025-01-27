@@ -534,9 +534,259 @@
     "href": "Assignments.html",
     "title": "Assignments and Due Dates",
     "section": "",
-    "text": "Schedule of Exercises and Due Dates\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nExercise/Assignment\nDue Date\n\n\n\n\nWeek 1\nIntroduction to the Course\nNo exercise\nN/A\n\n\nWeek 2\nPre-Course Assessment\nComplete pre-course assessment\nJanuary 13, 2025\n\n\nWeek 3\nNo Class - MLK Day\nN/A\nN/A\n\n\nWeek 4\nSimple Regression\nEscape Room Exercise\nJanuary 27, 2025\n\n\nWeek 5\nMultiple Regression\nAssignment 1 Distributed\nMarch 3, 2025\n\n\nWeek 6\nEffect Sizes & Confidence Intervals\nDebate Exercise\nFebruary 10, 2025\n\n\nWeek 7\nAssumptions and Violations of Assumptions\nAssumption Diagnosis Clinic\nFebruary 17, 2025\n\n\nWeek 8\nHierarchical Regression & Dummy Variables\nRegression Battle Exercise\nFebruary 24, 2025\n\n\nWeek 9\nLogistic Regression\nSubmit Assignment 1\nMarch 3, 2025\n\n\nWeek 10\nSpring Break\nN/A\nN/A\n\n\nWeek 11\nMediation & Suppressor Variables\nAssignment 2 Distributed\nApril 14, 2025\n\n\nWeek 12\nModeration in Regression\nModeration Story Exercise\nMarch 24, 2025\n\n\nWeek 13\nExploratory Factor Analysis (EFA)\nEFA Infographic Exercise\nMarch 31, 2025\n\n\nWeek 14\nConfirmatory Factor Analysis (CFA)\nCFA Model Refinement Exercise\nApril 7, 2025\n\n\nWeek 15\nLatent Class Analysis (LCA)\nPersona Deck Exercise\nApril 14, 2025\n\n\nWeek 16\nStudent Presentations and Review\nPresent Final Project\nApril 21, 2025\n\n\nFinal Exam\nCreate, Validate, and Apply Scales\nSubmit Final Exam or Publishable Manuscript\nApril 28, 2025",
+    "text": "Schedule of Exercises and Due Dates\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nExercises and Deliverables\nDue Date\n\n\n\n\nWeek 1\nIntroduction to the Course\nBegin thinking about how to use data to reclaim your story.\nN/A\n\n\nWeek 2\nPre-Course Assessment\nComplete pre-course assessment.\nJanuary 13, 2025\n\n\nWeek 3\nNo Class - MLK Day\nN/A\nN/A\n\n\nWeek 4\nSimple Regression\nInteractive Escape Room Exercise.Data Makeover Challenge: Reimagine data using storytelling.\nJanuary 27, 2025\n\n\nWeek 5\nMultiple Regression\nHypothesis Auction: Justify chosen testable hypotheses.Explain regression results to argue for policy change. Assignment 1 Distributed.\nMarch 3, 2025\n\n\nWeek 6\nEffect Sizes & Confidence Intervals\nDebate Exercise: Practical and legal significance of findings.Write an op-ed on significance.\nFebruary 10, 2025\n\n\nWeek 7\nAssumptions and Violations of Assumptions\nAssumption Diagnosis Clinic: Diagnose and “treat” assumption violations.Create a “prescription card” summarizing fixes.\nFebruary 17, 2025\n\n\nWeek 8\nHierarchical Regression & Dummy Variables\nRegression Battle: Build the best hierarchical model.Write a brief on ethical implications of dummy variable coding.\nFebruary 24, 2025\n\n\nWeek 9\nLogistic Regression\nPredictive Policy Game: Use predictions for interventions.Create a policy recommendation.Submit Assignment 1.\nMarch 3, 2025\n\n\nWeek 10\nSpring Break\nN/A\nN/A\n\n\nWeek 11\nMediation & Suppressor Variables\nData Detective Roleplay: Investigate intervention mechanisms.Examine a “case file” for mediation analysis. Assignment 2 Distributed.\nMarch 17, 2025\n\n\nWeek 12\nModeration in Regression\nBuild-a-Story Workshop: Narratives around moderation analysis. Create a 1-page illustrated story on moderation findings.\nMarch 24, 2025\n\n\nWeek 13\nExploratory Factor Analysis (EFA)\nFactor Scavenger Hunt: Interpret factor loadings.Create an infographic summarizing EFA findings.\nMarch 31, 2025\n\n\nWeek 14\nConfirmatory Factor Analysis (CFA)\nModel Critique Workshop: Propose refinements to a CFA model.Submit a report evaluating and refining the CFA model.\nApril 7, 2025\n\n\nWeek 15\nLatent Class Analysis (LCA)\nLatent Storytelling: Use LCA findings to understand group experiences.Create a “persona deck” illustrating latent group characteristics.Submit Assignment 2.\nApril 14, 2025\n\n\nWeek 16\nStudent Presentations and Review\nPresent Final Project.Review the course content.\nApril 21, 2025\n\n\nFinal Exam\nCreate, Validate, and Apply Scales\nTake Final Exam or Submit a Publishable Manuscript.\nApril 28, 2025",
     "crumbs": [
       "<span class='chapter-number'>17</span>  <span class='chapter-title'>Assignments and Due Dates</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html",
+    "href": "09-mediation.html",
+    "title": "Mediation",
+    "section": "",
+    "text": "Week 11: March 17, 2025",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#todays-reading",
+    "href": "09-mediation.html#todays-reading",
+    "title": "Mediation",
+    "section": "Today’s Reading",
+    "text": "Today’s Reading\n\nHayes Chapter 3",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#introduction-to-the-topic",
+    "href": "09-mediation.html#introduction-to-the-topic",
+    "title": "Mediation",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we explore mediation analysis, a statistical approach used to understand the mechanisms through which an independent variable influences a dependent variable via a third variable, known as the mediator. Mediation analysis is essential for uncovering causal pathways in research.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#key-concepts",
+    "href": "09-mediation.html#key-concepts",
+    "title": "Mediation",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nDirect Effects: The relationship between the independent variable and the dependent variable, excluding the mediator.\nIndirect Effects: The portion of the relationship explained through the mediator.\nTotal Effects: The combined impact of direct and indirect effects.\nBootstrapping: A resampling method for testing the significance of indirect effects.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#relevance",
+    "href": "09-mediation.html#relevance",
+    "title": "Mediation",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to identify and test mediating variables in a causal framework.\nStudents will explore how to decompose total effects into direct and indirect components to better understand relationships among variables.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#why-this-is-important",
+    "href": "09-mediation.html#why-this-is-important",
+    "title": "Mediation",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nMediation analysis allows researchers to move beyond simple relationships to uncover how and why effects occur.\nUnderstanding mediation is critical for testing theoretical models in fields like psychology, sociology, and public health.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#how-this-ties-into-the-overall-course",
+    "href": "09-mediation.html#how-this-ties-into-the-overall-course",
+    "title": "Mediation",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous topics, such as regression and effect sizes, by extending these tools to explore causal pathways.\nPrepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where mediation analysis is a core component.\n\nBy the end of this week, students will be able to conduct mediation analyses, interpret direct and indirect effects, and evaluate the significance of mediators using bootstrapping methods.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#class-files",
+    "href": "09-mediation.html#class-files",
+    "title": "Mediation",
+    "section": "Class Files",
+    "text": "Class Files",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#class-files-1",
+    "href": "09-mediation.html#class-files-1",
+    "title": "Mediation",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\n\nR Code\n\n\nData Sets",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#resources",
+    "href": "09-mediation.html#resources",
+    "title": "Mediation",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#todays-reading-1",
+    "href": "09-mediation.html#todays-reading-1",
+    "title": "Mediation",
+    "section": "Today’s Reading",
+    "text": "Today’s Reading",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#r-lab-files",
+    "href": "09-mediation.html#r-lab-files",
+    "title": "Mediation",
+    "section": "R Lab Files",
+    "text": "R Lab Files",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "09-mediation.html#additional-notes",
+    "href": "09-mediation.html#additional-notes",
+    "title": "Mediation",
+    "section": "Additional Notes",
+    "text": "Additional Notes",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html",
+    "href": "10-moderation.html",
+    "title": "Moderation",
+    "section": "",
+    "text": "Week 12: March 24, 2025",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#todays-reading",
+    "href": "10-moderation.html#todays-reading",
+    "title": "Moderation",
+    "section": "Today’s Reading",
+    "text": "Today’s Reading\n\nHayes Chapter 7,8",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#introduction-to-the-topic",
+    "href": "10-moderation.html#introduction-to-the-topic",
+    "title": "Moderation",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we focus on moderation analysis, a statistical approach used to examine whether the relationship between an independent variable and a dependent variable depends on the value of a third variable, known as the moderator. Moderation analysis is key for understanding conditional effects in research.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#key-concepts",
+    "href": "10-moderation.html#key-concepts",
+    "title": "Moderation",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nInteraction Effects: How the relationship between two variables changes depending on the level of the moderator.\nModerators: Variables that influence the strength or direction of an effect.\nCentering: Preparing variables to reduce multicollinearity in moderation models.\nSimple Slopes Analysis: Breaking down interaction effects to interpret conditional relationships.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#relevance",
+    "href": "10-moderation.html#relevance",
+    "title": "Moderation",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to test for and interpret interaction effects in moderation models.\nStudents will explore tools like simple slopes analysis and visualization to communicate results effectively.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#why-this-is-important",
+    "href": "10-moderation.html#why-this-is-important",
+    "title": "Moderation",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nModeration analysis provides insights into when and for whom certain effects occur, enabling more nuanced interpretations of data.\nUnderstanding moderation is critical in areas like policy evaluation, intervention design, and theory testing.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#how-this-ties-into-the-overall-course",
+    "href": "10-moderation.html#how-this-ties-into-the-overall-course",
+    "title": "Moderation",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like regression and effect sizes by extending these methods to account for conditional effects.\nSets the stage for future topics like moderated mediation and multilevel modeling, where interaction effects are a core focus.\n\nBy the end of this week, students will be able to identify and test moderation effects, interpret interaction terms, and visualize conditional relationships to better understand complex variable interactions.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#class-files",
+    "href": "10-moderation.html#class-files",
+    "title": "Moderation",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\n\nR Code\n\n\nData Sets",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#resources",
+    "href": "10-moderation.html#resources",
+    "title": "Moderation",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#todays-reading-1",
+    "href": "10-moderation.html#todays-reading-1",
+    "title": "Moderation",
+    "section": "Today’s Reading",
+    "text": "Today’s Reading",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#r-lab-files",
+    "href": "10-moderation.html#r-lab-files",
+    "title": "Moderation",
+    "section": "R Lab Files",
+    "text": "R Lab Files",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
+    ]
+  },
+  {
+    "objectID": "10-moderation.html#additional-notes",
+    "href": "10-moderation.html#additional-notes",
+    "title": "Moderation",
+    "section": "Additional Notes",
+    "text": "Additional Notes",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   }
 ]
