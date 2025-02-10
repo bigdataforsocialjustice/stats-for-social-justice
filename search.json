@@ -64,7 +64,7 @@
     "href": "04-effect-sizes.html#how-this-ties-into-the-overall-course",
     "title": "Effect Sizes",
     "section": "How This Ties Into the Overall Course:",
-    "text": "How This Ties Into the Overall Course:\n\nBuilds upon last week’s exploration of hypothesis testing and statistical significance.\nPrepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.\n\nBy the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon last week’s exploration of hypothesis testing and statistical significance.\nPrepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.\n\nBy the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.\n\nLecture Notes\n\nIntroduction to MLR\n\n\n\nR Code\n\nSimple and Multiple Linear Regression\nCalculating Cohen’s D: The full explanation of the code is here. This file calculates Cohen’s D effect size with the added bones of also demonstrating how to download the Area Deprivation Index (ADI) which is frequently used in Social Work and Public Health. Even bettern there is a county-level map of the ADI! See Barboza-Salerno (2023).\n\n\n\nData Sets\n\nAdmissions Data (in lecture notes)\nGRE and graduate student GPA Data (in lecture notes) ## Resources\n\nI have put together a detailed explanation about simple and multiple linear regression in R.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "04-effect-sizes.html#resources",
     "title": "Effect Sizes",
     "section": "Resources",
-    "text": "Resources",
+    "text": "Resources\nI have put together a detailed explanation about simple and multiple linear regression in R.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "04-effect-sizes.html#todays-reading",
     "title": "Effect Sizes",
     "section": "Today’s Reading",
-    "text": "Today’s Reading",
+    "text": "Today’s Reading\nToday’s in class assignment is going to ask you to run a multiple linear regression using the National Survey of Child and Adolescent Well-Being (NSCAW I) survey. I used this data in a couple of manuscripts “Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model” Barboza et al. (2017) and “Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type” See Barboza & Dominguez (2017).",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "04-effect-sizes.html#additional-notes",
     "title": "Effect Sizes",
     "section": "Additional Notes",
-    "text": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and DO NOT be normal.\n\n\n\n\n\nBarboza, G. E., & Dominguez, S. (2017). Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type. Children and Youth Services Review, 81, 368–378.\n\n\nBarboza, G. E., Dominguez, S., & Pinder, J. (2017). Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model. Child Abuse & Neglect, 72, 370–382.\n\n\nBarboza-Salerno, G. E. (2023). The neighborhood deprivation gradient and child physical abuse and neglect: A bayesian spatial model. Child Abuse & Neglect, 146, 106501.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -977,6 +977,66 @@
     "text": "Keep calm and be significant.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html",
+    "href": "cohensd.html",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "",
+    "text": "22 Introduction\nThis analysis examines the Area Deprivation Index (ADI) across U.S. counties. The goal is to assess disparities between areas of high- and low-deprivation (by county) and quantify the effect size using Cohen’s d.\nThe ADI provides a measure of socioeconomic disadvantage, with higher values indicating greater deprivation. We also map ADI values across counties and exclude non-contiguous U.S. states and territories.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#data-collection-preparation",
+    "href": "cohensd.html#data-collection-preparation",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.1 Data Collection & Preparation",
+    "text": "22.1 Data Collection & Preparation\n\n# Install and load required packages\n# install.packages(\"sociome\")\n# install.packages(\"ggplot2\")\n# install.packages(\"dplyr\")\n# install.packages(\"sf\")\n# install.packages(\"tigris\")\n# install.packages(\"effectsize\")\n\nlibrary(sociome)     # For ADI data\nlibrary(ggplot2)     # For visualization\n\nWarning: package 'ggplot2' was built under R version 4.3.3\n\nlibrary(dplyr)       # For data manipulation\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(sf)          # For mapping spatial data\n\nLinking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE\n\nlibrary(tigris)      # For county boundaries\n\nTo enable caching of data, set `options(tigris_use_cache = TRUE)`\nin your R script or .Rprofile.\n\nlibrary(effectsize)  # For Cohen's d calculation\n\nWe first retrieve the ADI data for 2020 at the county level.\n\n# --- Step 1: Get ADI Data by County ---\nadi_data &lt;- get_adi(year = 2020, geography = \"county\")\n\n# Extract GEOID, county name, and ADI\nadi_data &lt;- adi_data %&gt;%\n  dplyr::select(GEOID, NAME, ADI)\n\n\n22.1.1 Excluding Non-Contiguous U.S. States and Territories\nTo focus on the contiguous U.S., we exclude: - Alaska (02) & Hawaii (15) - U.S. territories: Puerto Rico, Guam, American Samoa, Northern Mariana Islands, U.S. Virgin Islands.\n\n# List of FIPS codes for non-contiguous states/territories\nnon_contiguous_fips &lt;- c(\"02\", \"15\", \"60\", \"66\", \"69\", \"72\", \"78\")  \n\n# Load county boundaries and exclude non-contiguous areas\ncounties &lt;- counties(cb = TRUE, resolution = \"20m\", year = 2020) %&gt;%\n  filter(!STATEFP %in% non_contiguous_fips)\n\n\n  |                                                                            \n  |                                                                      |   0%\n  |                                                                            \n  |=                                                                     |   2%\n  |                                                                            \n  |===                                                                   |   4%\n  |                                                                            \n  |======                                                                |   8%\n  |                                                                            \n  |=======                                                               |  10%\n  |                                                                            \n  |========                                                              |  12%\n  |                                                                            \n  |==========                                                            |  14%\n  |                                                                            \n  |===========                                                           |  16%\n  |                                                                            \n  |=============                                                         |  19%\n  |                                                                            \n  |===============                                                       |  21%\n  |                                                                            \n  |================                                                      |  23%\n  |                                                                            \n  |==================                                                    |  25%\n  |                                                                            \n  |====================                                                  |  29%\n  |                                                                            \n  |======================                                                |  31%\n  |                                                                            \n  |=======================                                               |  33%\n  |                                                                            \n  |=======================                                               |  34%\n  |                                                                            \n  |=========================                                             |  35%\n  |                                                                            \n  |============================                                          |  40%\n  |                                                                            \n  |==============================                                        |  43%\n  |                                                                            \n  |================================                                      |  45%\n  |                                                                            \n  |=================================                                     |  47%\n  |                                                                            \n  |===================================                                   |  50%\n  |                                                                            \n  |======================================                                |  55%\n  |                                                                            \n  |=========================================                             |  58%\n  |                                                                            \n  |============================================                          |  63%\n  |                                                                            \n  |===============================================                       |  67%\n  |                                                                            \n  |================================================                      |  69%\n  |                                                                            \n  |======================================================================| 100%\n\n# Merge ADI data with county geometries\nadi_map_data &lt;- counties %&gt;%\n  left_join(adi_data, by = c(\"GEOID\" = \"GEOID\"))",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#mapping-adi-by-county",
+    "href": "cohensd.html#mapping-adi-by-county",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.2 Mapping ADI by County",
+    "text": "22.2 Mapping ADI by County\nThe following map visualizes area deprivation across the contiguous U.S.. Darker areas represent higher deprivation levels.\nYou should play around with ggplot to get used to its functionality.\n\nlibrary(ggplot2)\nggplot(adi_map_data) +\n  geom_sf(aes(fill = ADI), color = NA) +\n  scale_fill_viridis_c(option = \"plasma\", name = \"ADI\") +\n  labs(\n    title = \"Area Deprivation by County (Contiguous U.S., ADI Data 2020)\",\n    subtitle = \"Excludes Alaska, Hawaii, & U.S. Territories\",\n    caption = \"Source: Sociome package ADI 2020\"\n  ) +\n  theme_void()",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#adi-disparities-effect-size-cohens-d",
+    "href": "cohensd.html#adi-disparities-effect-size-cohens-d",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.3 ADI Disparities & Effect Size (Cohen’s d)",
+    "text": "22.3 ADI Disparities & Effect Size (Cohen’s d)\nWe divide counties into low-deprivation (least disadvantaged, bottom 25%) and high-deprivation (most disadvantaged, top 25%) groups. The income differences between these groups are quantified using Cohen’s d, a measure of standardized effect size.\n\n# Define thresholds: Top 25% (most deprived) vs. Bottom 25% (least deprived)\nquantiles &lt;- quantile(adi_data$ADI, probs = c(0.25, 0.75), na.rm = TRUE)\nlow_deprivation &lt;- adi_data %&gt;% filter(ADI &lt;= quantiles[1])\nhigh_deprivation &lt;- adi_data %&gt;% filter(ADI &gt;= quantiles[2])\n\n# Compute Cohen's d\ncohens_d_value &lt;- cohens_d(high_deprivation$ADI, low_deprivation$ADI)\n\n# Print Cohen's d result\nprint(cohens_d_value)",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#interpretation-of-cohens-d-results",
+    "href": "cohensd.html#interpretation-of-cohens-d-results",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.4 Interpretation of Cohen’s d Results",
+    "text": "22.4 Interpretation of Cohen’s d Results\nCohen’s d tells us how large the difference in ADI between low- and high-deprivation counties:\n\n( d = 0.2 ) → Small effect\n( d = 0.5 ) → Medium effect\n( d = 0.8+ ) → Large effect\n\nIf the result is negative, it means that high-deprivation counties have significantly higher ADI scores than low-deprivation counties. The absolute value of d still represents the effect size.\n\n22.4.1 Key Findings\n🔹 A large Cohen’s d suggests significant deprivation disparities between counties with low and high deprivation.\n🔹 This reinforces the need for economic policies addressing regional deprivation.\n🔹 Mapping ADI allows for geographically targeted interventions to reduce socioeconomic inequalities.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#conclusion",
+    "href": "cohensd.html#conclusion",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.5 Conclusion",
+    "text": "22.5 Conclusion\nThe effect size tells us that the ADI in low-deprivation counties is 3.39 standard deviations higher than in high-deprivation counties. Since Cohen’s d is standardized, this means the deprivation difference is very large in relative terms. This analysis confirms that county-level deprivation is strongly associated with huge disparities in ADI, with high-deprivation counties having more economic inequaltity, low educational attainment, and less financial strength. Future research could associate some outcome across levels of ADI.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
     ]
   }
 ]

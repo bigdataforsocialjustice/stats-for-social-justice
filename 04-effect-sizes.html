@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -210,14 +230,32 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Required Course Materials</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./infant_mortality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Infant Mortality Example</span></span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Infant Mortality Example</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PRAMS_Correlation_Analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Partial and Semi-Partial Correlation Analysis with PRAMS 8 Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cohensd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Analysis of Area Deprivation Disparities Using Cohen’s D</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -236,16 +274,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts:</a></li>
   <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance:</a></li>
   <li><a href="#why-this-is-important" id="toc-why-this-is-important" class="nav-link" data-scroll-target="#why-this-is-important">Why This Is Important:</a></li>
-  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a></li>
-  <li><a href="#class-files" id="toc-class-files" class="nav-link" data-scroll-target="#class-files">Class Files</a>
+  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a>
   <ul class="collapse">
   <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
   <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">R Code</a></li>
   <li><a href="#data-sets" id="toc-data-sets" class="nav-link" data-scroll-target="#data-sets">Data Sets</a></li>
   </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#todays-reading" id="toc-todays-reading" class="nav-link" data-scroll-target="#todays-reading">Today’s Reading</a></li>
-  <li><a href="#r-lab-files" id="toc-r-lab-files" class="nav-link" data-scroll-target="#r-lab-files">R Lab Files</a></li>
   <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
   </ul></li>
   </ul>
@@ -311,33 +346,50 @@ ul.task-list li input[type="checkbox"] {
 <li>Prepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.</li>
 </ul>
 <p>By the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.</p>
-</section>
-<section id="class-files" class="level2">
-<h2 class="anchored" data-anchor-id="class-files">Class Files</h2>
 <section id="lecture-notes" class="level3">
 <h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
+<ul>
+<li><a href="slides/Effect_Sizes/Effect Size, Confidence Intervals, and Diagnostic.pptx">Introduction to MLR</a></li>
+</ul>
 </section>
 <section id="r-code" class="level3">
 <h3 class="anchored" data-anchor-id="r-code">R Code</h3>
+<ul>
+<li><a href="slides/Effect_Sizes/admissions_R_ex.R">Simple and Multiple Linear Regression</a></li>
+<li><a href="slides/Effect_Sizes/cohensD.R">Calculating Cohen’s D</a>: The full explanation of the code is <a href="./cohensd.html">here</a>. This file calculates Cohen’s D effect size with the added bones of also demonstrating how to download the Area Deprivation Index (ADI) which is frequently used in Social Work and Public Health. Even bettern there is a county-level map of the ADI! See <span class="citation" data-cites="barboza2023neighborhood">Barboza-Salerno (<a href="#ref-barboza2023neighborhood" role="doc-biblioref">2023</a>)</span>.</li>
+</ul>
 </section>
 <section id="data-sets" class="level3">
 <h3 class="anchored" data-anchor-id="data-sets">Data Sets</h3>
+<ul>
+<li><a href="data/admissions.sav">Admissions Data</a> (in lecture notes)</li>
+<li><a href="data/gregpa.sav">GRE and graduate student GPA Data</a> (in lecture notes) ## Resources</li>
+</ul>
+<p>I have put together a <a href="admissions_R_ex.qmd">detailed explanation</a> about simple and multiple linear regression in R.</p>
 </section>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 </section>
 <section id="todays-reading" class="level2">
 <h2 class="anchored" data-anchor-id="todays-reading">Today’s Reading</h2>
-</section>
-<section id="r-lab-files" class="level2">
-<h2 class="anchored" data-anchor-id="r-lab-files">R Lab Files</h2>
+<p>Today’s in class assignment is going to ask you to run a multiple linear regression using the National Survey of Child and Adolescent Well-Being (NSCAW I) survey. I used this data in a couple of manuscripts <a href="static/pts_ext.pdf">“Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model”</a> <span class="citation" data-cites="barboza2017trajectories">Barboza et al. (<a href="#ref-barboza2017trajectories" role="doc-biblioref">2017</a>)</span> and <a href="static/pts_ext.pdf">“Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type”</a> See <span class="citation" data-cites="barboza2017longitudinal">Barboza &amp; Dominguez (<a href="#ref-barboza2017longitudinal" role="doc-biblioref">2017</a>)</span>.</p>
 </section>
 <section id="additional-notes" class="level2">
 <h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
-<hr>
+<ul>
+<li>Keep calm and DO NOT be normal.</li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-barboza2017longitudinal" class="csl-entry" role="listitem">
+Barboza, G. E., &amp; Dominguez, S. (2017). Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type. <em>Children and Youth Services Review</em>, <em>81</em>, 368–378.
+</div>
+<div id="ref-barboza2017trajectories" class="csl-entry" role="listitem">
+Barboza, G. E., Dominguez, S., &amp; Pinder, J. (2017). Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model. <em>Child Abuse &amp; Neglect</em>, <em>72</em>, 370–382.
+</div>
+<div id="ref-barboza2023neighborhood" class="csl-entry" role="listitem">
+Barboza-Salerno, G. E. (2023). The neighborhood deprivation gradient and child physical abuse and neglect: A bayesian spatial model. <em>Child Abuse &amp; Neglect</em>, <em>146</em>, 106501.
+</div>
+</div>
 </section>
 </section>
 

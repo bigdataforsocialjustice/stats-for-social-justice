@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Course syllabus for Spring 2025, covering equity-focused statistical analysis.">
+<meta name="author" content="Barboza-Salerno">
+<meta name="dcterms.date" content="2025-02-10">
 
-<title>Syllabus: Statistics for Social Justice – Statistics for Social Justice</title>
+<title>21&nbsp; Analysis of Area Deprivation Disparities Using Cohen’s D – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -31,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Assignments.html" rel="next">
-<link href="./14-final-project.html" rel="prev">
+<link href="./references.html" rel="next">
+<link href="./PRAMS_Correlation_Analysis.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d5d78c9e45e9a5253a6059031ce5ea1b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-77205cbbef6a5b90ba72edc25dea2156.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -82,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./syllabus.html"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Syllabus: Statistics for Social Justice</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cohensd.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Analysis of Area Deprivation Disparities Using Cohen’s D</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -199,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./syllabus.html" class="sidebar-item-text sidebar-link active">
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Syllabus: Statistics for Social Justice</span></span></a>
   </div>
 </li>
@@ -229,7 +264,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cohensd.html" class="sidebar-item-text sidebar-link">
+  <a href="./cohensd.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Analysis of Area Deprivation Disparities Using Cohen’s D</span></span></a>
   </div>
 </li>
@@ -249,29 +284,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#miscellaneous-course-policies" id="toc-miscellaneous-course-policies" class="nav-link active" data-scroll-target="#miscellaneous-course-policies">Miscellaneous Course Policies</a></li>
-  <li><a href="#course-information" id="toc-course-information" class="nav-link" data-scroll-target="#course-information">Course Information</a></li>
-  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives">Course Objectives</a></li>
-  <li><a href="#weekly-schedule-activities" id="toc-weekly-schedule-activities" class="nav-link" data-scroll-target="#weekly-schedule-activities">Weekly Schedule &amp; Activities</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">22</span> <strong>Introduction</strong></a>
   <ul class="collapse">
-  <li><a href="#week-1-january-6-2025" id="toc-week-1-january-6-2025" class="nav-link" data-scroll-target="#week-1-january-6-2025">Week 1: January 6, 2025</a></li>
-  <li><a href="#week-2-january-13-2025" id="toc-week-2-january-13-2025" class="nav-link" data-scroll-target="#week-2-january-13-2025">Week 2: January 13, 2025</a></li>
-  <li><a href="#week-3-january-20-2025" id="toc-week-3-january-20-2025" class="nav-link" data-scroll-target="#week-3-january-20-2025">Week 3: January 20, 2025</a></li>
-  <li><a href="#week-4-january-27-2025" id="toc-week-4-january-27-2025" class="nav-link" data-scroll-target="#week-4-january-27-2025">Week 4: January 27, 2025</a></li>
-  <li><a href="#week-5-february-3-2025" id="toc-week-5-february-3-2025" class="nav-link" data-scroll-target="#week-5-february-3-2025">Week 5: February 3, 2025</a></li>
-  <li><a href="#week-6-february-10-2025" id="toc-week-6-february-10-2025" class="nav-link" data-scroll-target="#week-6-february-10-2025">Week 6: February 10, 2025</a></li>
-  <li><a href="#week-7-february-17-2025" id="toc-week-7-february-17-2025" class="nav-link" data-scroll-target="#week-7-february-17-2025">Week 7: February 17, 2025</a></li>
-  <li><a href="#week-8-february-24-2025" id="toc-week-8-february-24-2025" class="nav-link" data-scroll-target="#week-8-february-24-2025">Week 8: February 24, 2025</a></li>
-  <li><a href="#week-9-march-3-2025" id="toc-week-9-march-3-2025" class="nav-link" data-scroll-target="#week-9-march-3-2025">Week 9: March 3, 2025</a></li>
-  <li><a href="#week-10-march-10-2025" id="toc-week-10-march-10-2025" class="nav-link" data-scroll-target="#week-10-march-10-2025">Week 10: March 10, 2025</a></li>
-  <li><a href="#week-11-march-17-2025" id="toc-week-11-march-17-2025" class="nav-link" data-scroll-target="#week-11-march-17-2025">Week 11: March 17, 2025</a></li>
-  <li><a href="#week-12-march-24-2025" id="toc-week-12-march-24-2025" class="nav-link" data-scroll-target="#week-12-march-24-2025">Week 12: March 24, 2025</a></li>
-  <li><a href="#week-13-march-31-2025" id="toc-week-13-march-31-2025" class="nav-link" data-scroll-target="#week-13-march-31-2025">Week 13: March 31, 2025</a></li>
-  <li><a href="#week-14-april-7-2025" id="toc-week-14-april-7-2025" class="nav-link" data-scroll-target="#week-14-april-7-2025">Week 14: April 7, 2025</a></li>
-  <li><a href="#week-15-april-14-2025" id="toc-week-15-april-14-2025" class="nav-link" data-scroll-target="#week-15-april-14-2025">Week 15: April 14, 2025</a></li>
-  <li><a href="#week-16-april-21-2025" id="toc-week-16-april-21-2025" class="nav-link" data-scroll-target="#week-16-april-21-2025">Week 16: April 21, 2025</a></li>
-  <li><a href="#final-exam-april-28-2025" id="toc-final-exam-april-28-2025" class="nav-link" data-scroll-target="#final-exam-april-28-2025">Final Exam: April 28, 2025</a></li>
-  <li><a href="#contact-information" id="toc-contact-information" class="nav-link" data-scroll-target="#contact-information">Contact Information</a></li>
+  <li><a href="#data-collection-preparation" id="toc-data-collection-preparation" class="nav-link" data-scroll-target="#data-collection-preparation"><span class="header-section-number">22.1</span> <strong>Data Collection &amp; Preparation</strong></a>
+  <ul class="collapse">
+  <li><a href="#excluding-non-contiguous-u.s.-states-and-territories" id="toc-excluding-non-contiguous-u.s.-states-and-territories" class="nav-link" data-scroll-target="#excluding-non-contiguous-u.s.-states-and-territories"><span class="header-section-number">22.1.1</span> <strong>Excluding Non-Contiguous U.S. States and Territories</strong></a></li>
+  </ul></li>
+  <li><a href="#mapping-adi-by-county" id="toc-mapping-adi-by-county" class="nav-link" data-scroll-target="#mapping-adi-by-county"><span class="header-section-number">22.2</span> <strong>Mapping ADI by County</strong></a></li>
+  <li><a href="#adi-disparities-effect-size-cohens-d" id="toc-adi-disparities-effect-size-cohens-d" class="nav-link" data-scroll-target="#adi-disparities-effect-size-cohens-d"><span class="header-section-number">22.3</span> <strong>ADI Disparities &amp; Effect Size (Cohen’s d)</strong></a></li>
+  <li><a href="#interpretation-of-cohens-d-results" id="toc-interpretation-of-cohens-d-results" class="nav-link" data-scroll-target="#interpretation-of-cohens-d-results"><span class="header-section-number">22.4</span> <strong>Interpretation of Cohen’s d Results</strong></a>
+  <ul class="collapse">
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings"><span class="header-section-number">22.4.1</span> <strong>Key Findings</strong></a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">22.5</span> <strong>Conclusion</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -281,14 +306,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Syllabus: Statistics for Social Justice</span></h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Analysis of Area Deprivation Disparities Using Cohen’s D</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Barboza-Salerno </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 10, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -298,276 +335,200 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="miscellaneous-course-policies" class="level2">
-<h2 class="anchored" data-anchor-id="miscellaneous-course-policies">Miscellaneous Course Policies</h2>
-<p>Please download the OSU and CSW <a href="misc_course_policies.docx">course policies</a> that are incorporated by reference within this course.</p>
-</section>
-<section id="course-information" class="level2">
-<h2 class="anchored" data-anchor-id="course-information">Course Information</h2>
-<p><strong>Course Title</strong>: Statistics II: Equity-Focused Data Analysis<br>
-<strong>Instructor</strong>: Dr.&nbsp;Gia Elise Barboza-Salerno<br>
-<strong>Institution</strong>: College of Social Work, The Ohio State University<br>
-<strong>Term</strong>: Spring 2025</p>
-</section>
-<section id="course-objectives" class="level1">
-<h1>Course Objectives</h1>
-<p>This course will push you to think creatively about statistics in the social work context, exploring regression, measurement, and latent variable models with an emphasis on real-world application. Each week will involve hands-on learning, storytelling through data, and team-based projects. By the end, you’ll not only master regression techniques but also apply them to innovative social work challenges.</p>
+<section id="introduction" class="level1" data-number="22">
+<h1 data-number="22"><span class="header-section-number">22</span> <strong>Introduction</strong></h1>
+<p>This analysis examines the <strong>Area Deprivation Index (ADI)</strong> across U.S. counties. The goal is to assess <strong>disparities between areas of high- and low-deprivation (by county)</strong> and quantify the effect size using <strong>Cohen’s d</strong>.</p>
+<p>The ADI provides a <strong>measure of socioeconomic disadvantage</strong>, with higher values indicating greater deprivation. We also <strong>map ADI values across counties</strong> and exclude non-contiguous U.S. states and territories.</p>
 <hr>
-<p><a href="./reading.html">Click here</a> for the required reading and software needed for the course.</p>
-<hr>
-</section>
-<section id="weekly-schedule-activities" class="level1">
-<h1>Weekly Schedule &amp; Activities</h1>
-<section id="week-1-january-6-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-1-january-6-2025">Week 1: January 6, 2025</h3>
-<p><strong>No Class</strong> <strong>Introduction to the course</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Course structure, and role of statistics in social work.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-We are using innovative data science tools to help us learn the material.</p></li>
-<li><p><strong>R Lab</strong>:</p>
-<ul>
-<li><p>Introduction to R for data analysis and graphing</p></li>
-<li><p>Introduction to the RStudio Interface</p></li>
-<li><p>Opening files in R</p></li>
-<li><p>Data wrangling</p></li>
-<li><p>Skills: Use <code>foreign</code>, <code>dplyr</code> and <code>ggplot2</code> to open, clean and visualize data.</p></li>
-</ul></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Begin thinking about how to use data to reclaim your story.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-2-january-13-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-2-january-13-2025">Week 2: January 13, 2025</h3>
-<p><strong>Assessment</strong></p>
-<p><strong>Activity</strong>:<br>
-- Complete a pre-course assessment to evaluate your understanding of statistics and R.</p>
-<ul>
-<li><strong><a href="assessment_answers.html">Access the Assessment</a></strong></li>
-</ul>
-<hr>
-</section>
-<section id="week-3-january-20-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-3-january-20-2025">Week 3: January 20, 2025</h3>
-<p><strong>No Class - MLK Day</strong></p>
-</section>
-<section id="week-4-january-27-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-4-january-27-2025"><a href="./02-simple-regression.html">Week 4: January 27, 2025</a></h3>
-<p><strong>Simple Regression: Foundations and Application</strong></p>
-<ul>
-<li><strong>Topics</strong>:<br>
-Slope, intercept, residuals, and regression output.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="data-collection-preparation" class="level2" data-number="22.1">
+<h2 data-number="22.1" class="anchored" data-anchor-id="data-collection-preparation"><span class="header-section-number">22.1</span> <strong>Data Collection &amp; Preparation</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install and load required packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("sociome")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("ggplot2")</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dplyr")</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("sf")</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("tigris")</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("effectsize")</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sociome)     <span class="co"># For ADI data</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)     <span class="co"># For visualization</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.3</code></pre>
 </div>
-<div class="callout-title-container flex-fill">
-Note
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)       <span class="co"># For data manipulation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)          <span class="co"># For mapping spatial data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tigris)      <span class="co"># For county boundaries</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>To enable caching of data, set `options(tigris_use_cache = TRUE)`
+in your R script or .Rprofile.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(effectsize)  <span class="co"># For Cohen's d calculation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We first <strong>retrieve the ADI data for 2020 at the county level</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Step 1: Get ADI Data by County ---</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>adi_data <span class="ot">&lt;-</span> <span class="fu">get_adi</span>(<span class="at">year =</span> <span class="dv">2020</span>, <span class="at">geography =</span> <span class="st">"county"</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract GEOID, county name, and ADI</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>adi_data <span class="ot">&lt;-</span> adi_data <span class="sc">%&gt;%</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(GEOID, NAME, ADI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="excluding-non-contiguous-u.s.-states-and-territories" class="level3" data-number="22.1.1">
+<h3 data-number="22.1.1" class="anchored" data-anchor-id="excluding-non-contiguous-u.s.-states-and-territories"><span class="header-section-number">22.1.1</span> <strong>Excluding Non-Contiguous U.S. States and Territories</strong></h3>
+<p>To focus on <strong>the contiguous U.S.</strong>, we exclude: - <strong>Alaska (02) &amp; Hawaii (15)</strong> - <strong>U.S. territories</strong>: Puerto Rico, Guam, American Samoa, Northern Mariana Islands, U.S. Virgin Islands.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List of FIPS codes for non-contiguous states/territories</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>non_contiguous_fips <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"02"</span>, <span class="st">"15"</span>, <span class="st">"60"</span>, <span class="st">"66"</span>, <span class="st">"69"</span>, <span class="st">"72"</span>, <span class="st">"78"</span>)  </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load county boundaries and exclude non-contiguous areas</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>counties <span class="ot">&lt;-</span> <span class="fu">counties</span>(<span class="at">cb =</span> <span class="cn">TRUE</span>, <span class="at">resolution =</span> <span class="st">"20m"</span>, <span class="at">year =</span> <span class="dv">2020</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span>STATEFP <span class="sc">%in%</span> non_contiguous_fips)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+  |                                                                            
+  |                                                                      |   0%
+  |                                                                            
+  |=                                                                     |   2%
+  |                                                                            
+  |===                                                                   |   4%
+  |                                                                            
+  |======                                                                |   8%
+  |                                                                            
+  |=======                                                               |  10%
+  |                                                                            
+  |========                                                              |  12%
+  |                                                                            
+  |==========                                                            |  14%
+  |                                                                            
+  |===========                                                           |  16%
+  |                                                                            
+  |=============                                                         |  19%
+  |                                                                            
+  |===============                                                       |  21%
+  |                                                                            
+  |================                                                      |  23%
+  |                                                                            
+  |==================                                                    |  25%
+  |                                                                            
+  |====================                                                  |  29%
+  |                                                                            
+  |======================                                                |  31%
+  |                                                                            
+  |=======================                                               |  33%
+  |                                                                            
+  |=======================                                               |  34%
+  |                                                                            
+  |=========================                                             |  35%
+  |                                                                            
+  |============================                                          |  40%
+  |                                                                            
+  |==============================                                        |  43%
+  |                                                                            
+  |================================                                      |  45%
+  |                                                                            
+  |=================================                                     |  47%
+  |                                                                            
+  |===================================                                   |  50%
+  |                                                                            
+  |======================================                                |  55%
+  |                                                                            
+  |=========================================                             |  58%
+  |                                                                            
+  |============================================                          |  63%
+  |                                                                            
+  |===============================================                       |  67%
+  |                                                                            
+  |================================================                      |  69%
+  |                                                                            
+  |======================================================================| 100%</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Merge ADI data with county geometries</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>adi_map_data <span class="ot">&lt;-</span> counties <span class="sc">%&gt;%</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(adi_data, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"GEOID"</span> <span class="ot">=</span> <span class="st">"GEOID"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+</section>
+<section id="mapping-adi-by-county" class="level2" data-number="22.2">
+<h2 data-number="22.2" class="anchored" data-anchor-id="mapping-adi-by-county"><span class="header-section-number">22.2</span> <strong>Mapping ADI by County</strong></h2>
+<p>The following map <strong>visualizes area deprivation across the contiguous U.S.</strong>. Darker areas represent <strong>higher deprivation levels</strong>.</p>
+<p>You should play around with ggplot to get used to its functionality.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(adi_map_data) <span class="sc">+</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> ADI), <span class="at">color =</span> <span class="cn">NA</span>) <span class="sc">+</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> <span class="st">"plasma"</span>, <span class="at">name =</span> <span class="st">"ADI"</span>) <span class="sc">+</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Area Deprivation by County (Contiguous U.S., ADI Data 2020)"</span>,</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Excludes Alaska, Hawaii, &amp; U.S. Territories"</span>,</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption =</span> <span class="st">"Source: Sociome package ADI 2020"</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="cohensd_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Note: Unfortunately, the R Cloud has stopped allowing apps to run and so I need to figure a workaround. Until then, you will have to download the R script to run it. This will require installing the <code>learnr</code> package.</p>
 </div>
+<hr>
+</section>
+<section id="adi-disparities-effect-size-cohens-d" class="level2" data-number="22.3">
+<h2 data-number="22.3" class="anchored" data-anchor-id="adi-disparities-effect-size-cohens-d"><span class="header-section-number">22.3</span> <strong>ADI Disparities &amp; Effect Size (Cohen’s d)</strong></h2>
+<p>We divide counties into <strong>low-deprivation (least disadvantaged, bottom 25%)</strong> and <strong>high-deprivation (most disadvantaged, top 25%)</strong> groups. The income differences between these groups are quantified using <strong>Cohen’s d</strong>, a measure of <strong>standardized effect size</strong>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define thresholds: Top 25% (most deprived) vs. Bottom 25% (least deprived)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>quantiles <span class="ot">&lt;-</span> <span class="fu">quantile</span>(adi_data<span class="sc">$</span>ADI, <span class="at">probs =</span> <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.75</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>low_deprivation <span class="ot">&lt;-</span> adi_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(ADI <span class="sc">&lt;=</span> quantiles[<span class="dv">1</span>])</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>high_deprivation <span class="ot">&lt;-</span> adi_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(ADI <span class="sc">&gt;=</span> quantiles[<span class="dv">2</span>])</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute Cohen's d</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>cohens_d_value <span class="ot">&lt;-</span> <span class="fu">cohens_d</span>(high_deprivation<span class="sc">$</span>ADI, low_deprivation<span class="sc">$</span>ADI)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Print Cohen's d result</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(cohens_d_value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<hr>
+</section>
+<section id="interpretation-of-cohens-d-results" class="level2" data-number="22.4">
+<h2 data-number="22.4" class="anchored" data-anchor-id="interpretation-of-cohens-d-results"><span class="header-section-number">22.4</span> <strong>Interpretation of Cohen’s d Results</strong></h2>
+<p>Cohen’s d tells us <strong>how large the difference in ADI between low- and high-deprivation counties</strong>:</p>
 <ul>
-<li><p><strong>Innovative Approach</strong>:<br>
-Interactive Data <a href="https://github.com/bigdataforsocialjustice/stats-for-social-justice/blob/main/escape_room_redlining.Rmd">Escape Room</a>: Step-by-step example to illustrate working with data from the web. Learn more about how to use and install <a href="https://rstudio.github.io/learnr/articles/learnr.html"><code>learnr</code> here</a>. Download the Historic Redlining Scores <a href="HRS2020_CLEAN.sav">here</a></p></li>
-<li><p><strong>R Lab</strong>:<br>
-Fit simple regression models using <code>lm()</code> and create dynamic visuals with <code>ggplot2</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-<a href="static/HRS and child maltreatment.pdf">Read our paper</a> on historic redlining and child welfare investigations in Los Angeles County.</p></li>
+<li><strong>( d = 0.2 )</strong> → Small effect</li>
+<li><strong>( d = 0.5 )</strong> → Medium effect</li>
+<li><strong>( d = 0.8+ )</strong> → Large effect</li>
 </ul>
-<p><strong>Introduction: Turning Data Into Stories</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Finding Data</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Data Makeover Challenge: Reimagine data using effective storytelling</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Introduction to R, JASP and SPSS</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Are there differences in <a href="./infant_mortality.html">infant mortality</a> by race?</p></li>
-</ul>
+<p>If the result is <strong>negative</strong>, it means that <strong>high-deprivation counties have significantly higher ADI scores than low-deprivation counties</strong>. The <strong>absolute value</strong> of d still represents the effect size.</p>
+<section id="key-findings" class="level3" data-number="22.4.1">
+<h3 data-number="22.4.1" class="anchored" data-anchor-id="key-findings"><span class="header-section-number">22.4.1</span> <strong>Key Findings</strong></h3>
+<p>🔹 A large Cohen’s d suggests <strong>significant deprivation disparities</strong> between counties with low and high deprivation.<br>
+🔹 This reinforces the need for <strong>economic policies addressing regional deprivation</strong>.<br>
+🔹 Mapping ADI allows for <strong>geographically targeted interventions</strong> to reduce socioeconomic inequalities.</p>
 <hr>
 </section>
-<section id="week-5-february-3-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-5-february-3-2025"><a href="./03-multiple-regression.html">Week 5: February 3, 2025</a></h3>
-<p><strong>Multiple Regression: Hypothesis Testing and Decomposition of Effects</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-F-tests, p-values, R², and decomposition of effects.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Hypothesis Auction: Students “bid” on testable hypotheses and justify their choices.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Fit and interpret multiple regression models with <code>lm()</code> and conduct diagnostic checks.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Explain the results of a multiple regression analysis to a argue for policy change.</p></li>
-<li><p><strong>Assignment 1</strong> will be distributed today and due at the end of Week 9 (March 3, 2025).</p></li>
-</ul>
-<hr>
 </section>
-<section id="week-6-february-10-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-6-february-10-2025"><a href="./04-effect-sizes.html">Week 6: February 10, 2025</a></h3>
-<p><strong>Effect Sizes &amp; Confidence Intervals: Moving Beyond P-Values</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Practical significance, confidence intervals, effect sizes.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Data Debate: Teams debate the practical and legal significance of statistical findings in a social work context.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Calculate and interpret effect sizes with the <code>effectsize</code> package and create visual confidence intervals with <code>ggdist</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Write an op-ed arguing for or against the practical significance of debated findings.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-7-february-17-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-7-february-17-2025"><a href="./05-assumptions.html">Week 7: February 17, 2025</a></h3>
-<p><strong>Assumptions and Violations of Assumptions</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Diagnosing and addressing regression assumption violations.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Assumption Diagnosis Clinic: Diagnose and “treat” assumption violations in datasets.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Conduct diagnostic checks with the <code>car</code> and <code>performance</code> packages.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Create a “prescription card” summarizing diagnostics and fixes for your dataset.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-8-february-24-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-8-february-24-2025"><a href="./06-hierarchical-regression.html">Week 8: February 24, 2025</a></h3>
-<p><strong>Hierarchical Regression &amp; Dummy Variables</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Coding categorical predictors, hierarchical models, and their applications.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Regression Battle: Teams compete to build the best hierarchical model to explain variance in a dataset.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Code dummy variables and fit hierarchical models using <code>lm()</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Write a brief explaining the ethical implications of your dummy variable coding.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-9-march-3-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-9-march-3-2025"><a href="./07-logistic-regression.html">Week 9: March 3, 2025</a></h3>
-<p><strong>Logistic Regression: Predicting Dichotomous Outcomes</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Odds ratios, ROC curves, interpreting results.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Predictive Policy Game: Prediction scenarious to tackle social work interventions.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Fit logistic regression models with <code>glm()</code> and create ROC curves with <code>pROC</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Create a policy recommendation informed by logistic regression findings.</p></li>
-<li><p><strong>Assignment 1 Due Today.</strong></p></li>
-</ul>
-<hr>
-</section>
-<section id="week-10-march-10-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-10-march-10-2025">Week 10: March 10, 2025</h3>
-<p><strong>Spring Break</strong></p>
-<hr>
-</section>
-<section id="week-11-march-17-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-11-march-17-2025"><a href="./09-mediation.html">Week 11: March 17, 2025</a></h3>
-<p><strong>Mediation &amp; Suppressor Variables</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Mediation analysis and identifying suppressor effects.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Data Detective Roleplay: Investigate intervention mechanisms using mediation analysis.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Perform mediation analysis with the <code>mediation</code> package and visualize indirect effects.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Examine a “case file” documenting your mediation analysis, including visualizations and key takeaways.</p></li>
-<li><p><strong>Assignment 2</strong> will be distributed today and due at the end of Week 15 (April 14, 2025).</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-12-march-24-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-12-march-24-2025"><a href="./10-moderation.html">Week 12: March 24, 2025</a></h3>
-<p><strong>Moderation (Interactions) in Regression</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Interactions, visualization, and interpretation.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Build-a-Story Workshop: Create narratives around moderation analysis results using regions of significance.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Use interactions to plot and interpret effects.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Submit a 1-page illustrated story using moderation findings.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-13-march-31-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-13-march-31-2025"><a href="./11-efa.html">Week 13: March 31, 2025</a></h3>
-<p><strong>Exploratory Factor Analysis (EFA)</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Factor extraction, analysis and visualization.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Factor Scavenger Hunt: Interpret factor loadings to uncover insights using <a href="https://psychilin.shinyapps.io/EFAshiny/">EFAShiny</a></p></li>
-<li><p><strong>R Lab</strong>:<br>
-Conduct EFA with <code>psych</code> and visualize results with <code>corrplot</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Create an infographic summarizing EFA findings and what they mean.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-14-april-7-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-14-april-7-2025"><a href="./12-cfa.html">Week 14: April 7, 2025</a></h3>
-<p><strong>Confirmatory Factor Analysis (CFA)</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Model fit and parameter estimates.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Model Critique Workshop: Propose refinements to a provided CFA model.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Conduct CFA with <code>lavaan</code> and visualize results with <code>semPlot</code>.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Evaluate the CFA model and suggesting refinements.</p></li>
-</ul>
-<hr>
-</section>
-<section id="week-15-april-14-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-15-april-14-2025"><a href="./13-lca.html">Week 15: April 14, 2025</a></h3>
-<p><strong>Latent Class Analysis (LCA)</strong></p>
-<ul>
-<li><p><strong>Topics</strong>:<br>
-Identifying latent subgroups.</p></li>
-<li><p><strong>Innovative Approach</strong>:<br>
-Latent Storytelling: Use LCA findings to understand lived experiences of a group of your choice.</p></li>
-<li><p><strong>R Lab</strong>:<br>
-Perform LCA with <code>poLCA</code> and visualize latent profiles.</p></li>
-<li><p><strong>Social Justice Policy Application</strong>:<br>
-Create a “persona deck” illustrating latent group characteristics.</p></li>
-<li><p><strong>Assignment 2 Due Today.</strong></p></li>
-</ul>
-<hr>
-</section>
-<section id="week-16-april-21-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-16-april-21-2025">Week 16: April 21, 2025</h3>
-<p><strong>Student Presentations</strong> <strong>Review</strong></p>
-<hr>
-</section>
-<section id="final-exam-april-28-2025" class="level3">
-<h3 class="anchored" data-anchor-id="final-exam-april-28-2025">Final Exam: April 28, 2025</h3>
-<p><strong>Create, Validate, and Apply Scales</strong></p>
-<p><strong>Task</strong>:<br>
-Take the final exam, or submit a publishable manuscript.</p>
-</section>
-<section id="contact-information" class="level2">
-<h2 class="anchored" data-anchor-id="contact-information">Contact Information</h2>
-<p><strong>Office Hours</strong>: Mondays 2–4 PM, or by appointment.<br>
-<strong>Email</strong>: <a href="mailto:barboza-salerno@osu.edu">barboza-salerno@osu.edu</a></p>
+<section id="conclusion" class="level2" data-number="22.5">
+<h2 data-number="22.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">22.5</span> <strong>Conclusion</strong></h2>
+<p>The effect size tells us that the ADI in low-deprivation counties is 3.39 standard deviations higher than in high-deprivation counties. Since Cohen’s d is standardized, this means the deprivation difference is very large in relative terms. This analysis confirms that <strong>county-level deprivation is strongly associated with huge disparities in ADI</strong>, with high-deprivation counties having more economic inequaltity, low educational attainment, and less financial strength. Future research could associate some outcome across levels of ADI.</p>
 
 
 </section>
@@ -993,13 +954,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./14-final-project.html" class="pagination-link" aria-label="Final Project">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Final Project</span></span>
+      <a href="./PRAMS_Correlation_Analysis.html" class="pagination-link" aria-label="Partial and Semi-Partial Correlation Analysis with PRAMS 8 Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Partial and Semi-Partial Correlation Analysis with PRAMS 8 Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Assignments.html" class="pagination-link" aria-label="Assignments and Due Dates">
-        <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Assignments and Due Dates</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
