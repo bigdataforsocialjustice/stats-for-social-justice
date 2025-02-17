@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.40">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Research Team">
+<meta name="description" content="develop, read, critique, design, and conduct high-quality scientific research in public health">
+
+<title>Examining Adverse Birth Outcomes in Santa Clara County – Research Methods in Public Health</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//files/icon-512.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-9e228d6d4d66c12a9d11739da31c2b1c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a8425b28daa99b4d9d6bc6eb50546379.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="Examining Adverse Birth Outcomes in Santa Clara County – Research Methods in Public Health">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://bigdataforsocialjustice/phhbhp7534sp25.com/files/social-image-sp23.png">
+<meta property="og:site_name" content="Research Methods in Public Health">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="640">
+<meta property="og:image:width" content="1280">
+<meta name="twitter:title" content="Examining Adverse Birth Outcomes in Santa Clara County – Research Methods in Public Health">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://bigdataforsocialjustice/phhbhp7534sp25.com/files/social-image-sp23.png">
+<meta name="twitter:creator" content="@bigdataforsocialjustice">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="640">
+<meta name="twitter:image-width" content="1280">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Research Methods in Public Health</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../content/index.html"> 
+<span class="menu-text">Content</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignment/index.html"> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../example/index.html"> 
+<span class="menu-text">Examples</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resource/index.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../alerts/index.html"> 
+<span class="menu-text">Alerts</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://phhbhp7534.slack.com"> <i class="bi bi-slack" role="img" aria-label="Slack">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://posit.cloud/content/yours?sort=name_asc"> <i class="bi bi-cloud-fill" role="img" aria-label="RStudio.cloud">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#i.-introduction" id="toc-i.-introduction" class="nav-link active" data-scroll-target="#i.-introduction"><strong>I. Introduction</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-research-topic-and-importance" id="toc-a.-research-topic-and-importance" class="nav-link" data-scroll-target="#a.-research-topic-and-importance"><strong>A. Research Topic and Importance</strong></a></li>
+  <li><a href="#b.-selecting-a-target-journal" id="toc-b.-selecting-a-target-journal" class="nav-link" data-scroll-target="#b.-selecting-a-target-journal"><strong>B. Selecting a Target Journal</strong></a></li>
+  <li><a href="#c.-research-questions" id="toc-c.-research-questions" class="nav-link" data-scroll-target="#c.-research-questions"><strong>C. Research Question(s)</strong></a></li>
+  </ul></li>
+  <li><a href="#ii.-theoretical-framework-organized-abandonment-theory" id="toc-ii.-theoretical-framework-organized-abandonment-theory" class="nav-link" data-scroll-target="#ii.-theoretical-framework-organized-abandonment-theory"><strong>II. Theoretical Framework: Organized Abandonment Theory</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-definition-of-organized-abandonment" id="toc-a.-definition-of-organized-abandonment" class="nav-link" data-scroll-target="#a.-definition-of-organized-abandonment"><strong>A. Definition of Organized Abandonment</strong></a></li>
+  <li><a href="#b.-application-to-preterm-birth-outcomes" id="toc-b.-application-to-preterm-birth-outcomes" class="nav-link" data-scroll-target="#b.-application-to-preterm-birth-outcomes"><strong>B. Application to Preterm Birth Outcomes</strong></a></li>
+  </ul></li>
+  <li><a href="#iii.-literature-review-reproducibility" id="toc-iii.-literature-review-reproducibility" class="nav-link" data-scroll-target="#iii.-literature-review-reproducibility"><strong>III. Literature Review &amp; Reproducibility</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-literature-review-zotero" id="toc-a.-literature-review-zotero" class="nav-link" data-scroll-target="#a.-literature-review-zotero"><strong>A. Literature Review &amp; Zotero</strong></a></li>
+  <li><a href="#b.-reproducible-research-tools" id="toc-b.-reproducible-research-tools" class="nav-link" data-scroll-target="#b.-reproducible-research-tools"><strong>B. Reproducible Research Tools</strong></a></li>
+  </ul></li>
+  <li><a href="#iv.-research-methods" id="toc-iv.-research-methods" class="nav-link" data-scroll-target="#iv.-research-methods"><strong>IV. Research Methods</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-unit-of-analysis" id="toc-a.-unit-of-analysis" class="nav-link" data-scroll-target="#a.-unit-of-analysis"><strong>A. Unit of Analysis</strong></a></li>
+  <li><a href="#b.-data-sources-processing" id="toc-b.-data-sources-processing" class="nav-link" data-scroll-target="#b.-data-sources-processing"><strong>B. Data Sources &amp; Processing</strong></a></li>
+  </ul></li>
+  <li><a href="#v.-causal-analysis-using-directed-acyclic-graphs-dags" id="toc-v.-causal-analysis-using-directed-acyclic-graphs-dags" class="nav-link" data-scroll-target="#v.-causal-analysis-using-directed-acyclic-graphs-dags"><strong>V. Causal Analysis Using Directed Acyclic Graphs (DAGs)</strong></a></li>
+  <li><a href="#vi.-visualizing-relationships-with-maps" id="toc-vi.-visualizing-relationships-with-maps" class="nav-link" data-scroll-target="#vi.-visualizing-relationships-with-maps"><strong>VI. Visualizing Relationships with Maps</strong></a></li>
+  <li><a href="#vii.-expected-outcomes-policy-implications" id="toc-vii.-expected-outcomes-policy-implications" class="nav-link" data-scroll-target="#vii.-expected-outcomes-policy-implications"><strong>VII. Expected Outcomes &amp; Policy Implications</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-anticipated-findings" id="toc-a.-anticipated-findings" class="nav-link" data-scroll-target="#a.-anticipated-findings"><strong>A. Anticipated Findings</strong></a></li>
+  <li><a href="#b.-policy-implications" id="toc-b.-policy-implications" class="nav-link" data-scroll-target="#b.-policy-implications"><strong>B. Policy Implications</strong></a></li>
+  </ul></li>
+  <li><a href="#viii.-conclusion-next-steps" id="toc-viii.-conclusion-next-steps" class="nav-link" data-scroll-target="#viii.-conclusion-next-steps"><strong>VIII. Conclusion &amp; Next Steps</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">Examining Adverse Birth Outcomes in Santa Clara County</h1></header>
+
+<header id="title-block-header">
+
+
+<div class="date-block bg-assignment text-white p-2">
+  <p class="date">Due by 11:59 PM on Thursday, January 30, 2025</p>
+</div>
+</header>
+
+
+<section id="i.-introduction" class="level1">
+<h1><strong>I. Introduction</strong></h1>
+<section id="a.-research-topic-and-importance" class="level2">
+<h2 class="anchored" data-anchor-id="a.-research-topic-and-importance"><strong>A. Research Topic and Importance</strong></h2>
+<ul>
+<li>Overview of <strong>adverse birth outcomes</strong> (e.g., preterm birth, low birth weight) in Santa Clara County.<br>
+</li>
+<li>Importance of <strong>social and environmental determinants</strong> (tree equity, area deprivation, air pollution, housing, gentrification).<br>
+</li>
+<li>Introduction to available data: <strong>Santa Clara County Preterm Births GIS dataset</strong> (<a href="https://hub.arcgis.com/datasets/sccphd::preterm-births-gis/explore">source</a>).</li>
+</ul>
+</section>
+<section id="b.-selecting-a-target-journal" class="level2">
+<h2 class="anchored" data-anchor-id="b.-selecting-a-target-journal"><strong>B. Selecting a Target Journal</strong></h2>
+<ul>
+<li><strong>Potential Journals:</strong>
+<ul>
+<li><em>Environmental Health Perspectives</em> (focus on environmental determinants of health)<br>
+</li>
+<li><em>American Journal of Public Health</em> (broader public health &amp; equity focus)<br>
+</li>
+<li><em>Maternal and Child Health Journal</em> (specific to birth outcomes)<br>
+</li>
+</ul></li>
+<li><strong>Formatting Considerations:</strong>
+<ul>
+<li>Follow journal <strong>word limits, citation styles (APA, AMA, etc.)</strong>, and <strong>structured sections</strong> (Abstract, Methods, Results, Discussion).<br>
+</li>
+<li>Use <strong>LaTeX (Overleaf) or RMarkdown</strong> for manuscript formatting.</li>
+</ul></li>
+</ul>
+</section>
+<section id="c.-research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="c.-research-questions"><strong>C. Research Question(s)</strong></h2>
+<ol type="1">
+<li><strong>Primary Question:</strong>
+<ul>
+<li>What environmental and social determinants (<strong>tree equity, area deprivation, air pollution, housing instability, gentrification</strong>) are associated with <strong>preterm birth rates</strong> in Santa Clara County?<br>
+</li>
+</ul></li>
+<li><strong>Sub-questions:</strong>
+<ul>
+<li>How do neighborhood-level <strong>socioeconomic factors (housing affordability, displacement, area deprivation)</strong> impact preterm birth risk?<br>
+</li>
+<li>What is the relationship between <strong>gentrification and birth outcomes</strong>?<br>
+</li>
+<li>Do areas with <strong>higher tree equity scores and lower pollution levels</strong> have lower rates of adverse birth outcomes?</li>
+</ul></li>
+</ol>
+</section>
+</section>
+<section id="ii.-theoretical-framework-organized-abandonment-theory" class="level1">
+<h1><strong>II. Theoretical Framework: Organized Abandonment Theory</strong></h1>
+<section id="a.-definition-of-organized-abandonment" class="level2">
+<h2 class="anchored" data-anchor-id="a.-definition-of-organized-abandonment"><strong>A. Definition of Organized Abandonment</strong></h2>
+<ul>
+<li><strong>Organized Abandonment</strong> (Gilmore, 2007) refers to <strong>state-sanctioned neglect of marginalized communities</strong>, particularly through <strong>disinvestment, racialized urban policies, and structural inequalities</strong>.<br>
+</li>
+<li><a href="https://www-sciencedirect-com.proxy.lib.ohio-state.edu/science/article/pii/S0277953624000200?casa_token=XEHrfbiS4CcAAAAA:vn5EIzP7NmWyrczrjEGcE8SDwxgWm5bWTdJ_Wfz5Z-gDpm96EjXI7dbC9Nv7dPLtHdv-LPvLpI4"><strong>Check out this paper</strong></a> on the association between organized abandonment and policing published in Social Science &amp; Medicine.</li>
+</ul>
+</section>
+<section id="b.-application-to-preterm-birth-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="b.-application-to-preterm-birth-outcomes"><strong>B. Application to Preterm Birth Outcomes</strong></h2>
+<ul>
+<li><strong>Housing instability and gentrification:</strong> Rising rents, eviction, and displacement lead to <strong>stress, instability, and poorer maternal health outcomes</strong>.<br>
+</li>
+<li><strong>Environmental hazards:</strong> Industrial zoning, lack of tree cover, and proximity to highways contribute to <strong>higher air pollution and exposure to toxins</strong>, disproportionately affecting <strong>low-income communities of color</strong>.<br>
+</li>
+<li><strong>Healthcare access disparities:</strong> Disinvestment in public health infrastructure reduces <strong>prenatal care access</strong>, exacerbating preterm birth risks.</li>
+</ul>
+</section>
+</section>
+<section id="iii.-literature-review-reproducibility" class="level1">
+<h1><strong>III. Literature Review &amp; Reproducibility</strong></h1>
+<section id="a.-literature-review-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="a.-literature-review-zotero"><strong>A. Literature Review &amp; Zotero</strong></h2>
+<ul>
+<li>Organize references using <strong>Zotero</strong>.<br>
+</li>
+<li>Categorize studies on social, environmental, housing, and health determinants.</li>
+</ul>
+</section>
+<section id="b.-reproducible-research-tools" class="level2">
+<h2 class="anchored" data-anchor-id="b.-reproducible-research-tools"><strong>B. Reproducible Research Tools</strong></h2>
+<ul>
+<li><strong>GitHub for version control</strong>.<br>
+</li>
+<li><strong>RMarkdown for analysis reports</strong>.<br>
+</li>
+<li><strong>Quarto for document formatting &amp; publication</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="iv.-research-methods" class="level1">
+<h1><strong>IV. Research Methods</strong></h1>
+<section id="a.-unit-of-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="a.-unit-of-analysis"><strong>A. Unit of Analysis</strong></h2>
+<ul>
+<li><strong>Census tracts in Santa Clara County</strong> (spatial unit of analysis).<br>
+</li>
+<li><strong>Outcome variable:</strong> Percentage of preterm births per tract.<br>
+</li>
+<li><strong>Independent variables:</strong>
+<ul>
+<li><strong>Housing &amp; Gentrification:</strong> Median Rent, Rent-Burdened Households, Displacement Index<br>
+</li>
+<li><strong>Environmental Variables:</strong> Tree Equity Score, Air Pollution (PM2.5, ozone exposure)<br>
+</li>
+<li><strong>Socioeconomic Indicators:</strong> Area Deprivation Index (ADI)</li>
+</ul></li>
+</ul>
+</section>
+<section id="b.-data-sources-processing" class="level2">
+<h2 class="anchored" data-anchor-id="b.-data-sources-processing"><strong>B. Data Sources &amp; Processing</strong></h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Preterm Birth Rate</td>
+<td>Santa Clara County GIS Hub</td>
+</tr>
+<tr class="even">
+<td>Tree Equity</td>
+<td>American Forests Tree Equity Score</td>
+</tr>
+<tr class="odd">
+<td>Area Deprivation Index</td>
+<td>NCI/Neighborhood Atlas</td>
+</tr>
+<tr class="even">
+<td>Air Pollution</td>
+<td>EPA Air Quality Data</td>
+</tr>
+<tr class="odd">
+<td>Housing &amp; Gentrification</td>
+<td>Census ACS, Urban Displacement Project</td>
+</tr>
+<tr class="even">
+<td>Alcohol Outlet Density</td>
+<td>???</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="v.-causal-analysis-using-directed-acyclic-graphs-dags" class="level1">
+<h1><strong>V. Causal Analysis Using Directed Acyclic Graphs (DAGs)</strong></h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dagitty)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dag <span class="ot">&lt;-</span> <span class="fu">dagitty</span>(<span class="st">"dag {</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">  ADI -&gt; Preterm_Birth</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="st">  Tree_Equity -&gt; ADI</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="st">  Air_Pollution -&gt; Preterm_Birth</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="st">  Tree_Equity -&gt; Air_Pollution</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="st">  Gentrification -&gt; Housing_Instability</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">  Housing_Instability -&gt; Preterm_Birth</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">}"</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dag)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Plot coordinates for graph not supplied! Generating coordinates, see ?coordinates for how to set your own.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="research_project_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="vi.-visualizing-relationships-with-maps" class="level1">
+<h1><strong>VI. Visualizing Relationships with Maps</strong></h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../slides/img/01/lbw.png" class="img-fluid figure-img"></p>
+<figcaption>Low Birth Rate Map</figcaption>
+</figure>
+</div>
+</section>
+<section id="vii.-expected-outcomes-policy-implications" class="level1">
+<h1><strong>VII. Expected Outcomes &amp; Policy Implications</strong></h1>
+<section id="a.-anticipated-findings" class="level2">
+<h2 class="anchored" data-anchor-id="a.-anticipated-findings"><strong>A. Anticipated Findings</strong></h2>
+<ul>
+<li>Areas with <strong>high ADI scores and rising gentrification may have higher preterm birth rates</strong>.<br>
+</li>
+<li>Areas with <strong>greater tree cover and lower air pollution may have better birth outcomes</strong>.</li>
+</ul>
+</section>
+<section id="b.-policy-implications" class="level2">
+<h2 class="anchored" data-anchor-id="b.-policy-implications"><strong>B. Policy Implications</strong></h2>
+<ul>
+<li>Identify high-risk areas for <strong>public health interventions</strong>.<br>
+</li>
+<li>Advocate for <strong>affordable housing policies</strong> to reduce displacement.<br>
+</li>
+<li>Promote <strong>urban greening and environmental justice initiatives</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="viii.-conclusion-next-steps" class="level1">
+<h1><strong>VIII. Conclusion &amp; Next Steps</strong></h1>
+<ul>
+<li><strong>Integrates social, environmental, and housing factors into birth outcome research</strong>.<br>
+</li>
+<li><strong>Uses reproducible research methods (GitHub, RMarkdown, Zotero)</strong>.<br>
+</li>
+<li><strong>Applies causal inference (DAGs) to assess relationships</strong>.</li>
+</ul>
+<p>This structured approach ensures a <strong>rigorous, reproducible, and impactful</strong> research project. 🚀</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/bigdataforsocialjustice\/phhbhp7534sp25\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Content <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> 2024-25 by <a href="https://bigdataforsocialjustice.github.io/">Gia Barboza-Salerno</a> <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> <i class="fa-brands fa-creative-commons-nc" aria-label="creative-commons-nc"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Made with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/bigdataforsocialjustice.com/phhbhp7534/">View the source at <i class="fa-brands fa-github" aria-label="github"></i> GitHub</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
