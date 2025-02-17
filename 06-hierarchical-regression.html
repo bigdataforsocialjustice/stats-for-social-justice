@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Hierarchical Regression and Dummy Variables – Statistics for Social Justice</title>
+<title>hierarchical-regression – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-hierarchical-regression.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Hierarchical Regression and Dummy Variables</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-hierarchical-regression.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">06-hierarchical-regression.html</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-hierarchical-regression.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Hierarchical Regression and Dummy Variables</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">06-hierarchical-regression.html</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -261,120 +261,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#week-8-february-24-2025" id="toc-week-8-february-24-2025" class="nav-link active" data-scroll-target="#week-8-february-24-2025">Week 8: February 24, 2025</a>
-  <ul class="collapse">
-  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a>
-  <ul class="collapse">
-  <li><a href="#what-are-dummy-variables" id="toc-what-are-dummy-variables" class="nav-link" data-scroll-target="#what-are-dummy-variables">What are Dummy Variables?</a></li>
-  </ul></li>
-  <li><a href="#class-files" id="toc-class-files" class="nav-link" data-scroll-target="#class-files">Class Files</a>
-  <ul class="collapse">
-  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
-  <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">R Code</a></li>
-  <li><a href="#data-sets" id="toc-data-sets" class="nav-link" data-scroll-target="#data-sets">Data Sets</a></li>
-  </ul></li>
-  <li><a href="#r-lab-files" id="toc-r-lab-files" class="nav-link" data-scroll-target="#r-lab-files">R Lab Files</a></li>
-  <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Hierarchical Regression and Dummy Variables</span></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="week-8-february-24-2025" class="level1">
-<h1>Week 8: February 24, 2025</h1>
-<section id="introduction-to-the-topic" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
-<p>Today we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables.</p>
-<p>In regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.</p>
-<section id="what-are-dummy-variables" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-dummy-variables">What are Dummy Variables?</h3>
-<p>A dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. <a href="static/johfre-freese-2021-reconsidering-the-reference-category.pdf">Read this article</a> for a social justice application of selecting reference variables in regression models. I used this idea to code <code>trans man</code> as the reference category in <a href="static/acestrans.pdf">this paper</a> .</p>
-<section id="why-use-dummy-variables" class="level4">
-<h4 class="anchored" data-anchor-id="why-use-dummy-variables">Why Use Dummy Variables?</h4>
-<ul>
-<li><p>They quantify categorical differences in a regression model.</p></li>
-<li><p>They allow us to compare groups while controlling for other factors.</p></li>
-<li><p>They help capture interaction effects when combined with numerical predictors.</p></li>
-</ul>
-</section>
-<section id="extending-dummy-variables" class="level4">
-<h4 class="anchored" data-anchor-id="extending-dummy-variables">Extending Dummy Variables:</h4>
-<ul>
-<li><p>For variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).</p></li>
-<li><p>Reference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="class-files" class="level2">
-<h2 class="anchored" data-anchor-id="class-files">Class Files</h2>
-<section id="lecture-notes" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
-<ul>
-<li><a href="slides/dummy/dummy_vars.pptx">Today’s Lecture Notes</a></li>
-</ul>
-</section>
-<section id="r-code" class="level3">
-<h3 class="anchored" data-anchor-id="r-code">R Code</h3>
-<ul>
-<li><a href="slides/dummy/asap.R">Script 1: CLT</a> Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?</li>
-<li><a href="slides/dummy/clt_fun.R">Script 2: CLT</a> More CLT Fun</li>
-<li><a href="slides/dummy/dag_ex.R">Directed Acyclic Graph - DAGS</a> And even more fun, check out how you can create diagrams, including DAGS, in R.</li>
-</ul>
-</section>
-<section id="data-sets" class="level3">
-<h3 class="anchored" data-anchor-id="data-sets">Data Sets</h3>
-<ul>
-<li><a href="./data/nscaw.sav">National Survey of Child and Adolescent Well-Being</a>: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?</li>
-<li>Influence, Outliers, and Leverage <a href="./data/influence1.sav">Part I</a>, <a href="./data/influence2.sav">Part II</a>, <a href="./data/influence3.sav">Part III</a>, <a href="./data/influence4.sav">Part IV</a></li>
-</ul>
-</section>
-</section>
-<section id="r-lab-files" class="level2">
-<h2 class="anchored" data-anchor-id="r-lab-files">R Lab Files</h2>
-<ul>
-<li><a href="./nscaw.html">Lab Instructions</a> We are going to run some simple and multiple regressions using R with the NSCAW data.</li>
-<li><a href="slides/dummy/LSD.jasp">Here</a> is a partially annotated data file to get us started.</li>
-<li><a href="data/nscaw.sav">Lab Dataset</a></li>
-<li><a href="./slides/inclass.html">Another practice assignment</a> that we never got it. Check it out and see if you can answer the questions.</li>
-</ul>
-<hr>
-</section>
-<section id="additional-notes" class="level2">
-<h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
-<ul>
-<li>Keep calm and be influential.</li>
-</ul>
-
-
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

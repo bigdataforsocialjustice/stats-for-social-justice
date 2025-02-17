@@ -214,7 +214,7 @@
     "href": "05-assumptions.html#introduction-to-the-topic",
     "title": "Regression Assumptions",
     "section": "Introduction to the Topic",
-    "text": "Introduction to the Topic\nThis week, we focus on regression assumptions, the foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.",
+    "text": "Introduction to the Topic\nToday we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables. Regression assumptions are foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
@@ -1217,6 +1217,46 @@
     "text": "Additional Notes\n\nKeep calm and be influential.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#class-files",
+    "href": "05-assumptions.html#class-files",
+    "title": "Regression Assumptions",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nScript 1: CLT Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?\nScript 2: CLT More CLT Fun\nDirected Acyclic Graph - DAGS And even more fun, check out how you can create diagrams, including DAGS, in R.\n\n\n\nData Sets\n\nNational Survey of Child and Adolescent Well-Being: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?\nInfluence, Outliers, and Leverage Part I, Part II, Part III, Part IV",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#r-lab-files",
+    "href": "05-assumptions.html#r-lab-files",
+    "title": "Regression Assumptions",
+    "section": "R Lab Files",
+    "text": "R Lab Files\n\nLab Instructions We are going to run some simple and multiple regressions using R with the NSCAW data.\nHere is a partially annotated data file to get us started.\nLab Dataset\nAnother practice assignment that we never got it. Check it out and see if you can answer the questions.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#additional-notes",
+    "href": "05-assumptions.html#additional-notes",
+    "title": "Regression Assumptions",
+    "section": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and be influential.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#dummy-variables",
+    "href": "05-assumptions.html#dummy-variables",
+    "title": "Regression Assumptions",
+    "section": "Dummy Variables",
+    "text": "Dummy Variables\nIn regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.\n\nWhat are Dummy Variables?\nA dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. Read this article for a social justice application of selecting reference variables in regression models. I used this idea to code trans man as the reference category in this paper .\n\nWhy Use Dummy Variables?\n\nThey quantify categorical differences in a regression model.\nThey allow us to compare groups while controlling for other factors.\nThey help capture interaction effects when combined with numerical predictors.\n\n\n\nExtending Dummy Variables:\n\nFor variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).\nReference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   }
 ]
