@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1ccbc09170d6d559ed2114ae69d8a77e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -204,8 +204,56 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Assignments and Due Dates</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./reading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Required Course Materials</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./infant_mortality.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Infant Mortality Example</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./PRAMS_Correlation_Analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Partial and Semi-Partial Correlation Analysis with PRAMS 8 Data</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./admissions_R_ex.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Admissions Data Analysis</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cohensd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Analysis of Area Deprivation Disparities Using Cohen’s D</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nscaw.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">NSCAW I In-Class Exercise</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides/inclass.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">In Class Assignment</span></span></a>
   </div>
 </li>
     </ul>
@@ -220,15 +268,16 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#week-8-february-24-2025" id="toc-week-8-february-24-2025" class="nav-link active" data-scroll-target="#week-8-february-24-2025">Week 8: February 24, 2025</a>
   <ul class="collapse">
-  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a></li>
+  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a>
+  <ul class="collapse">
+  <li><a href="#what-are-dummy-variables" id="toc-what-are-dummy-variables" class="nav-link" data-scroll-target="#what-are-dummy-variables">What are Dummy Variables?</a></li>
+  </ul></li>
   <li><a href="#class-files" id="toc-class-files" class="nav-link" data-scroll-target="#class-files">Class Files</a>
   <ul class="collapse">
   <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
   <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">R Code</a></li>
   <li><a href="#data-sets" id="toc-data-sets" class="nav-link" data-scroll-target="#data-sets">Data Sets</a></li>
   </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#todays-reading" id="toc-todays-reading" class="nav-link" data-scroll-target="#todays-reading">Today’s Reading</a></li>
   <li><a href="#r-lab-files" id="toc-r-lab-files" class="nav-link" data-scroll-target="#r-lab-files">R Lab Files</a></li>
   <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
   </ul></li>
@@ -261,63 +310,67 @@ ul.task-list li input[type="checkbox"] {
 <h1>Week 8: February 24, 2025</h1>
 <section id="introduction-to-the-topic" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
-<p>Provide a brief overview of the week’s topic. Include key concepts, relevance, and how it ties into the overall course. For example: - What will students learn this week? - Why is this topic important? - How does it relate to previous or future content?</p>
-<p>Example: This week, we will explore the fundamentals of regression analysis, focusing on its applications in predicting outcomes and modeling relationships between variables. This builds upon last week’s introduction to descriptive statistics and prepares us for next week’s work on multivariate techniques.</p>
+<p>Today we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables.</p>
+<p>In regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.</p>
+<section id="what-are-dummy-variables" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-dummy-variables">What are Dummy Variables?</h3>
+<p>A dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. <a href="static/johfre-freese-2021-reconsidering-the-reference-category.pdf">Read this article</a> for a social justice application of selecting reference variables in regression models. I used this idea to code <code>trans man</code> as the reference category in <a href="static/acestrans.pdf">this paper</a> .</p>
+<section id="why-use-dummy-variables" class="level4">
+<h4 class="anchored" data-anchor-id="why-use-dummy-variables">Why Use Dummy Variables?</h4>
+<ul>
+<li><p>They quantify categorical differences in a regression model.</p></li>
+<li><p>They allow us to compare groups while controlling for other factors.</p></li>
+<li><p>They help capture interaction effects when combined with numerical predictors.</p></li>
+</ul>
+</section>
+<section id="extending-dummy-variables" class="level4">
+<h4 class="anchored" data-anchor-id="extending-dummy-variables">Extending Dummy Variables:</h4>
+<ul>
+<li><p>For variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).</p></li>
+<li><p>Reference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.</p></li>
+</ul>
+</section>
+</section>
 </section>
 <section id="class-files" class="level2">
 <h2 class="anchored" data-anchor-id="class-files">Class Files</h2>
 <section id="lecture-notes" class="level3">
 <h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
 <ul>
-<li><a href="path/to/lecture1_notes.qmd">Today’s Lecture Notes</a></li>
+<li><a href="slides/dummy/dummy_vars.pptx">Today’s Lecture Notes</a></li>
 </ul>
 </section>
 <section id="r-code" class="level3">
 <h3 class="anchored" data-anchor-id="r-code">R Code</h3>
 <ul>
-<li><a href="path/to/analysis_script.R">Script 1: Analysis Code</a></li>
-<li><a href="path/to/visualization_script.R">Script 2: Visualization Code</a></li>
+<li><a href="slides/dummy/asap.R">Script 1: CLT</a> Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?</li>
+<li><a href="slides/dummy/clt_fun.R">Script 2: CLT</a> More CLT Fun</li>
+<li><a href="slides/dummy/dag_ex.R">Directed Acyclic Graph - DAGS</a> And even more fun, check out how you can create diagrams, including DAGS, in R.</li>
 </ul>
 </section>
 <section id="data-sets" class="level3">
 <h3 class="anchored" data-anchor-id="data-sets">Data Sets</h3>
 <ul>
-<li><a href="path/to/dataset1.csv">Dataset 1: Descriptive Statistics</a></li>
-<li><a href="path/to/dataset2.csv">Dataset 2: Regression Analysis</a></li>
+<li><a href="./data/nscaw.sav">National Survey of Child and Adolescent Well-Being</a>: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?</li>
+<li>Influence, Outliers, and Leverage <a href="./data/influence1.sav">Part I</a>, <a href="./data/influence2.sav">Part II</a>, <a href="./data/influence3.sav">Part III</a>, <a href="./data/influence4.sav">Part IV</a></li>
 </ul>
 </section>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="https://link-to-video">Recommended Video: Topic Overview</a></li>
-<li><a href="https://link-to-article">Supplementary Article</a></li>
-<li><a href="path/to/book_chapter.pdf">Additional Book Chapter (PDF)</a></li>
-</ul>
-</section>
-<section id="todays-reading" class="level2">
-<h2 class="anchored" data-anchor-id="todays-reading">Today’s Reading</h2>
-<ul>
-<li><strong>Primary Reading</strong>: <a href="path/to/article.pdf">Article Title</a></li>
-<li><strong>Optional Reading</strong>: <a href="path/to/optional_material.pdf">Supplementary Material</a></li>
-</ul>
 </section>
 <section id="r-lab-files" class="level2">
 <h2 class="anchored" data-anchor-id="r-lab-files">R Lab Files</h2>
 <ul>
-<li><a href="path/to/lab_instructions.qmd">Lab Instructions</a></li>
-<li><a href="path/to/lab_dataset.csv">Lab Dataset</a></li>
-<li><a href="path/to/lab_solution.R">Lab Solution Code</a></li>
+<li><a href="./nscaw.html">Lab Instructions</a> We are going to run some simple and multiple regressions using R with the NSCAW data.</li>
+<li><a href="slides/dummy/LSD.jasp">Here</a> is a partially annotated data file to get us started.</li>
+<li><a href="data/nscaw.sav">Lab Dataset</a></li>
+<li><a href="./slides/inclass.html">Another practice assignment</a> that we never got it. Check it out and see if you can answer the questions.</li>
 </ul>
+<hr>
 </section>
 <section id="additional-notes" class="level2">
 <h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
 <ul>
-<li><strong>Assignment Due</strong>: <a href="path/to/assignment1.pdf">Assignment 1</a> (Submit by [Date])</li>
-<li><strong>Quiz</strong>: <a href="path/to/quiz">Link to Quiz</a></li>
-<li><strong>Office Hours</strong>: [Time and Location]</li>
+<li>Keep calm and be influential.</li>
 </ul>
-<hr>
 
 
 </section>
@@ -406,6 +459,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -516,6 +571,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
