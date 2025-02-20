@@ -1258,5 +1258,115 @@
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
+  },
+  {
+    "objectID": "assignment.html",
+    "href": "assignment.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Install libraries\nThe assignment assumes the following packages have been installed:\nlibrary(emoji)\nlibrary(emoji)\nlibrary(dplyr)\nlibrary(gt)\nlibrary(gtsummary)\nlibrary(officer)\nlibrary(flextable)\nlibrary(ppcor)\nlibrary(ggcorrplot)\nlibrary(fastDummies)\nlibrary(emmeans)\nlibrary(gtsummary)\nlibrary(flextable)\nlibrary(performance)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#data-preparation-and-descriptive-statistics",
+    "href": "assignment.html#data-preparation-and-descriptive-statistics",
+    "title": "Assignment 1",
+    "section": "1. Data Preparation and Descriptive Statistics",
+    "text": "1. Data Preparation and Descriptive Statistics\n\n1.1 Load and Clean the Data\n\ndata &lt;- read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")\n\n# Selecting relevant variables \ndata &lt;- data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) \n\nBefore removing the missing data, let’s get a sense of the missingness across race & ethnicity. What is the distribution of missing respondents by race? Are there any implications?\n\n# Select only rows with missing data\ndf_missing &lt;- data[!complete.cases(data), ]\ndf_missing |&gt; tbl_summary(include = c(Race_Ethnicity))\n\n\n\n1.2 Missing Data Analysis\nHow many cases are missing? Calculate the number of omitted cases due to missing values:\n\ndata &lt;- data %&gt;% na.omit()\nnum_omitted &lt;- nrow(read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")) - nrow(data)\ncat(\"Number of omitted cases:\", num_omitted, \"\\n\")",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#correlation-analysis",
+    "href": "assignment.html#correlation-analysis",
+    "title": "Assignment 1",
+    "section": "2. Correlation Analysis",
+    "text": "2. Correlation Analysis\n\n2.1 Which variables are significantly correlated?\n\n\n2.2 Why are we using Spearman and not Pearson Correlaion?\n\n\n2.3 What variable changes the least after partialing out the other variables?\n\n# Compute correlation matrix\ncor_matrix &lt;- cor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale), use = \"complete.obs\", method = \"spearman\")\n\nggplot_correlation &lt;- ggcorrplot(cor_matrix, lab = TRUE, title = \"Correlation Matrix\")\nprint(ggplot_correlation)\n\n\n\n\n\n\n\nprint(cor_matrix)\n# Compute partial correlations\npartial_corrs &lt;- pcor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale))\nprint(partial_corrs)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#creating-dummy-variables-for-categorical-data",
+    "href": "assignment.html#creating-dummy-variables-for-categorical-data",
+    "title": "Assignment 1",
+    "section": "3. Creating Dummy Variables for Categorical Data",
+    "text": "3. Creating Dummy Variables for Categorical Data\n\n3.1 Frequency of Race/Ethnicity Categories\nWhat is the distribution by race?\n\ntable(data$Race_Ethnicity)\n\n\n\n3.2 Creating Dummy Variables\nRace/Ethnicity is categorical. We need to create dummies to include them into the model. The best way to do this is by using fastDummies. Follow this below. Describe exactly what this line of code is doing, word by word.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)\n\nExplanation: This function converts categorical Race_Ethnicity into binary variables while removing the first level as a reference category.\n\n\n3.3 Re-leveling Race/Ethnicity\nSometimes its nice to re-level the variable. The original variable distribution is given above.\n\ndata$Race_Ethnicity &lt;- relevel(factor(data$Race_Ethnicity), ref = \"NH White\")\n\nThis reorders the levels so that “NH White” is the reference category in our regression model.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#running-regression-models",
+    "href": "assignment.html#running-regression-models",
+    "title": "Assignment 1",
+    "section": "4. Running Regression Models",
+    "text": "4. Running Regression Models\nWe are predicting cigartette use during pregnancy by whether the pregnant person experienced any abuse during pregnancy, ACEs, is depressed (BPG_DEPRS8), and by race/ethnicity. Fit progressively more complex models: starting with Any_Abuse, etc…\n\nmodel0 &lt;- lm(CIG_1TRI ~ Any_Abuse, data = data)\nmodel1 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale, data = data)\nmodel2 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8, data = data)\nmodel3 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8 + Race_Ethnicity_Hispanic + `Race_Ethnicity_NH Black` + Race_Ethnicity_Other, data = data)\n\nsummary(model3)\n\nWhat variable is omitted, and why? How much more of the variance is explained by ACEs_Scale, BPG_DEPRS8, and Race_Ethnicity compared to just Any_Abuse?",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#model-diagnostics",
+    "href": "assignment.html#model-diagnostics",
+    "title": "Assignment 1",
+    "section": "5. Model Diagnostics",
+    "text": "5. Model Diagnostics\nThe performance package is a very cool package in R. It facilitates model diagnostics. Then, plots it. Follow along.\n\n5.1 Checking Assumptions\n\ncheck_collinearity(model3)\ncheck_heteroscedasticity(model3)\ncheck_normality(model3)\ncheck_outliers(model3)\n\n\n\n5.2 Visualizing Diagnostic Plots\n\ndiagnostic_plots &lt;- plot(check_model(model3, panel = FALSE))\n\n# Display plots\nprint(diagnostic_plots[[2]]) # Q-Q plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[3]]) # Residuals vs Fitted plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[4]]) # Scale-location plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[5]]) # Cook’s distance",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#post-hoc-analysis-using-estimated-marginal-means-emms",
+    "href": "assignment.html#post-hoc-analysis-using-estimated-marginal-means-emms",
+    "title": "Assignment 1",
+    "section": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)",
+    "text": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)\nThe emmeans package allows us to predict cigarette use by any variable, here race/ethnicity. Then, we can use the confint to get confidence intervals.\n\nemm &lt;- emmeans(model3, pairwise ~ Race_Ethnicity_Hispanic)\nprint(emm)\nconfint(emm, level = 0.95)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#saving-results-to-a-word-document",
+    "href": "assignment.html#saving-results-to-a-word-document",
+    "title": "Assignment 1",
+    "section": "7. Saving Results to a Word Document",
+    "text": "7. Saving Results to a Word Document\nCreate a structured report including tables and regression results:\n\ndata %&gt;%\n  dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n  tbl_summary(include = c(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity)) %&gt;%\n  as_flex_table() %&gt;%\n  print()\n\n\ndoc &lt;- read_docx()\n\ndoc1 &lt;- doc %&gt;%\n  body_add_par(\"Descriptive Statistics\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    data %&gt;%\n      dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n      tbl_summary(\n        type = all_continuous() ~ \"continuous2\",\n        statistic = all_continuous() ~ c(\n          \"{N_nonmiss}\",\n          \"{median} ({p25}, {p75})\",\n          \"{min}, {max}\"\n        ),\n        missing = \"no\"\n      ) %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Regression Model Summary\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    tbl_regression(model3) %&gt;%  # Corrected function placement\n      add_global_p() %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Correlation Analysis\", style = \"heading 1\") %&gt;%\n  body_add_gg(ggplot_correlation)\n\nprint(doc1, target = \"C:/Users/barboza-salerno.1/Downloads/Regression_Report_FINAL.docx\")",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#write-up-guidelines",
+    "href": "assignment.html#write-up-guidelines",
+    "title": "Assignment 1",
+    "section": "7. Write-Up Guidelines",
+    "text": "7. Write-Up Guidelines\n\nWrite a report that includes:\n\nIntroduction: Briefly describe the purpose of the analysis.\nData Description: Briefly explain the data set and key variables used, including how they were coded and re-coded as applicable.\nStatistical Analysis: Describe the analytic approach taken. This includes descriptive statistics, regression analysis, diagnostic assessment, and marginal means.\nDescriptive Statistics: Present summary statistics and missing data analysis (Table 1 in Word). Correlation analysis (Figure 1).\nRegression Models: Interpret key findings from each model. Describe how the models change. Present final model (Table 2 in Word).\nModel Assumption Checks: Discuss the model’s validity based on assumption checks. Include plots as appendix.\nPost-Hoc Analysis: Interpret estimated marginal means. Create a table of the estimated marginal means for smoking by Race/Ethnicity (By hand - Table 3).\nConclusion: Summarize key insights and possible limitations. Suggest two policy recommendations for addressing smoking during pregnancy.",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#submission-instructions",
+    "href": "assignment.html#submission-instructions",
+    "title": "Assignment 1",
+    "section": "Submission Instructions:",
+    "text": "Submission Instructions:\n\nSubmit both the .R script and the Word document.\nEnsure all tables and plots are properly formatted.\nAssignment due by email by end of Week 9.",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#grading-criteria",
+    "href": "assignment.html#grading-criteria",
+    "title": "Assignment 1",
+    "section": "Grading Criteria:",
+    "text": "Grading Criteria:\n\n\n\nSection\nPoints\n\n\n\n\nData Cleaning & Preparation\n20\n\n\nDescriptive Statistics\n20\n\n\nRegression Models\n20\n\n\nModel Diagnostics\n20\n\n\nWrite-Up & Interpretation\n20\n\n\nTotal\n100\n\n\n\nGood luck with your analysis!",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
   }
 ]
