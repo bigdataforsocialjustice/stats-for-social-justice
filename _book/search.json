@@ -64,7 +64,7 @@
     "href": "04-effect-sizes.html#how-this-ties-into-the-overall-course",
     "title": "Effect Sizes",
     "section": "How This Ties Into the Overall Course:",
-    "text": "How This Ties Into the Overall Course:\n\nBuilds upon last week’s exploration of hypothesis testing and statistical significance.\nPrepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.\n\nBy the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon last week’s exploration of hypothesis testing and statistical significance.\nPrepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.\n\nBy the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.\n\nLecture Notes\n\nEffect Sizes, Confidence Intervals, Assumptions\n\n\n\nR Code\n\nSimple and Multiple Linear Regression\nCalculating Cohen’s D: The full explanation of the code is here. This file calculates Cohen’s D effect size with the added bones of also demonstrating how to download the Area Deprivation Index (ADI) which is frequently used in Social Work and Public Health. Even bettern there is a county-level map of the ADI! See Barboza-Salerno (2023).\n\n\n\nData Sets\n\nAdmissions Data (in lecture notes)\nGRE and graduate student GPA Data (in lecture notes)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -84,7 +84,7 @@
     "href": "04-effect-sizes.html#resources",
     "title": "Effect Sizes",
     "section": "Resources",
-    "text": "Resources",
+    "text": "Resources\nI have put together a detailed explanation about simple and multiple linear regression in R.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "04-effect-sizes.html#todays-reading",
     "title": "Effect Sizes",
     "section": "Today’s Reading",
-    "text": "Today’s Reading",
+    "text": "Today’s Reading\nToday’s in class assignment is going to ask you to run a multiple linear regression using the National Survey of Child and Adolescent Well-Being (NSCAW I) survey. I used this data in a couple of manuscripts “Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model” Barboza et al. (2017) and “Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type” See Barboza & Dominguez (2017).",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -114,7 +114,7 @@
     "href": "04-effect-sizes.html#additional-notes",
     "title": "Effect Sizes",
     "section": "Additional Notes",
-    "text": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and DO NOT be normal.\n\n\n\n\n\nBarboza, G. E., & Dominguez, S. (2017). Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type. Children and Youth Services Review, 81, 368–378.\n\n\nBarboza, G. E., Dominguez, S., & Pinder, J. (2017). Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model. Child Abuse & Neglect, 72, 370–382.\n\n\nBarboza-Salerno, G. E. (2023). The neighborhood deprivation gradient and child physical abuse and neglect: A bayesian spatial model. Child Abuse & Neglect, 146, 106501.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
@@ -214,7 +214,7 @@
     "href": "05-assumptions.html#introduction-to-the-topic",
     "title": "Regression Assumptions",
     "section": "Introduction to the Topic",
-    "text": "Introduction to the Topic\nThis week, we focus on regression assumptions, the foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.",
+    "text": "Introduction to the Topic\nToday we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables. Regression assumptions are foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
@@ -336,7 +336,7 @@
     "section": "",
     "text": "Reading List",
     "crumbs": [
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>References</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>References</span>"
     ]
   },
   {
@@ -344,9 +344,9 @@
     "href": "references.html#reading-list",
     "title": "References",
     "section": "",
-    "text": "Linear Regression\n\nThis paper Razak (2019) provides an example of Simple Linear Regression.\nThis paper Littleton et al. (2024) provides an example of using Historic Redlining Scores to understand higher rates of child welfare reporting.\nPenn State has a nice tutorial with examples on how to conduct linear regression in R\n\n\n\nLogistic Regression\n\nThis paper uses the glm function to model the presence of fictional fantastic characters Corlatti (2021). Super cool.\nWhile we do not cover it here, this paper explains how to use multilevel modeling with a categorical dependent variable: Merlo et al. (2006).\nA recent co-authored manuscript used logistic regression, you can read it: Meshelemiah et al. (2024)\n\n\n\nMediation and Moderation\n\nThis paper Livingston & Haardörfer (2019) should be read together with Glick et al. (2019).\nThis paper is a tutorial on how to use the SPSS PROCESS macro by Hayes Clement & Bradley-Garcia (2022)\nI have used moderation and mediation in several papers, here is one example: Barboza-Salerno & Meshelemiah (2024)\n\n\n\nFactor Analysis\n\nThis paper has some cool visualizations: Štiglic et al. (2023) and I downloaded it here\nI have used factor analytic techniques in many papers, here is one example: Elise Barboza & Siller (2021)\n\n\n\nPower Analysis\nThis paper is good to follow if you need to calculate power for causal models Qin (2023)\n\n\nSocial Justice Applications\nWhile not directly stating it, in this paper Barboza-Salerno (2020) I found increases in post-partum parenting stress is linked to poor socio-emotional adjustment in children. My examination of the PRAMS data set suggests that psychosocial stressors during pregnancy, a vulnerable period for many, increases the risk of intimate partner violence.\n\n\n\n\n\nBarboza-Salerno, G. E. (2020). Cognitive readiness to parent, stability and change in postpartum parenting stress and social-emotional problems in early childhood: A second order growth curve model. Children and Youth Services Review, 113, 104958.\n\n\nBarboza-Salerno, G. E., & Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. Child Abuse & Neglect, 149, 106705.\n\n\nClement, L. M., & Bradley-Garcia, M. (2022). A step-by-step tutorial for performing a moderated mediation analysis using PROCESS. The Quantitative Methods for Psychology, 18(3), 258–271.\n\n\nCorlatti, L. (2021). Regression Models, Fantastic Beasts, and Where to Find Them: A Simple Tutorial for Ecologists Using R. Bioinformatics and Biology Insights, 15, 11779322211051522. https://doi.org/10.1177/11779322211051522Regression modeling is a workhorse of statistical ecology that allows to find relationships between a response variable and a set of explanatory variables. Despite being one of the fundamental statistical ideas in ecological curricula, regression modeling can be complex and subtle. This paper is intended as an applied protocol to help students understand the data, select the most appropriate models, verify assumptions, and interpret the output. Basic ecological questions are tackled using data from a fictional series, ?Fantastic beasts and where to find them,? with the aim to show how statistical thinking can foster curiosity, creativity and imagination in ecology, from the formulation of hypotheses to the interpretation of results.\n\n\nElise Barboza, G., & Siller, L. A. (2021). Child maltreatment, school bonds, and adult violence: A serial mediation model. Journal of Interpersonal Violence, 36(11-12), NP5839–NP5873.\n\n\nGlick, A. F., Farkas, J. S., Mendelsohn, A. L., Fierman, A. H., Tomopoulos, S., Rosenberg, R. E., Dreyer, B. P., Melgar, J., Varriano, J., & Yin, H. S. (2019). Discharge Instruction Comprehension and Adherence Errors: Interrelationship Between Plan Complexity and Parent Health Literacy. The Journal of Pediatrics, 214, 193–200.e3. https://doi.org/10.1016/j.jpeds.2019.04.052Objective To examine associations between parent health literacy, discharge plan complexity, and parent comprehension of and adherence to inpatient discharge instructions. Study design This was a prospective cohort study of English/Spanish-speaking parents (n = 165) of children \\(\\leq\\)12 years discharged on \\(\\geq\\)1 daily medication from an urban, public hospital. Outcome variables were parent comprehension (survey) of and adherence (survey, in-person dosing assessment, chart review) to discharge instructions. Predictor variables included low parent health literacy (Newest Vital Sign score 0-3) and plan complexity. Generalized estimating equations were used to account for the assessment of multiple types of comprehension and adherence errors for each subject, adjusting for ethnicity, language, child age, length of stay, and chronic disease status. Similar analyses were performed to assess for mediation and moderation. Results Error rates were highest for comprehension of medication side effects (50%), adherence to medication dose (34%), and return precaution (78%) instructions. Comprehension errors were associated with adherence errors (aOR, 8.7; 95% CI, 5.9-12.9). Discharge plan complexity was associated with comprehension (aOR, 7.0; 95% CI, 5.4-9.1) and adherence (aOR, 5.5; 95% CI, 4.0-7.6) errors. Low health literacy was indirectly associated with adherence errors through comprehension errors. The association between plan complexity and comprehension errors was greater in parents with low (aOR, 8.3; 95% CI, 6.2-11.2) compared with adequate (aOR, 3.8; 95% CI, 2.2-6.5) health literacy (interaction term P = .004). Conclusions Parent health literacy and discharge plan complexity play key roles in comprehension and adherence errors. Future work will focus on the development of health literacy-informed interventions to promote discharge plan comprehension.\n\n\nLittleton, T., Freisthler, B., Boyd, R., Smith, A. M., & Barboza-Salerno, G. (2024). Historical redlining, neighborhood disadvantage, and reports of child maltreatment in a large urban county. Child Abuse & Neglect, 156, 107011.\n\n\nLivingston, M. D., & Haardörfer, R. (2019). A gentle introduction to mediation and moderation. The Journal of Pediatrics, 214, 246–248.\n\n\nMerlo, J., Chaix, B., Ohlsson, H., Beckman, A., Johnell, K., Hjerpe, P., Råstam, L., & Larsen, K. (2006). A brief conceptual tutorial of multilevel analysis in social epidemiology: Using measures of clustering in multilevel logistic regression to investigate contextual phenomena. Journal of Epidemiology & Community Health, 60(4), 290–297.\n\n\nMeshelemiah, J. C., Dellor, E., Karandikar, S., Munshi, A., Barboza-Salerno, G., & Steinke, H. R. (2024). Adverse childhood experiences, women who are sex trafficked, and social service utilization: Implications for social work. Social Work, swae024.\n\n\nQin, X. (2023). Sample size and power calculations for causal mediation analysis: A Tutorial and Shiny App. Behavior Research Methods, 56(3), 1738–1769. https://doi.org/10.3758/s13428-023-02118-0\n\n\nRazak, M. R. R. (2019). Child social welfare institution participation in the implementation of good governance.\n\n\nŠtiglic, G., Budler, L. C., & Watson, R. (2023). 15 running a confirmatory factor analysis in r: A step-by-step tutorial. In K. Č. Trifkovič, M. Lorber, N. M. Reljić, & G. Štiglic (Eds.), Education and research (pp. 207–222). De Gruyter. https://doi.org/doi:10.1515/9783110786088-015",
+    "text": "Linear Regression\n\nThis paper Razak (2019) provides an example of Simple Linear Regression.\nThis paper Littleton et al. (2024) provides an example of using Historic Redlining Scores to understand higher rates of child welfare reporting.\nPenn State has a nice tutorial with examples on how to conduct linear regression in R\n\n\n\nLogistic Regression\n\nThis paper uses the glm function to model the presence of fictional fantastic characters Corlatti (2021). Super cool.\nWhile we do not cover it here, this paper explains how to use multilevel modeling with a categorical dependent variable: Merlo et al. (2006).\nA recent co-authored manuscript used logistic regression, you can read it: Meshelemiah et al. (2024)\n\n\n\nMediation and Moderation\n\nThis paper Livingston & Haardörfer (2019) should be read together with Glick et al. (2019).\nThis paper is a tutorial on how to use the SPSS PROCESS macro by Hayes Clement & Bradley-Garcia (2022)\nI have used moderation and mediation in several papers, here is one example: Barboza-Salerno & Meshelemiah (2024)\n\n\n\nFactor Analysis\n\nThis paper has some cool visualizations: Štiglic et al. (2023) and I downloaded it here\nI have used factor analytic techniques in many papers, here is one example: Elise Barboza & Siller (2021)\n\n\n\nPower Analysis\nThis paper is good to follow if you need to calculate power for causal models Qin (2023)\n\n\nDummy Variable Coding\nThis paper is a must read Johfre & Freese (2021)\n\n\nSocial Justice Applications\nWhile not directly stating it, in this paper Barboza-Salerno (2020) I found increases in post-partum parenting stress is linked to poor socio-emotional adjustment in children. My examination of the PRAMS data set suggests that psychosocial stressors during pregnancy, a vulnerable period for many, increases the risk of intimate partner violence.\n\n\n\n\n\nBarboza-Salerno, G. E. (2020). Cognitive readiness to parent, stability and change in postpartum parenting stress and social-emotional problems in early childhood: A second order growth curve model. Children and Youth Services Review, 113, 104958.\n\n\nBarboza-Salerno, G. E., & Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. Child Abuse & Neglect, 149, 106705.\n\n\nClement, L. M., & Bradley-Garcia, M. (2022). A step-by-step tutorial for performing a moderated mediation analysis using PROCESS. The Quantitative Methods for Psychology, 18(3), 258–271.\n\n\nCorlatti, L. (2021). Regression Models, Fantastic Beasts, and Where to Find Them: A Simple Tutorial for Ecologists Using R. Bioinformatics and Biology Insights, 15, 11779322211051522. https://doi.org/10.1177/11779322211051522Regression modeling is a workhorse of statistical ecology that allows to find relationships between a response variable and a set of explanatory variables. Despite being one of the fundamental statistical ideas in ecological curricula, regression modeling can be complex and subtle. This paper is intended as an applied protocol to help students understand the data, select the most appropriate models, verify assumptions, and interpret the output. Basic ecological questions are tackled using data from a fictional series, ?Fantastic beasts and where to find them,? with the aim to show how statistical thinking can foster curiosity, creativity and imagination in ecology, from the formulation of hypotheses to the interpretation of results.\n\n\nElise Barboza, G., & Siller, L. A. (2021). Child maltreatment, school bonds, and adult violence: A serial mediation model. Journal of Interpersonal Violence, 36(11-12), NP5839–NP5873.\n\n\nGlick, A. F., Farkas, J. S., Mendelsohn, A. L., Fierman, A. H., Tomopoulos, S., Rosenberg, R. E., Dreyer, B. P., Melgar, J., Varriano, J., & Yin, H. S. (2019). Discharge Instruction Comprehension and Adherence Errors: Interrelationship Between Plan Complexity and Parent Health Literacy. The Journal of Pediatrics, 214, 193–200.e3. https://doi.org/10.1016/j.jpeds.2019.04.052Objective To examine associations between parent health literacy, discharge plan complexity, and parent comprehension of and adherence to inpatient discharge instructions. Study design This was a prospective cohort study of English/Spanish-speaking parents (n = 165) of children \\(\\leq\\)12 years discharged on \\(\\geq\\)1 daily medication from an urban, public hospital. Outcome variables were parent comprehension (survey) of and adherence (survey, in-person dosing assessment, chart review) to discharge instructions. Predictor variables included low parent health literacy (Newest Vital Sign score 0-3) and plan complexity. Generalized estimating equations were used to account for the assessment of multiple types of comprehension and adherence errors for each subject, adjusting for ethnicity, language, child age, length of stay, and chronic disease status. Similar analyses were performed to assess for mediation and moderation. Results Error rates were highest for comprehension of medication side effects (50%), adherence to medication dose (34%), and return precaution (78%) instructions. Comprehension errors were associated with adherence errors (aOR, 8.7; 95% CI, 5.9-12.9). Discharge plan complexity was associated with comprehension (aOR, 7.0; 95% CI, 5.4-9.1) and adherence (aOR, 5.5; 95% CI, 4.0-7.6) errors. Low health literacy was indirectly associated with adherence errors through comprehension errors. The association between plan complexity and comprehension errors was greater in parents with low (aOR, 8.3; 95% CI, 6.2-11.2) compared with adequate (aOR, 3.8; 95% CI, 2.2-6.5) health literacy (interaction term P = .004). Conclusions Parent health literacy and discharge plan complexity play key roles in comprehension and adherence errors. Future work will focus on the development of health literacy-informed interventions to promote discharge plan comprehension.\n\n\nJohfre, S. S., & Freese, J. (2021). Reconsidering the reference category. Sociological Methodology, 51(2), 253–269.\n\n\nLittleton, T., Freisthler, B., Boyd, R., Smith, A. M., & Barboza-Salerno, G. (2024). Historical redlining, neighborhood disadvantage, and reports of child maltreatment in a large urban county. Child Abuse & Neglect, 156, 107011.\n\n\nLivingston, M. D., & Haardörfer, R. (2019). A gentle introduction to mediation and moderation. The Journal of Pediatrics, 214, 246–248.\n\n\nMerlo, J., Chaix, B., Ohlsson, H., Beckman, A., Johnell, K., Hjerpe, P., Råstam, L., & Larsen, K. (2006). A brief conceptual tutorial of multilevel analysis in social epidemiology: Using measures of clustering in multilevel logistic regression to investigate contextual phenomena. Journal of Epidemiology & Community Health, 60(4), 290–297.\n\n\nMeshelemiah, J. C., Dellor, E., Karandikar, S., Munshi, A., Barboza-Salerno, G., & Steinke, H. R. (2024). Adverse childhood experiences, women who are sex trafficked, and social service utilization: Implications for social work. Social Work, swae024.\n\n\nQin, X. (2023). Sample size and power calculations for causal mediation analysis: A Tutorial and Shiny App. Behavior Research Methods, 56(3), 1738–1769. https://doi.org/10.3758/s13428-023-02118-0\n\n\nRazak, M. R. R. (2019). Child social welfare institution participation in the implementation of good governance.\n\n\nŠtiglic, G., Budler, L. C., & Watson, R. (2023). 15 running a confirmatory factor analysis in r: A step-by-step tutorial. In K. Č. Trifkovič, M. Lorber, N. M. Reljić, & G. Štiglic (Eds.), Education and research (pp. 207–222). De Gruyter. https://doi.org/doi:10.1515/9783110786088-015",
     "crumbs": [
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>References</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>References</span>"
     ]
   },
   {
@@ -977,6 +977,496 @@
     "text": "Keep calm and be significant.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html",
+    "href": "cohensd.html",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "",
+    "text": "22 Introduction\nThis analysis examines the Area Deprivation Index (ADI) across U.S. counties. The goal is to assess disparities between areas of high- and low-deprivation (by county) and quantify the effect size using Cohen’s d.\nThe ADI provides a measure of socioeconomic disadvantage, with higher values indicating greater deprivation. We also map ADI values across counties and exclude non-contiguous U.S. states and territories.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#data-collection-preparation",
+    "href": "cohensd.html#data-collection-preparation",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.1 Data Collection & Preparation",
+    "text": "22.1 Data Collection & Preparation\n\n# Install and load required packages\n# install.packages(\"sociome\")\n# install.packages(\"ggplot2\")\n# install.packages(\"dplyr\")\n# install.packages(\"sf\")\n# install.packages(\"tigris\")\n# install.packages(\"effectsize\")\n\nlibrary(sociome)     # For ADI data\nlibrary(ggplot2)     # For visualization\n\nWarning: package 'ggplot2' was built under R version 4.3.3\n\nlibrary(dplyr)       # For data manipulation\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(sf)          # For mapping spatial data\n\nLinking to GEOS 3.11.2, GDAL 3.7.2, PROJ 9.3.0; sf_use_s2() is TRUE\n\nlibrary(tigris)      # For county boundaries\n\nTo enable caching of data, set `options(tigris_use_cache = TRUE)`\nin your R script or .Rprofile.\n\nlibrary(effectsize)  # For Cohen's d calculation\n\nWe first retrieve the ADI data for 2020 at the county level.\n\n# --- Step 1: Get ADI Data by County ---\nadi_data &lt;- get_adi(year = 2020, geography = \"county\")\n\n# Extract GEOID, county name, and ADI\nadi_data &lt;- adi_data %&gt;%\n  dplyr::select(GEOID, NAME, ADI)\n\n\n22.1.1 Excluding Non-Contiguous U.S. States and Territories\nTo focus on the contiguous U.S., we exclude: - Alaska (02) & Hawaii (15) - U.S. territories: Puerto Rico, Guam, American Samoa, Northern Mariana Islands, U.S. Virgin Islands.\n\n# List of FIPS codes for non-contiguous states/territories\nnon_contiguous_fips &lt;- c(\"02\", \"15\", \"60\", \"66\", \"69\", \"72\", \"78\")  \n\n# Load county boundaries and exclude non-contiguous areas\ncounties &lt;- counties(cb = TRUE, resolution = \"20m\", year = 2020) %&gt;%\n  filter(!STATEFP %in% non_contiguous_fips)\n\n\n  |                                                                            \n  |                                                                      |   0%\n  |                                                                            \n  |=                                                                     |   2%\n  |                                                                            \n  |===                                                                   |   4%\n  |                                                                            \n  |======                                                                |   8%\n  |                                                                            \n  |=======                                                               |  10%\n  |                                                                            \n  |========                                                              |  12%\n  |                                                                            \n  |==========                                                            |  14%\n  |                                                                            \n  |===========                                                           |  16%\n  |                                                                            \n  |=============                                                         |  19%\n  |                                                                            \n  |===============                                                       |  21%\n  |                                                                            \n  |================                                                      |  23%\n  |                                                                            \n  |==================                                                    |  25%\n  |                                                                            \n  |====================                                                  |  29%\n  |                                                                            \n  |======================                                                |  31%\n  |                                                                            \n  |=======================                                               |  33%\n  |                                                                            \n  |=======================                                               |  34%\n  |                                                                            \n  |=========================                                             |  35%\n  |                                                                            \n  |============================                                          |  40%\n  |                                                                            \n  |==============================                                        |  43%\n  |                                                                            \n  |================================                                      |  45%\n  |                                                                            \n  |=================================                                     |  47%\n  |                                                                            \n  |===================================                                   |  50%\n  |                                                                            \n  |======================================                                |  55%\n  |                                                                            \n  |=========================================                             |  58%\n  |                                                                            \n  |============================================                          |  63%\n  |                                                                            \n  |===============================================                       |  67%\n  |                                                                            \n  |================================================                      |  69%\n  |                                                                            \n  |======================================================================| 100%\n\n# Merge ADI data with county geometries\nadi_map_data &lt;- counties %&gt;%\n  left_join(adi_data, by = c(\"GEOID\" = \"GEOID\"))",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#mapping-adi-by-county",
+    "href": "cohensd.html#mapping-adi-by-county",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.2 Mapping ADI by County",
+    "text": "22.2 Mapping ADI by County\nThe following map visualizes area deprivation across the contiguous U.S.. Darker areas represent higher deprivation levels.\nYou should play around with ggplot to get used to its functionality.\n\nlibrary(ggplot2)\nggplot(adi_map_data) +\n  geom_sf(aes(fill = ADI), color = NA) +\n  scale_fill_viridis_c(option = \"plasma\", name = \"ADI\") +\n  labs(\n    title = \"Area Deprivation by County (Contiguous U.S., ADI Data 2020)\",\n    subtitle = \"Excludes Alaska, Hawaii, & U.S. Territories\",\n    caption = \"Source: Sociome package ADI 2020\"\n  ) +\n  theme_void()",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#adi-disparities-effect-size-cohens-d",
+    "href": "cohensd.html#adi-disparities-effect-size-cohens-d",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.3 ADI Disparities & Effect Size (Cohen’s d)",
+    "text": "22.3 ADI Disparities & Effect Size (Cohen’s d)\nWe divide counties into low-deprivation (least disadvantaged, bottom 25%) and high-deprivation (most disadvantaged, top 25%) groups. The income differences between these groups are quantified using Cohen’s d, a measure of standardized effect size.\n\n# Define thresholds: Top 25% (most deprived) vs. Bottom 25% (least deprived)\nquantiles &lt;- quantile(adi_data$ADI, probs = c(0.25, 0.75), na.rm = TRUE)\nlow_deprivation &lt;- adi_data %&gt;% filter(ADI &lt;= quantiles[1])\nhigh_deprivation &lt;- adi_data %&gt;% filter(ADI &gt;= quantiles[2])\n\n# Compute Cohen's d\ncohens_d_value &lt;- cohens_d(high_deprivation$ADI, low_deprivation$ADI)\n\n# Print Cohen's d result\nprint(cohens_d_value)",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#interpretation-of-cohens-d-results",
+    "href": "cohensd.html#interpretation-of-cohens-d-results",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.4 Interpretation of Cohen’s d Results",
+    "text": "22.4 Interpretation of Cohen’s d Results\nCohen’s d tells us how large the difference in ADI between low- and high-deprivation counties:\n\n( d = 0.2 ) → Small effect\n( d = 0.5 ) → Medium effect\n( d = 0.8+ ) → Large effect\n\nIf the result is negative, it means that high-deprivation counties have significantly higher ADI scores than low-deprivation counties. The absolute value of d still represents the effect size.\n\n22.4.1 Key Findings\n🔹 A large Cohen’s d suggests significant deprivation disparities between counties with low and high deprivation.\n🔹 This reinforces the need for economic policies addressing regional deprivation.\n🔹 Mapping ADI allows for geographically targeted interventions to reduce socioeconomic inequalities.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "cohensd.html#conclusion",
+    "href": "cohensd.html#conclusion",
+    "title": "21  Analysis of Area Deprivation Disparities Using Cohen’s D",
+    "section": "22.5 Conclusion",
+    "text": "22.5 Conclusion\nThe effect size tells us that the ADI in low-deprivation counties is 3.39 standard deviations higher than in high-deprivation counties. Since Cohen’s d is standardized, this means the deprivation difference is very large in relative terms. This analysis confirms that county-level deprivation is strongly associated with huge disparities in ADI, with high-deprivation counties having more economic inequaltity, low educational attainment, and less financial strength. Future research could associate some outcome across levels of ADI.",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Analysis of Area Deprivation Disparities Using Cohen's D</span>"
+    ]
+  },
+  {
+    "objectID": "admissions_R_ex.html",
+    "href": "admissions_R_ex.html",
+    "title": "Admissions Data Analysis",
+    "section": "",
+    "text": "Introduction\nThis code analyzes admissions data, focusing on predicting SAT Math scores using SAT Verbal scores and high school class size. The analysis employs linear regression models, including simple linear regression, multiple linear regression, correlation assessments, and visualizations to explore the relationships between these variables.\nHere is the admissions data and you can download the script to run in R here\n\n\nLoad Necessary Libraries\n\nlibrary(foreign)    # For reading .sav files\nlibrary(ggplot2)    # For visualization\n\nWarning: package 'ggplot2' was built under R version 4.3.3\n\nlibrary(dplyr)      # For data manipulation\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(gtsummary)  # For creating regression tables\nlibrary(officer)    # For exporting to Word\n\nWarning: package 'officer' was built under R version 4.3.3\n\nlibrary(flextable)  # For table formatting\n\n\nAttaching package: 'flextable'\n\n\nThe following objects are masked from 'package:gtsummary':\n\n    as_flextable, continuous_summary\n\n\n\n\nLoad and Inspect Data\n\nadmissions &lt;- read.spss(\"data/admissions.sav\", to.data.frame = TRUE)\nhead(admissions) # Display first few rows\n\n  row_number paiddeposit scholarship_yes_no Type_of_scholarship_offered Female\n1          7           1                  0                                  0\n2         12           0                  0                                  0\n3         19           1                  0                                  0\n4         23           1                  0                                  0\n5         25           0                  0                                  0\n6         28           0                  0                                  1\n             Race HS_rank HS_class_size HS_Quintile HS_CODE\n1 white               190           281        4/5   392835\n2 white               111           223        3/5   393655\n3 white               109           371        2/5    51830\n4 Asian                88           266        2/5   390527\n5 white                NA            NA              390870\n6 white                59           382        1/5   392655\n                  HS_NAME SAT_verbal ACT Honors_college_eligible\n1 FRANKLIN_REGIONAL_SR_HI        560  NA                     no \n2 CENTRAL_CATHOLIC_HIGH_S        600  NA                     no \n3 WESTCHESTER_HIGH_SCHOOL        550  NA                     no \n4 CEDAR_CLIFF_HIGH_SCHOOL        520  NA                     no \n5 HOLY_GHOST_PREPARATORY         650  NA                     no \n6 PENN_MANOR_HIGH_SCHOOL         460  20                     no \n  distancefromPitt state Number_of_family_alumni father_alumni grand_alumni\n1        14.228946    PA                       0             0            0\n2         7.162134    PA                       0             0            0\n3       232.363382    PA                       0             0            0\n4       163.462296    PA                       0             0            0\n5       261.534151    PA                       0             0            0\n6       192.493359    PA                       0             0            0\n  mother_alumni sibling_alumni step_parent_alumni other_family_alumni\n1             0              0                  0                   0\n2             0              0                  0                   0\n3             0              0                  0                   0\n4             0              0                  0                   0\n5             0              0                  0                   0\n6             0              0                  0                   0\n  SAT_composite ACT_as_SAT Max_Test_Score Training from_PA\n1          1180         NA           1180        0       1\n2          1150         NA           1150        0       1\n3          1190         NA           1190        0       1\n4          1140         NA           1140        0       1\n5          1200         NA           1200        0       1\n6           940        950            950        0       1\n               alumniYN SAT_math\n1 Family is not an alum      620\n2 Family is not an alum      550\n3 Family is not an alum      640\n4 Family is not an alum      620\n5 Family is not an alum      550\n6 Family is not an alum      480\n\n\n\n\nData Preprocessing\n\nadmissions_clean &lt;- admissions %&gt;% \n  dplyr::select(SAT_math, SAT_verbal, HS_class_size) %&gt;% \n  na.omit()\n\n\n\nSimple Linear Regression: SAT Math ~ SAT Verbal\n\nsimple_model &lt;- lm(SAT_math ~ SAT_verbal, data = admissions_clean)\nsummary(simple_model) # Regression summary\n\n\nCall:\nlm(formula = SAT_math ~ SAT_verbal, data = admissions_clean)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-168.125  -43.568   -1.667   41.119  188.462 \n\nCoefficients:\n             Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 329.24934   19.49133   16.89   &lt;2e-16 ***\nSAT_verbal    0.45572    0.03448   13.22   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 61.42 on 689 degrees of freedom\nMultiple R-squared:  0.2023,    Adjusted R-squared:  0.2011 \nF-statistic: 174.7 on 1 and 689 DF,  p-value: &lt; 2.2e-16\n\n\n\nInterpretation:\n\nSAT Verbal has a positive effect on SAT Math scores (Estimate = 0.45572, p &lt; 0.001).\nModel explains ~20.2% of variance in SAT Math scores (Adjusted R² = 0.2011), meaning SAT Verbal alone is a moderate predictor.\nResiduals appear reasonably distributed, suggesting no major violations of normality assumptions.\n\n\n\n\nCompute Fitted Values and Residuals\n\nadmissions_clean$fitted_simple &lt;- fitted(simple_model)\nadmissions_clean$residuals_simple &lt;- residuals(simple_model)\n\n\n\nCompute Standardized Values\n\nadmissions_clean$std_fitted_simple &lt;- scale(admissions_clean$fitted_simple)\nadmissions_clean$std_residuals_simple &lt;- scale(admissions_clean$residuals_simple)\n\n\n\nVisualization: Residuals vs. Fitted\n\nggplot(admissions_clean, aes(x = std_fitted_simple, y = std_residuals_simple)) +\n  geom_point(color = \"blue\") +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"red\") +\n  labs(title = \"Standardized Residuals vs. Standardized Fitted Values (Simple Model)\",\n       x = \"Standardized Fitted Values\", y = \"Standardized Residuals\")\n\n\n\n\n\n\n\n\n\nInterpretation:\n\nResiduals are fairly symmetrically distributed around zero, suggesting the linear model is appropriate.\nNo major patterns in residuals indicate homoscedasticity.\n\n\n\n\nHistogram of Residuals\n\nggplot(admissions_clean, aes(x = residuals_simple)) +\n  geom_histogram(bins = 30, fill = \"lightblue\", color = \"black\") +\n  labs(title = \"Histogram of Residuals (Simple Model)\", x = \"Residuals\", y = \"Frequency\")\n\n\n\n\n\n\n\n\n\nInterpretation:\n\nResiduals follow a normal-like distribution, supporting the assumption of normality.\n\n\n\n\nCorrelation Analysis\n\ncor(admissions_clean[, c(\"SAT_math\", \"SAT_verbal\", \"fitted_simple\", \"residuals_simple\")], use = \"complete.obs\")\n\n                  SAT_math    SAT_verbal fitted_simple residuals_simple\nSAT_math         1.0000000  4.497305e-01  4.497305e-01     8.931643e-01\nSAT_verbal       0.4497305  1.000000e+00  1.000000e+00    -5.014076e-16\nfitted_simple    0.4497305  1.000000e+00  1.000000e+00    -1.828283e-15\nresiduals_simple 0.8931643 -5.014076e-16 -1.828283e-15     1.000000e+00\n\n\n\nInterpretation:\n\nStrong positive correlation between SAT Math and SAT Verbal (r ≈ 0.45).\nFitted values highly correlate with SAT Verbal, confirming its predictive power.\n\n\n\n\nMultiple Linear Regression: SAT Math ~ SAT Verbal + HS Class Size\n\nmultiple_model &lt;- lm(SAT_math ~ SAT_verbal + HS_class_size, data = admissions_clean)\nsummary(multiple_model)\n\n\nCall:\nlm(formula = SAT_math ~ SAT_verbal + HS_class_size, data = admissions_clean)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-165.924  -44.589   -1.418   40.825  197.261 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   314.14654   19.47735  16.129  &lt; 2e-16 ***\nSAT_verbal      0.44864    0.03401  13.192  &lt; 2e-16 ***\nHS_class_size   0.06030    0.01295   4.656 3.88e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 60.52 on 688 degrees of freedom\nMultiple R-squared:  0.2266,    Adjusted R-squared:  0.2244 \nF-statistic: 100.8 on 2 and 688 DF,  p-value: &lt; 2.2e-16\n\n\n\nInterpretation:\n\nHS Class Size has a small but significant positive effect (Estimate = 0.06030, p &lt; 0.001).\nExplained variance increases to 22.4%, showing a slight improvement over the simple model.\n\n\n\n\nVisualization of SAT Verbal Effect\n\nggplot(admissions_clean, aes(x = SAT_verbal, y = SAT_math)) +\n  geom_point(alpha = 0.5) +\n  geom_smooth(method = \"lm\", col = \"blue\") +\n  labs(title = \"Effect of SAT Verbal on SAT Math\", x = \"SAT Verbal\", y = \"SAT Math\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\nGenerate Regression Summary Table\n\nmlr_table &lt;- multiple_model %&gt;% \n  tbl_regression(label = list(SAT_verbal = \"SAT Verbal Score\", HS_class_size = \"High School Class Size\")) %&gt;%\n  modify_caption(\"Table 1: Multiple Linear Regression Results\") %&gt;%\n  add_n()\n\n\n\nSave Table to Word\n\nmlr_flextable &lt;- as_flex_table(mlr_table)\ndoc &lt;- read_docx()\ndoc &lt;- body_add_flextable(doc, value = mlr_flextable)\nprint(doc, target = \"MLR_Results.docx\")\n\n\n\nConclusion\n\nKey Findings:\n\nSAT Verbal scores significantly predict SAT Math scores, explaining ~20% of the variance.\nAdding HS Class Size improves the model slightly, raising the explained variance to 22.4%.\nBoth models suggest a linear relationship, with residuals showing normality and no major violations.\n\n\n\nImplications:\n\nSchools aiming to improve SAT Math scores may focus on strengthening verbal skills.\nClass size appears to play a small but relevant role in performance.\nFurther research could explore additional predictors (e.g., socioeconomic factors, study habits).",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Admissions Data Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "06-hierarchical-regression.html",
+    "href": "06-hierarchical-regression.html",
+    "title": "Hierarchical Regression and Dummy Variables",
+    "section": "",
+    "text": "Week 8: February 24, 2025",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "06-hierarchical-regression.html#introduction-to-the-topic",
+    "href": "06-hierarchical-regression.html#introduction-to-the-topic",
+    "title": "Hierarchical Regression and Dummy Variables",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nToday we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables.\nIn regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.\n\nWhat are Dummy Variables?\nA dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. Read this article for a social justice application of selecting reference variables in regression models. I used this idea to code trans man as the reference category in this paper .\n\nWhy Use Dummy Variables?\n\nThey quantify categorical differences in a regression model.\nThey allow us to compare groups while controlling for other factors.\nThey help capture interaction effects when combined with numerical predictors.\n\n\n\nExtending Dummy Variables:\n\nFor variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).\nReference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "06-hierarchical-regression.html#class-files",
+    "href": "06-hierarchical-regression.html#class-files",
+    "title": "Hierarchical Regression and Dummy Variables",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nScript 1: CLT Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?\nScript 2: CLT More CLT Fun\nDirected Acyclic Graph - DAGS And even more fun, check out how you can create diagrams, including DAGS, in R.\n\n\n\nData Sets\n\nNational Survey of Child and Adolescent Well-Being: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?\nInfluence, Outliers, and Leverage Part I, Part II, Part III, Part IV",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "06-hierarchical-regression.html#r-lab-files",
+    "href": "06-hierarchical-regression.html#r-lab-files",
+    "title": "Hierarchical Regression and Dummy Variables",
+    "section": "R Lab Files",
+    "text": "R Lab Files\n\nLab Instructions We are going to run some simple and multiple regressions using R with the NSCAW data.\nHere is a partially annotated data file to get us started.\nLab Dataset\nAnother practice assignment that we never got it. Check it out and see if you can answer the questions.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html",
+    "href": "nscaw.html",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "",
+    "text": "Introduction\nThis exercise explores child aggression and trauma using the NSCAW I dataset. Because this is designed for you to do, I supressed all of the output. The chunks of code give you a hints regarding the code that will answer each question. Create an R script and answer each question below. Cut and paste the chunk of code into your script, and fill it in so that it runs.",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-1-load-the-data",
+    "href": "nscaw.html#step-1-load-the-data",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 1: Load the Data",
+    "text": "Step 1: Load the Data\nMake sure all of these libraries are installed or you will not be able to run the code. Also, make sure that your data set is in a subdirectory called data in the same directory as the one in which your R script is saved.\n\n# Load necessary libraries\nlibrary(foreign)    # For reading SPSS files\nlibrary(dplyr)      # For data manipulation\nlibrary(ggplot2)    # For visualization\nlibrary(gtsummary)  # For creating regression tables\nlibrary(officer)    # For exporting tables to Word\nlibrary(flextable)  # For table formatting\n\n# Load NSCAW I dataset\nnscaw &lt;- read.spss(\"data/nscaw.sav\", to.data.frame = TRUE)\n\n# Inspect the first few rows\nhead(nscaw)\n\nQuestion: What type of variables are included in the dataset?\nTo get a sense of the variables in the dataset click here.",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-2-select-variables-handle-missing-data",
+    "href": "nscaw.html#step-2-select-variables-handle-missing-data",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 2: Select Variables & Handle Missing Data",
+    "text": "Step 2: Select Variables & Handle Missing Data\n\n# Select relevant variables\nnscaw_clean &lt;- nscaw %&gt;% \n  dplyr::select(FILL THE VARIABLES IN HERE) \n\n# Remove missing values\nnscaw_clean &lt;- na.omit(nscaw_clean)\n\n# View summary statistics\nsummary(nscaw_clean)\n\nHint: Look at the summary statistics—do any variables have extreme values?",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-3-compute-correlations",
+    "href": "nscaw.html#step-3-compute-correlations",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 3: Compute Correlations",
+    "text": "Step 3: Compute Correlations\n\n# Compute correlation matrix\ncor(nscaw_clean, use = \"complete.obs\")\n\nQuestion: Which variables are most strongly correlated? Does the direction make sense?\n\nRun the regression of child aggression on trauma score and age",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-4-run-a-multiple-regression-model",
+    "href": "nscaw.html#step-4-run-a-multiple-regression-model",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 4: Run a Multiple Regression Model",
+    "text": "Step 4: Run a Multiple Regression Model\n\n# Run regression: Predict aggression using trauma score and age\nreg_model &lt;- lm(WRITE THE CODE TO RUN THE REGRESSION)\n\n# Display model summary\nsummary(reg_model)\n\nHint: Examine the coefficients and p-values. Is trauma a significant predictor of aggression?",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-5-compute-fitted-values-residuals",
+    "href": "nscaw.html#step-5-compute-fitted-values-residuals",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 5: Compute Fitted Values & Residuals",
+    "text": "Step 5: Compute Fitted Values & Residuals\n\n# Compute fitted values and residuals\nnscaw_clean$fitted &lt;- fitted(PROVIDE THE CODE HERE)\nnscaw_clean$residuals &lt;- residuals(reg_model)\n\n# Compute standardized residuals\nnscaw_clean$std_residuals &lt;- PROVIDE THE CODE HERE(nscaw_clean$residuals)\n\nQuestion: Why do we standardize residuals? What does this help us understand?",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-6-visualize-residuals",
+    "href": "nscaw.html#step-6-visualize-residuals",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 6: Visualize Residuals",
+    "text": "Step 6: Visualize Residuals\n\n# Plot histogram of residuals\nggplot(nscaw_clean, aes(x = residuals)) +\n  PROVIDE THE CODE HERE(bins = 30, fill = \"lightblue\", color = \"black\") +\n  labs(title = \"Histogram of Residuals\", x = \"Residuals\", y = \"Frequency\")\n\nHint: Look for skewness—are residuals normally distributed?\n\n\n# Plot standardized residuals vs. predicted values\nggplot(nscaw_clean, aes(x = fitted, y = std_residuals)) +\n  geom_point(PROVIDE THE CODE HERE) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"red\") +\n  labs(PROVIDE THE CODE HERE)\n\nHint: If you see patterns in the residuals, what assumption may be violated?",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#step-7-create-export-regression-table",
+    "href": "nscaw.html#step-7-create-export-regression-table",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Step 7: Create & Export Regression Table",
+    "text": "Step 7: Create & Export Regression Table\n\n# Generate regression summary table\nreg_table &lt;- reg_model %&gt;% \n  tbl_regression(\n    label = list(tra1 = \"PTS Score\", bcagg1 = \"Aggressive Behavior\", ageY = \"Age\")\n  ) %&gt;% \n  modify_caption(\"Table 1: Regression Results for Aggression\")\n\n# Convert to flextable and export to Word\nreg_flextable &lt;- as_flex_table(reg_table)\ndoc &lt;- read_docx()\ndoc &lt;- body_add_flextable(doc, value = reg_flextable)\nprint(doc, target = \"Regression_Results.docx\")\n\nHint: Where does the p-value appear in the regression table? How does it inform significance?",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#deliverables",
+    "href": "nscaw.html#deliverables",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Deliverables",
+    "text": "Deliverables\nDiscuss the following:\n\nCorrelation matrix output\nRegression model summary\nHistogram of residuals\nResiduals vs. fitted plot\nRegression results table (Word document)",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "nscaw.html#discussion-questions",
+    "href": "nscaw.html#discussion-questions",
+    "title": "NSCAW I In-Class Exercise",
+    "section": "Discussion Questions",
+    "text": "Discussion Questions\n\nBased on your results, does trauma significantly predict aggression?\nHow does child age influence the relationship between trauma and aggression?\nAre the residuals normally distributed? If not, what would you do differently?\nIf the p-value for trauma is significant, what does that imply in real-world terms?\nHow could you improve this model?\n\nFinal Thought: This exercise helps you develop a deeper understanding of how trauma influences child behavior. Future analyses could incorporate more variables (e.g., social support, environment) for better predictions.",
+    "crumbs": [
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+    ]
+  },
+  {
+    "objectID": "slides/inclass.html",
+    "href": "slides/inclass.html",
+    "title": "In Class Assignment",
+    "section": "",
+    "text": "In Class assignment – Simple Linear Regression Mechanics\nThis file uses data from the 2021 BRFSS that is available for download here\nFor this assignment, download the subsetted SPSS file I created, and follow these steps:",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>In Class Assignment</span>"
+    ]
+  },
+  {
+    "objectID": "slides/inclass.html#in-class-assignment-simple-linear-regression-mechanics",
+    "href": "slides/inclass.html#in-class-assignment-simple-linear-regression-mechanics",
+    "title": "In Class Assignment",
+    "section": "",
+    "text": "The BRFSS data contains information on 11 separate ACEs. The file codes them as follows 1 = the respondent endorsed the ACE; 2 = the respondent did not endorse the ACE. Create a scale that ranges from 0 (No ACEs) to 11 (ALL ACEs) representing the ACEs sum score (i.e. cumulative risk).\nReport the mean, range and standard deviation of your ACEs scale.\nReport the correlations between all ACEs except for the three sexual abuse/assault variables (note how these variables are measured)\nRun a simple linear regression that predicts 1) the number of days the respondent reported being in poor mental health in the past 30 days; 2) the number of days the respondent reported being in poor physical health in the past 30 days; and 3) binge drinking. Then answer the following questions\n\n\nHow many days on average did Respondents with no ACEs report having poor mental health?\nHow many days on average did Respondents with no ACEs report having poor mental health?\nHow many days on average did the respondent report binge drinking?\nInterpret the slope parameter for each model. What is the null hypothesis. Comment on the statistical significance of the slope parameter.\nHow much of the variation in mental health, physical health and binge drinking is explained by ACEs for each model respectively. What factors should be considered when interpreting R square?",
+    "crumbs": [
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>In Class Assignment</span>"
+    ]
+  },
+  {
+    "objectID": "06-hierarchical-regression.html#additional-notes",
+    "href": "06-hierarchical-regression.html#additional-notes",
+    "title": "Hierarchical Regression and Dummy Variables",
+    "section": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and be influential.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Hierarchical Regression and Dummy Variables</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#class-files",
+    "href": "05-assumptions.html#class-files",
+    "title": "Regression Assumptions",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nScript 1: CLT Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?\nScript 2: CLT More CLT Fun\nDirected Acyclic Graph - DAGS And even more fun, check out how you can create diagrams, including DAGS, in R.\n\n\n\nData Sets\n\nNational Survey of Child and Adolescent Well-Being: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?\nInfluence, Outliers, and Leverage Part I, Part II, Part III, Part IV",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#r-lab-files",
+    "href": "05-assumptions.html#r-lab-files",
+    "title": "Regression Assumptions",
+    "section": "R Lab Files",
+    "text": "R Lab Files\n\nLab Instructions We are going to run some simple and multiple regressions using R with the NSCAW data.\nHere is a partially annotated data file to get us started.\nLab Dataset\nAnother practice assignment that we never got it. Check it out and see if you can answer the questions.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#additional-notes",
+    "href": "05-assumptions.html#additional-notes",
+    "title": "Regression Assumptions",
+    "section": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and be influential.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "05-assumptions.html#dummy-variables",
+    "href": "05-assumptions.html#dummy-variables",
+    "title": "Regression Assumptions",
+    "section": "Dummy Variables",
+    "text": "Dummy Variables\nIn regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.\n\nWhat are Dummy Variables?\nA dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. Read this article for a social justice application of selecting reference variables in regression models. I used this idea to code trans man as the reference category in this paper .\n\nWhy Use Dummy Variables?\n\nThey quantify categorical differences in a regression model.\nThey allow us to compare groups while controlling for other factors.\nThey help capture interaction effects when combined with numerical predictors.\n\n\n\nExtending Dummy Variables:\n\nFor variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).\nReference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html",
+    "href": "assignment.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Install libraries\nThe assignment assumes the following packages have been installed:\nlibrary(emoji)\nlibrary(emoji)\nlibrary(dplyr)\nlibrary(gt)\nlibrary(gtsummary)\nlibrary(officer)\nlibrary(flextable)\nlibrary(ppcor)\nlibrary(ggcorrplot)\nlibrary(fastDummies)\nlibrary(emmeans)\nlibrary(gtsummary)\nlibrary(flextable)\nlibrary(performance)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#data-preparation-and-descriptive-statistics",
+    "href": "assignment.html#data-preparation-and-descriptive-statistics",
+    "title": "Assignment 1",
+    "section": "1. Data Preparation and Descriptive Statistics",
+    "text": "1. Data Preparation and Descriptive Statistics\n\n1.1 Load and Clean the Data\n\ndata &lt;- read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")\n\n# Selecting relevant variables \ndata &lt;- data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) \n\nBefore removing the missing data, let’s get a sense of the missingness across race & ethnicity. What is the distribution of missing respondents by race? Are there any implications?\n\n# Select only rows with missing data\ndf_missing &lt;- data[!complete.cases(data), ]\ndf_missing |&gt; tbl_summary(include = c(Race_Ethnicity))\n\n\n\n1.2 Missing Data Analysis\nHow many cases are missing? Calculate the number of omitted cases due to missing values:\n\ndata &lt;- data %&gt;% na.omit()\nnum_omitted &lt;- nrow(read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")) - nrow(data)\ncat(\"Number of omitted cases:\", num_omitted, \"\\n\")",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#correlation-analysis",
+    "href": "assignment.html#correlation-analysis",
+    "title": "Assignment 1",
+    "section": "2. Correlation Analysis",
+    "text": "2. Correlation Analysis\n\n2.1 Which variables are significantly correlated?\n\n\n2.2 Why are we using Spearman and not Pearson Correlaion?\n\n\n2.3 What variable changes the least after partialing out the other variables?\n\n# Compute correlation matrix\ncor_matrix &lt;- cor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale), use = \"complete.obs\", method = \"spearman\")\n\nggplot_correlation &lt;- ggcorrplot(cor_matrix, lab = TRUE, title = \"Correlation Matrix\")\nprint(ggplot_correlation)\n\n\n\n\n\n\n\nprint(cor_matrix)\n# Compute partial correlations\npartial_corrs &lt;- pcor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale))\nprint(partial_corrs)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#creating-dummy-variables-for-categorical-data",
+    "href": "assignment.html#creating-dummy-variables-for-categorical-data",
+    "title": "Assignment 1",
+    "section": "3. Creating Dummy Variables for Categorical Data",
+    "text": "3. Creating Dummy Variables for Categorical Data\n\n3.1 Frequency of Race/Ethnicity Categories\nWhat is the distribution by race?\n\ntable(data$Race_Ethnicity)\n\n\n\n3.2 Creating Dummy Variables\nRace/Ethnicity is categorical. We need to create dummies to include them into the model. The best way to do this is by using fastDummies. Follow this below. Describe exactly what this line of code is doing, word by word.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)\n\nExplanation: This function converts categorical Race_Ethnicity into binary variables while removing the first level as a reference category.\n\n\n3.3 Re-leveling Race/Ethnicity\nSometimes its nice to re-level the variable. The original variable distribution is given above.\n\ndata$Race_Ethnicity &lt;- relevel(factor(data$Race_Ethnicity), ref = \"NH White\")\n\nThis reorders the levels so that “NH White” is the reference category in our regression model.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#running-regression-models",
+    "href": "assignment.html#running-regression-models",
+    "title": "Assignment 1",
+    "section": "4. Running Regression Models",
+    "text": "4. Running Regression Models\nWe are predicting cigartette use during pregnancy by whether the pregnant person experienced any abuse during pregnancy, ACEs, is depressed (BPG_DEPRS8), and by race/ethnicity. Fit progressively more complex models: starting with Any_Abuse, etc…\n\nmodel0 &lt;- lm(CIG_1TRI ~ Any_Abuse, data = data)\nmodel1 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale, data = data)\nmodel2 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8, data = data)\nmodel3 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8 + Race_Ethnicity_Hispanic + `Race_Ethnicity_NH Black` + Race_Ethnicity_Other, data = data)\n\nsummary(model3)\n\nWhat variable is omitted, and why? How much more of the variance is explained by ACEs_Scale, BPG_DEPRS8, and Race_Ethnicity compared to just Any_Abuse?",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#model-diagnostics",
+    "href": "assignment.html#model-diagnostics",
+    "title": "Assignment 1",
+    "section": "5. Model Diagnostics",
+    "text": "5. Model Diagnostics\nThe performance package is a very cool package in R. It facilitates model diagnostics. Then, plots it. Follow along.\n\n5.1 Checking Assumptions\n\ncheck_collinearity(model3)\ncheck_heteroscedasticity(model3)\ncheck_normality(model3)\ncheck_outliers(model3)\n\n\n\n5.2 Visualizing Diagnostic Plots\n\ndiagnostic_plots &lt;- plot(check_model(model3, panel = FALSE))\n\n# Display plots\nprint(diagnostic_plots[[2]]) # Q-Q plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[3]]) # Residuals vs Fitted plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[4]]) # Scale-location plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[5]]) # Cook’s distance",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#post-hoc-analysis-using-estimated-marginal-means-emms",
+    "href": "assignment.html#post-hoc-analysis-using-estimated-marginal-means-emms",
+    "title": "Assignment 1",
+    "section": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)",
+    "text": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)\nThe emmeans package allows us to predict cigarette use by any variable, here race/ethnicity. Then, we can use the confint to get confidence intervals.\n\nemm &lt;- emmeans(model3, pairwise ~ Race_Ethnicity_Hispanic)\nprint(emm)\nconfint(emm, level = 0.95)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#saving-results-to-a-word-document",
+    "href": "assignment.html#saving-results-to-a-word-document",
+    "title": "Assignment 1",
+    "section": "7. Saving Results to a Word Document",
+    "text": "7. Saving Results to a Word Document\nCreate a structured report including tables and regression results:\n\ndata %&gt;%\n  dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n  tbl_summary(include = c(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity)) %&gt;%\n  as_flex_table() %&gt;%\n  print()\n\n\ndoc &lt;- read_docx()\n\ndoc1 &lt;- doc %&gt;%\n  body_add_par(\"Descriptive Statistics\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    data %&gt;%\n      dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n      tbl_summary(\n        type = all_continuous() ~ \"continuous2\",\n        statistic = all_continuous() ~ c(\n          \"{N_nonmiss}\",\n          \"{median} ({p25}, {p75})\",\n          \"{min}, {max}\"\n        ),\n        missing = \"no\"\n      ) %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Regression Model Summary\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    tbl_regression(model3) %&gt;%  # Corrected function placement\n      add_global_p() %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Correlation Analysis\", style = \"heading 1\") %&gt;%\n  body_add_gg(ggplot_correlation)\n\nprint(doc1, target = \"C:/Users/barboza-salerno.1/Downloads/Regression_Report_FINAL.docx\")",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#write-up-guidelines",
+    "href": "assignment.html#write-up-guidelines",
+    "title": "Assignment 1",
+    "section": "7. Write-Up Guidelines",
+    "text": "7. Write-Up Guidelines\n\nWrite a report that includes:\n\nIntroduction: Briefly describe the purpose of the analysis.\nData Description: Briefly explain the data set and key variables used, including how they were coded and re-coded as applicable.\nStatistical Analysis: Describe the analytic approach taken. This includes descriptive statistics, regression analysis, diagnostic assessment, and marginal means.\nDescriptive Statistics: Present summary statistics and missing data analysis (Table 1 in Word). Correlation analysis (Figure 1).\nRegression Models: Interpret key findings from each model. Describe how the models change. Present final model (Table 2 in Word).\nModel Assumption Checks: Discuss the model’s validity based on assumption checks. Include plots as appendix.\nPost-Hoc Analysis: Interpret estimated marginal means. Create a table of the estimated marginal means for smoking by Race/Ethnicity (By hand - Table 3).\nConclusion: Summarize key insights and possible limitations. Suggest two policy recommendations for addressing smoking during pregnancy.",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#submission-instructions",
+    "href": "assignment.html#submission-instructions",
+    "title": "Assignment 1",
+    "section": "Submission Instructions:",
+    "text": "Submission Instructions:\n\nSubmit both the .R script and the Word document.\nEnsure all tables and plots are properly formatted.\nAssignment due by email by end of Week 9.",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "assignment.html#grading-criteria",
+    "href": "assignment.html#grading-criteria",
+    "title": "Assignment 1",
+    "section": "Grading Criteria:",
+    "text": "Grading Criteria:\n\n\n\nSection\nPoints\n\n\n\n\nData Cleaning & Preparation\n20\n\n\nDescriptive Statistics\n20\n\n\nRegression Models\n20\n\n\nModel Diagnostics\n20\n\n\nWrite-Up & Interpretation\n20\n\n\nTotal\n100\n\n\n\nGood luck with your analysis!",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html",
+    "href": "07-logistic-regression.html",
+    "title": "Logistic Regression",
+    "section": "",
+    "text": "Week 9: March 3, 2025",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#reading",
+    "href": "07-logistic-regression.html#reading",
+    "title": "Logistic Regression",
+    "section": "Reading",
+    "text": "Reading\n\nDiez et al. Chapter 9: Logistic Regression, from pp 371; sec. 9.5\nSee resources",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#introduction-to-the-topic",
+    "href": "07-logistic-regression.html#introduction-to-the-topic",
+    "title": "Logistic Regression",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we focus on logistic regression, a statistical method used to model binary outcomes and predict probabilities. Logistic regression is a cornerstone technique in statistical modeling, particularly for research questions involving categorical dependent variables.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#key-concepts",
+    "href": "07-logistic-regression.html#key-concepts",
+    "title": "Logistic Regression",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nLogistic Regression Models: Analyze the relationship between independent variables and a binary dependent variable (e.g., success vs. failure).\nOdds Ratios: Interpret the effect of predictors on the likelihood of the outcome.\nModel Fit and Diagnostics: Evaluate the accuracy and robustness of logistic regression models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#relevance",
+    "href": "07-logistic-regression.html#relevance",
+    "title": "Logistic Regression",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to build logistic regression models and interpret their results, including coefficients, odds ratios, and predicted probabilities.\nStudents will explore model evaluation techniques, such as goodness-of-fit measures and ROC curves.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#why-this-is-important",
+    "href": "07-logistic-regression.html#why-this-is-important",
+    "title": "Logistic Regression",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nLogistic regression is widely used in various fields, including social sciences, medicine, and marketing, to answer questions about classification and prediction.\nUnderstanding logistic regression provides the foundation for advanced modeling techniques like multinomial and ordinal regression.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#how-this-ties-into-the-overall-course",
+    "href": "07-logistic-regression.html#how-this-ties-into-the-overall-course",
+    "title": "Logistic Regression",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous weeks’ focus on linear regression and effect sizes, extending these concepts to binary outcomes.\nPrepares students for upcoming topics like machine learning classification models and survival analysis, where logistic regression plays a foundational role.\n\nBy the end of this week, students will be able to confidently apply logistic regression to real-world problems, interpret model outputs, and evaluate model performance for binary classification tasks.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#class-files",
+    "href": "07-logistic-regression.html#class-files",
+    "title": "Logistic Regression",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes and a review of risk and odds calculations using contingency tables\n\n\n\nR Code\n\nScript 1: Logistic Regression Application of Logistic Regression using R\n\n\n\nData Sets\n\nGPA-College Enrollment Example: In class example showing the mechanics of logistic regression?\nPredicting Probabilities with Logistic Regression Here is an excel file illustrating the math behind predicting probabilities\nAn annotated jasp file of logistic regression output including how to do the log-likelihood test\n\n\n\nResources\n\nThere are a million ways to recode variables in R\nNow that you are familiar with using R, check out this amazing book called R for Data Science which is written by the Hadley who co-authored the tidyverse suite.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#additional-notes",
+    "href": "07-logistic-regression.html#additional-notes",
+    "title": "Logistic Regression",
+    "section": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and don’t be a dummy.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "logistic.html",
+    "href": "logistic.html",
+    "title": "Logistic Regression Example",
+    "section": "",
+    "text": "The Dataset\nThe data is a mixed variable dataset containing 14 variables of 297 patients for their heart disease diagnosis. The data comes in an R package called kmed which you can read about on your own. Patients were diagnosed with heart disease in four classes. We will used this dataset to illustrate how multiple risk factors are related to a heart disease diagnosis, such as age (years), sex (FALSE = female; TRUE = male), chest pain (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, and 4 = asymptomatic) and thalach (max heart rate achieved).\n\nlibrary(kmed)\ndat &lt;- heart\n\n\n# select variables\nlibrary(dplyr)\ndat &lt;- dat %&gt;%\n  dplyr::select(\n    age,\n    sex,\n    cp,\n    thalach,\n    class\n  )\n# print dataset's structure\nstr(dat)\n\n'data.frame':   297 obs. of  5 variables:\n $ age    : num  63 67 67 37 41 56 62 57 63 53 ...\n $ sex    : logi  TRUE TRUE TRUE TRUE FALSE TRUE ...\n $ cp     : Factor w/ 4 levels \"1\",\"2\",\"3\",\"4\": 1 4 4 3 2 2 4 4 4 4 ...\n $ thalach: num  150 108 129 187 172 178 160 163 147 155 ...\n $ class  : int  0 2 1 0 0 0 3 0 2 1 ...\n - attr(*, \"na.action\")= 'omit' Named int [1:6] 88 167 193 267 288 303\n  ..- attr(*, \"names\")= chr [1:6] \"88\" \"167\" \"193\" \"267\" ...\n\n\n\n# rename variables\ndat &lt;- dat %&gt;%\n  dplyr::rename(\n    chest_pain = cp,\n    max_heartrate = thalach,\n    heart_disease = class\n  )\n\n\n# recode sex\ndat$sex &lt;- factor(dat$sex,\n  levels = c(FALSE, TRUE),\n  labels = c(\"female\", \"male\")\n)\n\n\n# recode chest_pain\ndat$chest_pain &lt;- factor(dat$chest_pain,\n  levels = 1:4,\n  labels = c(\"typical angina\", \"atypical angina\", \"non-anginal pain\", \"asymptomatic\")\n)\n\n\n# recode heart_disease into 2 classes\ndat$heart_disease &lt;- ifelse(dat$heart_disease == 0,\n  0,\n  1\n)\n\n\n# set labels for heart_disease\ndat$heart_disease &lt;- factor(dat$heart_disease,\n  levels = c(0, 1),\n  labels = c(\"no disease\", \"disease\")\n)\n\n\nlevels(dat$heart_disease)\n\n[1] \"no disease\" \"disease\"   \n\n\n\n# save model\nm1 &lt;- glm(heart_disease ~ age,\n  data = dat,\n  family = \"binomial\"\n)\n\n\nsummary(m1)\n\n\nCall:\nglm(formula = heart_disease ~ age, family = \"binomial\", data = dat)\n\nCoefficients:\n            Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept) -3.05122    0.76862  -3.970  7.2e-05 ***\nage          0.05291    0.01382   3.829 0.000128 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 409.95  on 296  degrees of freedom\nResidual deviance: 394.25  on 295  degrees of freedom\nAIC: 398.25\n\nNumber of Fisher Scoring iterations: 4\n\n\n\n# OR for age\nexp(coef(m1)[\"age\"])\n\n     age \n1.054331 \n\n\n\n# prob(heart disease) for age = 0\nexp(coef(m1)[1]) / (1 + exp(coef(m1)[1]))\n\n(Intercept) \n 0.04516478 \n\n\n\n# 95% CI for the OR for age\nexp(confint(m1,\n  parm = \"age\"\n))\n\n   2.5 %   97.5 % \n1.026699 1.083987 \n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m1,\n  newdata = data.frame(age = c(30)),\n  type = \"response\"\n)\n\n\npred\n\n        1 \n0.1878525 \n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m1,\n  newdata = data.frame(age = c(30)),\n  type = \"response\",\n  se = TRUE\n)\n\n\npred$fit\n\n        1 \n0.1878525 \n\n\n\n# 95% confidence interval for the prediction\nlower &lt;- pred$fit - (qnorm(0.975) * pred$se.fit)\nupper &lt;- pred$fit + (qnorm(0.975) * pred$se.fit)\nc(lower, upper)\n\n         1          1 \n0.07873357 0.29697138 \n\n\n\n# 95% confidence interval for the prediction\nlower &lt;- pred$fit - (1.96 * pred$se.fit)\nupper &lt;- pred$fit + (1.96 * pred$se.fit)\nc(lower, upper)\n\n         1          1 \n0.07873156 0.29697339 \n\n\n\nlibrary(sjPlot)\n\nInstall package \"strengejacke\" from GitHub (`devtools::install_github(\"strengejacke/strengejacke\")`) to load all sj-packages at once!\n\nlibrary(ggplot2)\n\n\n# plot\nplot_model(m1,\n  type = \"pred\",\n  terms = \"age\"\n) +\n  labs(y = \"Prob(heart disease)\") + theme_bw()\n\n\n\n\n\n\n\n\n\n# levels for sex\nlevels(dat$sex)\n\n[1] \"female\" \"male\"  \n\n\n\n# save model\nm2 &lt;- glm(heart_disease ~ sex,\n  data = dat,\n  family = \"binomial\"\n)\n\n\nsummary(m2)\n\n\nCall:\nglm(formula = heart_disease ~ sex, family = \"binomial\", data = dat)\n\nCoefficients:\n            Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  -1.0438     0.2326  -4.488 7.18e-06 ***\nsexmale       1.2737     0.2725   4.674 2.95e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 409.95  on 296  degrees of freedom\nResidual deviance: 386.12  on 295  degrees of freedom\nAIC: 390.12\n\nNumber of Fisher Scoring iterations: 4\n\n\n\nexp(coef(m2)[\"sexmale\"])\n\n sexmale \n3.573933 \n\n\n\n# prob(disease) for sex = female\nexp(coef(m2)[1]) / (1 + exp(coef(m2)[1]))\n\n(Intercept) \n  0.2604167 \n\n\n\nchisq.test(table(dat$heart_disease, dat$sex))\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  table(dat$heart_disease, dat$sex)\nX-squared = 21.852, df = 1, p-value = 2.946e-06\n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m2,\n  newdata = data.frame(sex = c(\"male\")),\n  type = \"response\"\n)\npred\n\n        1 \n0.5572139 \n\n\n\n# plot\nplot_model(m2,\n  type = \"pred\",\n  terms = \"sex\"\n) +\n  labs(y = \"Prob(heart disease)\")\n\n\n\n\n\n\n\n\n\n# create data frame of new patient\nnew_patient &lt;- data.frame(\n  age = 32,\n  sex = \"female\"\n)\n\n\nm3 &lt;- glm(heart_disease ~ sex + age,\n  data = dat,\n  family = \"binomial\"\n)\n# predict probability to develop heart disease\npred &lt;- predict(m3,\n  newdata = new_patient,\n  type = \"response\"\n)\n# print prediction\npred\n\n         1 \n0.06224456 \n\n\n\n# 1. age, sex and chest pain on prob of disease\nplot_model(m3,\n  type = \"pred\",\n  terms = c(\"age\",  \"sex\"),\n  ci.lvl = NA # remove confidence bands\n) +\n  labs(y = \"Prob(heart disease)\")\n\nData were 'prettified'. Consider using `terms=\"age [all]\"` to get smooth\n  plots.\n\n\n\n\n\n\n\n\n\n\ntab_model(m3, m2,\n  show.ci = FALSE, # remove CI\n  show.aic = TRUE, # display AIC\n  p.style = \"numeric_stars\" # display p-values and stars\n)\n\n\n\n\n \nheart disease\nheart disease\n\n\nPredictors\nOdds Ratios\np\nOdds Ratios\np\n\n\n(Intercept)\n0.01 ***\n&lt;0.001\n0.35 ***\n&lt;0.001\n\n\nsex [male]\n4.47 ***\n&lt;0.001\n3.57 ***\n&lt;0.001\n\n\nage\n1.07 ***\n&lt;0.001\n\n\n\n\nObservations\n297\n297\n\n\nR2 Tjur\n0.142\n0.078\n\n\nAIC\n370.435\n390.118\n\n\n* p&lt;0.05   ** p&lt;0.01   *** p&lt;0.001\n\n\n\n\n\n\n\n\nlibrary(pROC)\n\n\n# save roc object\nres &lt;- roc(heart_disease ~ fitted(m3),\n  data = dat\n)\n# plot ROC curve\nggroc(res, legacy.axes = TRUE)\n\n\n\n\n\n\n\n\n\nres$auc\n\nArea under the curve: 0.713\n\n\n\n# plot ROC curve with AUC in title\nggroc(res, legacy.axes = TRUE) +\n  labs(title = paste0(\"AUC = \", round(res$auc, 2)))\n\n\n\n\n\n\n\n\n\nlibrary(gtsummary)\n\n\n# print table of results\ntbl_regression(m3, exponentiate = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOR1\n95% CI1\np-value\n\n\n\n\nsex\n\n\n\n\n\n\n\n\n    female\n—\n—\n\n\n\n\n    male\n4.47\n2.57, 8.05\n&lt;0.001\n\n\nage\n1.07\n1.04, 1.10\n&lt;0.001\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval\n\n\n\n\n\n\n\n\n\nlibrary(finalfit)\n# set variables\ndependent &lt;- \"heart_disease\"\nindependent &lt;- c(\"age\", \"sex\")\nindependent_final &lt;- c(\"age\", \"sex\", \"chest_pain\")\n\ndat %&gt;% or_plot(dependent, independent,\n  table_text_size = 3.5 # reduce text size\n)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Logistic Regression Example</span>"
     ]
   }
 ]

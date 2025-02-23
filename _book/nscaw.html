@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Barboza-Salerno">
+<meta name="dcterms.date" content="2025-02-16">
 
-<title>Regression Assumptions – Statistics for Social Justice</title>
+<title>NSCAW I In-Class Exercise – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +66,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./07-logistic-regression.html" rel="next">
-<link href="./04-effect-sizes.html" rel="prev">
+<link href="./slides/inclass.html" rel="next">
+<link href="./references.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-assumptions.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Regression Assumptions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nscaw.html"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NSCAW I In-Class Exercise</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -138,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-assumptions.html" class="sidebar-item-text sidebar-link active">
+  <a href="./05-assumptions.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Regression Assumptions</span></span></a>
   </div>
 </li>
@@ -240,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./nscaw.html" class="sidebar-item-text sidebar-link">
+  <a href="./nscaw.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">NSCAW I In-Class Exercise</span></span></a>
   </div>
 </li>
@@ -256,6 +292,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">Assignment 1</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logistic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Logistic Regression Example</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -266,25 +308,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#week-7-february-17-2025" id="toc-week-7-february-17-2025" class="nav-link active" data-scroll-target="#week-7-february-17-2025">Week 7: February 17, 2025</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a>
   <ul class="collapse">
-  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts:</a></li>
-  <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance:</a></li>
-  <li><a href="#why-this-is-important" id="toc-why-this-is-important" class="nav-link" data-scroll-target="#why-this-is-important">Why This Is Important:</a></li>
-  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a></li>
-  <li><a href="#dummy-variables" id="toc-dummy-variables" class="nav-link" data-scroll-target="#dummy-variables">Dummy Variables</a>
-  <ul class="collapse">
-  <li><a href="#what-are-dummy-variables" id="toc-what-are-dummy-variables" class="nav-link" data-scroll-target="#what-are-dummy-variables">What are Dummy Variables?</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data"><strong>About the Data</strong></a></li>
   </ul></li>
-  <li><a href="#class-files" id="toc-class-files" class="nav-link" data-scroll-target="#class-files">Class Files</a>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link" data-scroll-target="#instructions"><strong>Instructions</strong></a>
   <ul class="collapse">
-  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
-  <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">R Code</a></li>
-  <li><a href="#data-sets" id="toc-data-sets" class="nav-link" data-scroll-target="#data-sets">Data Sets</a></li>
-  </ul></li>
-  <li><a href="#r-lab-files" id="toc-r-lab-files" class="nav-link" data-scroll-target="#r-lab-files">R Lab Files</a></li>
-  <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
+  <li><a href="#step-1-load-the-data" id="toc-step-1-load-the-data" class="nav-link" data-scroll-target="#step-1-load-the-data"><strong>Step 1: Load the Data</strong></a></li>
+  <li><a href="#step-2-select-variables-handle-missing-data" id="toc-step-2-select-variables-handle-missing-data" class="nav-link" data-scroll-target="#step-2-select-variables-handle-missing-data"><strong>Step 2: Select Variables &amp; Handle Missing Data</strong></a></li>
+  <li><a href="#step-3-compute-correlations" id="toc-step-3-compute-correlations" class="nav-link" data-scroll-target="#step-3-compute-correlations"><strong>Step 3: Compute Correlations</strong></a></li>
+  <li><a href="#step-4-run-a-multiple-regression-model" id="toc-step-4-run-a-multiple-regression-model" class="nav-link" data-scroll-target="#step-4-run-a-multiple-regression-model"><strong>Step 4: Run a Multiple Regression Model</strong></a></li>
+  <li><a href="#step-5-compute-fitted-values-residuals" id="toc-step-5-compute-fitted-values-residuals" class="nav-link" data-scroll-target="#step-5-compute-fitted-values-residuals"><strong>Step 5: Compute Fitted Values &amp; Residuals</strong></a></li>
+  <li><a href="#step-6-visualize-residuals" id="toc-step-6-visualize-residuals" class="nav-link" data-scroll-target="#step-6-visualize-residuals"><strong>Step 6: Visualize Residuals</strong></a></li>
+  <li><a href="#step-7-create-export-regression-table" id="toc-step-7-create-export-regression-table" class="nav-link" data-scroll-target="#step-7-create-export-regression-table"><strong>Step 7: Create &amp; Export Regression Table</strong></a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables"><strong>Deliverables</strong></a></li>
+  <li><a href="#discussion-questions" id="toc-discussion-questions" class="nav-link" data-scroll-target="#discussion-questions"><strong>Discussion Questions</strong></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -294,14 +332,26 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Regression Assumptions</span></h1>
+<h1 class="title"><span class="chapter-title">NSCAW I In-Class Exercise</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Barboza-Salerno </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 16, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -311,110 +361,183 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-7-february-17-2025" class="level1">
-<h1>Week 7: February 17, 2025</h1>
-<section id="introduction-to-the-topic" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
-<p>Today we are finishing up last week’s discussion of effect sizes and <strong>regression assumptions</strong>. Then we will turn to an even more exciting topic: dummy variables. Regression assumptions are foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.</p>
+<section id="introduction" class="level1">
+<h1><strong>Introduction</strong></h1>
+<p>This exercise explores <strong>child aggression and trauma</strong> using the <strong>NSCAW I dataset</strong>. Because this is designed for you to do, I supressed all of the output. The chunks of code give you a hints regarding the code that will answer each question. Create an R script and answer each question below. Cut and paste the chunk of code into your script, and fill it in so that it runs.</p>
+<section id="about-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="about-the-data"><strong>About the Data</strong></h3>
+<p>The <strong>National Survey of Child and Adolescent Well-Being (NSCAW I)</strong> is a <strong>longitudinal study</strong> that examines children involved in the child welfare system. It collects <strong>child well-being indicators, caregiver characteristics, and service utilization data</strong>. The dataset includes information on <strong>trauma exposure, behavioral outcomes, and demographics</strong>.</p>
+<p>For this assignment, we focus on three key variables:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 23%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>tra1</code></td>
+<td>Numeric</td>
+<td>Trauma: PTS T Score - This variable represents the <strong>Post-Traumatic Stress (PTS) T-score</strong> for the child. It measures trauma-related symptoms based on standardized assessments, with higher values indicating <strong>greater levels of trauma exposure or distress</strong>. Typically, scores above a certain threshold (e.g., 65-70) suggest clinically significant trauma symptoms.</td>
+</tr>
+<tr class="even">
+<td><code>bcagg1</code></td>
+<td>Numeric</td>
+<td>Aggressive Behavior Standardized Score - This variable is a <strong>standardized measure of aggressive behavior</strong> in children, derived from behavioral assessments. Higher values suggest <strong>greater levels of externalizing behaviors such as verbal or physical aggression</strong>. Scores in the clinically significant range (e.g., above 65) may indicate the need for behavioral intervention.</td>
+</tr>
+<tr class="odd">
+<td><code>ageY</code></td>
+<td>Numeric</td>
+<td>Child age in years</td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts:</h2>
-<ul>
-<li><strong>Linearity</strong>: The relationship between predictors and the outcome variable should be linear.</li>
-<li><strong>Independence</strong>: Observations should be independent of each other.</li>
-<li><strong>Homoscedasticity</strong>: The variance of errors should be consistent across levels of predictors.</li>
-<li><strong>Normality of Residuals</strong>: Residuals (errors) should follow a normal distribution.</li>
-<li><strong>Multicollinearity</strong>: Predictors should not be highly correlated with each other.</li>
-</ul>
+</section>
+<section id="instructions" class="level1">
+<h1><strong>Instructions</strong></h1>
+<section id="step-1-load-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-load-the-data"><strong>Step 1: Load the Data</strong></h2>
+<p>Make sure all of these libraries are installed or you will not be able to run the code. Also, make sure that your data set is in a <strong>subdirectory</strong> called <code>data</code> in the same directory as the one in which your <code>R script</code> is saved.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(foreign)    <span class="co"># For reading SPSS files</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)      <span class="co"># For data manipulation</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)    <span class="co"># For visualization</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)  <span class="co"># For creating regression tables</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(officer)    <span class="co"># For exporting tables to Word</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)  <span class="co"># For table formatting</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Load NSCAW I dataset</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>nscaw <span class="ot">&lt;-</span> <span class="fu">read.spss</span>(<span class="st">"data/nscaw.sav"</span>, <span class="at">to.data.frame =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Inspect the first few rows</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(nscaw)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Question:</strong> What type of variables are included in the dataset?</p>
+<p>To get a sense of the variables in the dataset <a href="https://www.ndacan.acf.hhs.gov/presentations/Overview_of_NSCAW_I_and_II.pdf">click here</a>.</p>
 <hr>
 </section>
-<section id="relevance" class="level2">
-<h2 class="anchored" data-anchor-id="relevance">Relevance:</h2>
-<ul>
-<li>Students will learn how to evaluate each regression assumption using diagnostic tests and visualizations.</li>
-<li>Students will gain skills to address violations of assumptions, such as transforming variables or using robust regression methods.</li>
-</ul>
+<section id="step-2-select-variables-handle-missing-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-select-variables-handle-missing-data"><strong>Step 2: Select Variables &amp; Handle Missing Data</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select relevant variables</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>nscaw_clean <span class="ot">&lt;-</span> nscaw <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(FILL THE VARIABLES IN HERE) </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove missing values</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>nscaw_clean <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(nscaw_clean)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># View summary statistics</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(nscaw_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Hint:</strong> Look at the summary statistics—do any variables have extreme values?</p>
 <hr>
 </section>
-<section id="why-this-is-important" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-is-important">Why This Is Important:</h2>
-<ul>
-<li>Violations of regression assumptions can lead to biased estimates, incorrect conclusions, and reduced model reliability.</li>
-<li>By understanding these assumptions, students can ensure the validity of their regression analyses and effectively communicate findings.</li>
-</ul>
+<section id="step-3-compute-correlations" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-compute-correlations"><strong>Step 3: Compute Correlations</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute correlation matrix</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(nscaw_clean, <span class="at">use =</span> <span class="st">"complete.obs"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Question:</strong> Which variables are most strongly correlated? Does the direction make sense?</p>
+<hr>
+<p>Run the regression of child aggression on trauma score and age</p>
+</section>
+<section id="step-4-run-a-multiple-regression-model" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-run-a-multiple-regression-model"><strong>Step 4: Run a Multiple Regression Model</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Run regression: Predict aggression using trauma score and age</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>reg_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(WRITE THE CODE TO RUN THE REGRESSION)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Display model summary</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Hint:</strong> Examine the coefficients and p-values. Is trauma a significant predictor of aggression?</p>
 <hr>
 </section>
-<section id="how-this-ties-into-the-overall-course" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</h2>
-<ul>
-<li>Builds upon prior topics like linear regression by adding a deeper layer of model evaluation and diagnostics.</li>
-<li>Prepares students for advanced topics like generalized linear models and robust regression techniques, which relax some assumptions.</li>
-</ul>
-<p>By the end of this week, students will be able to test and address regression assumptions, ensuring their models meet the necessary criteria for accurate and reliable results.</p>
-</section>
-<section id="dummy-variables" class="level2">
-<h2 class="anchored" data-anchor-id="dummy-variables">Dummy Variables</h2>
-<p>In regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.</p>
-<section id="what-are-dummy-variables" class="level3">
-<h3 class="anchored" data-anchor-id="what-are-dummy-variables">What are Dummy Variables?</h3>
-<p>A dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. <a href="static/johfre-freese-2021-reconsidering-the-reference-category.pdf">Read this article</a> for a social justice application of selecting reference variables in regression models. I used this idea to code <code>trans man</code> as the reference category in <a href="static/acestrans.pdf">this paper</a> .</p>
-<section id="why-use-dummy-variables" class="level4">
-<h4 class="anchored" data-anchor-id="why-use-dummy-variables">Why Use Dummy Variables?</h4>
-<ul>
-<li><p>They quantify categorical differences in a regression model.</p></li>
-<li><p>They allow us to compare groups while controlling for other factors.</p></li>
-<li><p>They help capture interaction effects when combined with numerical predictors.</p></li>
-</ul>
-</section>
-<section id="extending-dummy-variables" class="level4">
-<h4 class="anchored" data-anchor-id="extending-dummy-variables">Extending Dummy Variables:</h4>
-<ul>
-<li><p>For variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).</p></li>
-<li><p>Reference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section id="class-files" class="level2">
-<h2 class="anchored" data-anchor-id="class-files">Class Files</h2>
-<section id="lecture-notes" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
-<ul>
-<li><a href="slides/dummy/dummy_vars.pptx">Today’s Lecture Notes</a></li>
-</ul>
-</section>
-<section id="r-code" class="level3">
-<h3 class="anchored" data-anchor-id="r-code">R Code</h3>
-<ul>
-<li><a href="slides/dummy/asap.R">Script 1: CLT</a> Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?</li>
-<li><a href="slides/dummy/clt_fun.R">Script 2: CLT</a> More CLT Fun</li>
-<li><a href="slides/dummy/dag_ex.R">Directed Acyclic Graph - DAGS</a> And even more fun, check out how you can create diagrams, including DAGS, in R.</li>
-</ul>
-</section>
-<section id="data-sets" class="level3">
-<h3 class="anchored" data-anchor-id="data-sets">Data Sets</h3>
-<ul>
-<li><a href="./data/nscaw.sav">National Survey of Child and Adolescent Well-Being</a>: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?</li>
-<li>Influence, Outliers, and Leverage <a href="./data/influence1.sav">Part I</a>, <a href="./data/influence2.sav">Part II</a>, <a href="./data/influence3.sav">Part III</a>, <a href="./data/influence4.sav">Part IV</a></li>
-</ul>
-</section>
-</section>
-<section id="r-lab-files" class="level2">
-<h2 class="anchored" data-anchor-id="r-lab-files">R Lab Files</h2>
-<ul>
-<li><a href="./nscaw.html">Lab Instructions</a> We are going to run some simple and multiple regressions using R with the NSCAW data.</li>
-<li><a href="slides/dummy/LSD.jasp">Here</a> is a partially annotated data file to get us started.</li>
-<li><a href="data/nscaw.sav">Lab Dataset</a></li>
-<li><a href="./slides/inclass.html">Another practice assignment</a> that we never got it. Check it out and see if you can answer the questions.</li>
-</ul>
+<section id="step-5-compute-fitted-values-residuals" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-compute-fitted-values-residuals"><strong>Step 5: Compute Fitted Values &amp; Residuals</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute fitted values and residuals</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>nscaw_clean<span class="sc">$</span>fitted <span class="ot">&lt;-</span> <span class="fu">fitted</span>(PROVIDE THE CODE HERE)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>nscaw_clean<span class="sc">$</span>residuals <span class="ot">&lt;-</span> <span class="fu">residuals</span>(reg_model)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute standardized residuals</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>nscaw_clean<span class="sc">$</span>std_residuals <span class="ot">&lt;-</span> PROVIDE THE CODE <span class="fu">HERE</span>(nscaw_clean<span class="sc">$</span>residuals)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Question:</strong> Why do we standardize residuals? What does this help us understand?</p>
 <hr>
 </section>
-<section id="additional-notes" class="level2">
-<h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
-<ul>
-<li>Keep calm and be influential.</li>
-</ul>
+<section id="step-6-visualize-residuals" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-visualize-residuals"><strong>Step 6: Visualize Residuals</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot histogram of residuals</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nscaw_clean, <span class="fu">aes</span>(<span class="at">x =</span> residuals)) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  PROVIDE THE CODE <span class="fu">HERE</span>(<span class="at">bins =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="st">"lightblue"</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Histogram of Residuals"</span>, <span class="at">x =</span> <span class="st">"Residuals"</span>, <span class="at">y =</span> <span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Hint:</strong> Look for skewness—are residuals normally distributed?</p>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot standardized residuals vs. predicted values</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(nscaw_clean, <span class="fu">aes</span>(<span class="at">x =</span> fitted, <span class="at">y =</span> std_residuals)) <span class="sc">+</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(PROVIDE THE CODE HERE) <span class="sc">+</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(PROVIDE THE CODE HERE)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Hint:</strong> If you see patterns in the residuals, what assumption may be violated?</p>
+<hr>
+</section>
+<section id="step-7-create-export-regression-table" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-create-export-regression-table"><strong>Step 7: Create &amp; Export Regression Table</strong></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate regression summary table</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>reg_table <span class="ot">&lt;-</span> reg_model <span class="sc">%&gt;%</span> </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(<span class="at">tra1 =</span> <span class="st">"PTS Score"</span>, <span class="at">bcagg1 =</span> <span class="st">"Aggressive Behavior"</span>, <span class="at">ageY =</span> <span class="st">"Age"</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">modify_caption</span>(<span class="st">"Table 1: Regression Results for Aggression"</span>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to flextable and export to Word</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>reg_flextable <span class="ot">&lt;-</span> <span class="fu">as_flex_table</span>(reg_table)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>doc <span class="ot">&lt;-</span> <span class="fu">read_docx</span>()</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>doc <span class="ot">&lt;-</span> <span class="fu">body_add_flextable</span>(doc, <span class="at">value =</span> reg_flextable)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(doc, <span class="at">target =</span> <span class="st">"Regression_Results.docx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Hint:</strong> Where does the p-value appear in the regression table? How does it inform significance?</p>
+<hr>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables"><strong>Deliverables</strong></h2>
+<p>Discuss the following:</p>
+<ol type="1">
+<li><strong>Correlation matrix</strong> output</li>
+<li><strong>Regression model summary</strong></li>
+<li><strong>Histogram of residuals</strong></li>
+<li><strong>Residuals vs.&nbsp;fitted plot</strong></li>
+<li><strong>Regression results table (Word document)</strong></li>
+</ol>
+<hr>
+</section>
+<section id="discussion-questions" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-questions"><strong>Discussion Questions</strong></h2>
+<ol type="1">
+<li>Based on your results, does <strong>trauma significantly predict aggression</strong>?</li>
+<li>How does <strong>child age influence the relationship between trauma and aggression</strong>?</li>
+<li>Are the <strong>residuals normally distributed</strong>? If not, what would you do differently?</li>
+<li>If the <strong>p-value for trauma is significant</strong>, what does that imply in real-world terms?</li>
+<li>How could you <strong>improve this model</strong>?</li>
+</ol>
+<p><strong>Final Thought:</strong> This exercise helps you develop a deeper understanding of how trauma influences child behavior. Future analyses could incorporate more variables (e.g., social support, environment) for better predictions.</p>
 
 
 </section>
@@ -843,13 +966,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./04-effect-sizes.html" class="pagination-link" aria-label="Effect Sizes">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Effect Sizes</span></span>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">References</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./07-logistic-regression.html" class="pagination-link" aria-label="Logistic Regression">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Logistic Regression</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./slides/inclass.html" class="pagination-link" aria-label="In Class Assignment">
+        <span class="nav-page-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">In Class Assignment</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
