@@ -1,11 +1,14 @@
 ---
-title: "In class assignment - SLR"
-author: "Barboza-Salerno"
-editor: visual
-date: Jan 27, 2025 
+title: "In Class Assignment"
+author: "Dr. Gia Elise Barboza-Salerno"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: sandstone
 ---
 
-# In Class assignment – Simple Linear Regression Mechanics
+## In Class assignment – Simple Linear Regression Mechanics
 
 This file uses data from the 2021 BRFSS that is available for download [here](https://www.cdc.gov/brfss/annual_data/annual_data.htm)
 
