@@ -1096,7 +1096,7 @@
     "section": "",
     "text": "Introduction\nThis exercise explores child aggression and trauma using the NSCAW I dataset. Because this is designed for you to do, I supressed all of the output. The chunks of code give you a hints regarding the code that will answer each question. Create an R script and answer each question below. Cut and paste the chunk of code into your script, and fill it in so that it runs.",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1106,7 +1106,7 @@
     "section": "Step 1: Load the Data",
     "text": "Step 1: Load the Data\nMake sure all of these libraries are installed or you will not be able to run the code. Also, make sure that your data set is in a subdirectory called data in the same directory as the one in which your R script is saved.\n\n# Load necessary libraries\nlibrary(foreign)    # For reading SPSS files\nlibrary(dplyr)      # For data manipulation\nlibrary(ggplot2)    # For visualization\nlibrary(gtsummary)  # For creating regression tables\nlibrary(officer)    # For exporting tables to Word\nlibrary(flextable)  # For table formatting\n\n# Load NSCAW I dataset\nnscaw &lt;- read.spss(\"data/nscaw.sav\", to.data.frame = TRUE)\n\n# Inspect the first few rows\nhead(nscaw)\n\nQuestion: What type of variables are included in the dataset?\nTo get a sense of the variables in the dataset click here.",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1116,7 +1116,7 @@
     "section": "Step 2: Select Variables & Handle Missing Data",
     "text": "Step 2: Select Variables & Handle Missing Data\n\n# Select relevant variables\nnscaw_clean &lt;- nscaw %&gt;% \n  dplyr::select(FILL THE VARIABLES IN HERE) \n\n# Remove missing values\nnscaw_clean &lt;- na.omit(nscaw_clean)\n\n# View summary statistics\nsummary(nscaw_clean)\n\nHint: Look at the summary statistics—do any variables have extreme values?",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1126,7 +1126,7 @@
     "section": "Step 3: Compute Correlations",
     "text": "Step 3: Compute Correlations\n\n# Compute correlation matrix\ncor(nscaw_clean, use = \"complete.obs\")\n\nQuestion: Which variables are most strongly correlated? Does the direction make sense?\n\nRun the regression of child aggression on trauma score and age",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1136,7 +1136,7 @@
     "section": "Step 4: Run a Multiple Regression Model",
     "text": "Step 4: Run a Multiple Regression Model\n\n# Run regression: Predict aggression using trauma score and age\nreg_model &lt;- lm(WRITE THE CODE TO RUN THE REGRESSION)\n\n# Display model summary\nsummary(reg_model)\n\nHint: Examine the coefficients and p-values. Is trauma a significant predictor of aggression?",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1146,7 +1146,7 @@
     "section": "Step 5: Compute Fitted Values & Residuals",
     "text": "Step 5: Compute Fitted Values & Residuals\n\n# Compute fitted values and residuals\nnscaw_clean$fitted &lt;- fitted(PROVIDE THE CODE HERE)\nnscaw_clean$residuals &lt;- residuals(reg_model)\n\n# Compute standardized residuals\nnscaw_clean$std_residuals &lt;- PROVIDE THE CODE HERE(nscaw_clean$residuals)\n\nQuestion: Why do we standardize residuals? What does this help us understand?",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1156,7 +1156,7 @@
     "section": "Step 6: Visualize Residuals",
     "text": "Step 6: Visualize Residuals\n\n# Plot histogram of residuals\nggplot(nscaw_clean, aes(x = residuals)) +\n  PROVIDE THE CODE HERE(bins = 30, fill = \"lightblue\", color = \"black\") +\n  labs(title = \"Histogram of Residuals\", x = \"Residuals\", y = \"Frequency\")\n\nHint: Look for skewness—are residuals normally distributed?\n\n\n# Plot standardized residuals vs. predicted values\nggplot(nscaw_clean, aes(x = fitted, y = std_residuals)) +\n  geom_point(PROVIDE THE CODE HERE) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"red\") +\n  labs(PROVIDE THE CODE HERE)\n\nHint: If you see patterns in the residuals, what assumption may be violated?",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1166,7 +1166,7 @@
     "section": "Step 7: Create & Export Regression Table",
     "text": "Step 7: Create & Export Regression Table\n\n# Generate regression summary table\nreg_table &lt;- reg_model %&gt;% \n  tbl_regression(\n    label = list(tra1 = \"PTS Score\", bcagg1 = \"Aggressive Behavior\", ageY = \"Age\")\n  ) %&gt;% \n  modify_caption(\"Table 1: Regression Results for Aggression\")\n\n# Convert to flextable and export to Word\nreg_flextable &lt;- as_flex_table(reg_table)\ndoc &lt;- read_docx()\ndoc &lt;- body_add_flextable(doc, value = reg_flextable)\nprint(doc, target = \"Regression_Results.docx\")\n\nHint: Where does the p-value appear in the regression table? How does it inform significance?",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1176,7 +1176,7 @@
     "section": "Deliverables",
     "text": "Deliverables\nDiscuss the following:\n\nCorrelation matrix output\nRegression model summary\nHistogram of residuals\nResiduals vs. fitted plot\nRegression results table (Word document)",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1186,7 +1186,7 @@
     "section": "Discussion Questions",
     "text": "Discussion Questions\n\nBased on your results, does trauma significantly predict aggression?\nHow does child age influence the relationship between trauma and aggression?\nAre the residuals normally distributed? If not, what would you do differently?\nIf the p-value for trauma is significant, what does that imply in real-world terms?\nHow could you improve this model?\n\nFinal Thought: This exercise helps you develop a deeper understanding of how trauma influences child behavior. Future analyses could incorporate more variables (e.g., social support, environment) for better predictions.",
     "crumbs": [
-      "<span class='chapter-number'>24</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1367,6 +1367,106 @@
     "text": "Grading Criteria:\n\n\n\nSection\nPoints\n\n\n\n\nData Cleaning & Preparation\n20\n\n\nDescriptive Statistics\n20\n\n\nRegression Models\n20\n\n\nModel Diagnostics\n20\n\n\nWrite-Up & Interpretation\n20\n\n\nTotal\n100\n\n\n\nGood luck with your analysis!",
     "crumbs": [
       "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html",
+    "href": "07-logistic-regression.html",
+    "title": "Logistic Regression",
+    "section": "",
+    "text": "Week 9: March 3, 2025",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#reading",
+    "href": "07-logistic-regression.html#reading",
+    "title": "Logistic Regression",
+    "section": "Reading",
+    "text": "Reading\n\nDiez et al. Chapter 9: Logistic Regression, from pp 371; sec. 9.5\nSee resources",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#introduction-to-the-topic",
+    "href": "07-logistic-regression.html#introduction-to-the-topic",
+    "title": "Logistic Regression",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we focus on logistic regression, a statistical method used to model binary outcomes and predict probabilities. Logistic regression is a cornerstone technique in statistical modeling, particularly for research questions involving categorical dependent variables.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#key-concepts",
+    "href": "07-logistic-regression.html#key-concepts",
+    "title": "Logistic Regression",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nLogistic Regression Models: Analyze the relationship between independent variables and a binary dependent variable (e.g., success vs. failure).\nOdds Ratios: Interpret the effect of predictors on the likelihood of the outcome.\nModel Fit and Diagnostics: Evaluate the accuracy and robustness of logistic regression models.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#relevance",
+    "href": "07-logistic-regression.html#relevance",
+    "title": "Logistic Regression",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to build logistic regression models and interpret their results, including coefficients, odds ratios, and predicted probabilities.\nStudents will explore model evaluation techniques, such as goodness-of-fit measures and ROC curves.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#why-this-is-important",
+    "href": "07-logistic-regression.html#why-this-is-important",
+    "title": "Logistic Regression",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nLogistic regression is widely used in various fields, including social sciences, medicine, and marketing, to answer questions about classification and prediction.\nUnderstanding logistic regression provides the foundation for advanced modeling techniques like multinomial and ordinal regression.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#how-this-ties-into-the-overall-course",
+    "href": "07-logistic-regression.html#how-this-ties-into-the-overall-course",
+    "title": "Logistic Regression",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous weeks’ focus on linear regression and effect sizes, extending these concepts to binary outcomes.\nPrepares students for upcoming topics like machine learning classification models and survival analysis, where logistic regression plays a foundational role.\n\nBy the end of this week, students will be able to confidently apply logistic regression to real-world problems, interpret model outputs, and evaluate model performance for binary classification tasks.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#class-files",
+    "href": "07-logistic-regression.html#class-files",
+    "title": "Logistic Regression",
+    "section": "Class Files",
+    "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes and a review of risk and odds calculations using contingency tables\n\n\n\nR Code\n\nScript 1: Logistic Regression Application of Logistic Regression using R\n\n\n\nData Sets\n\nGPA-College Enrollment Example: In class example showing the mechanics of logistic regression?\nPredicting Probabilities with Logistic Regression Here is an excel file illustrating the math behind predicting probabilities\nAn annotated jasp file of logistic regression output including how to do the log-likelihood test\n\n\n\nResources\n\nThere are a million ways to recode variables in R\nNow that you are familiar with using R, check out this amazing book called R for Data Science which is written by the Hadley who co-authored the tidyverse suite.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "07-logistic-regression.html#additional-notes",
+    "href": "07-logistic-regression.html#additional-notes",
+    "title": "Logistic Regression",
+    "section": "Additional Notes",
+    "text": "Additional Notes\n\nKeep calm and don’t be a dummy.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+    ]
+  },
+  {
+    "objectID": "logistic.html",
+    "href": "logistic.html",
+    "title": "Logistic Regression Example",
+    "section": "",
+    "text": "The Dataset\nThe data is a mixed variable dataset containing 14 variables of 297 patients for their heart disease diagnosis. The data comes in an R package called kmed which you can read about on your own. Patients were diagnosed with heart disease in four classes. We will used this dataset to illustrate how multiple risk factors are related to a heart disease diagnosis, such as age (years), sex (FALSE = female; TRUE = male), chest pain (1 = typical angina, 2 = atypical angina, 3 = non-anginal pain, and 4 = asymptomatic) and thalach (max heart rate achieved).\n\nlibrary(kmed)\ndat &lt;- heart\n\n\n# select variables\nlibrary(dplyr)\ndat &lt;- dat %&gt;%\n  dplyr::select(\n    age,\n    sex,\n    cp,\n    thalach,\n    class\n  )\n# print dataset's structure\nstr(dat)\n\n'data.frame':   297 obs. of  5 variables:\n $ age    : num  63 67 67 37 41 56 62 57 63 53 ...\n $ sex    : logi  TRUE TRUE TRUE TRUE FALSE TRUE ...\n $ cp     : Factor w/ 4 levels \"1\",\"2\",\"3\",\"4\": 1 4 4 3 2 2 4 4 4 4 ...\n $ thalach: num  150 108 129 187 172 178 160 163 147 155 ...\n $ class  : int  0 2 1 0 0 0 3 0 2 1 ...\n - attr(*, \"na.action\")= 'omit' Named int [1:6] 88 167 193 267 288 303\n  ..- attr(*, \"names\")= chr [1:6] \"88\" \"167\" \"193\" \"267\" ...\n\n\n\n# rename variables\ndat &lt;- dat %&gt;%\n  dplyr::rename(\n    chest_pain = cp,\n    max_heartrate = thalach,\n    heart_disease = class\n  )\n\n\n# recode sex\ndat$sex &lt;- factor(dat$sex,\n  levels = c(FALSE, TRUE),\n  labels = c(\"female\", \"male\")\n)\n\n\n# recode chest_pain\ndat$chest_pain &lt;- factor(dat$chest_pain,\n  levels = 1:4,\n  labels = c(\"typical angina\", \"atypical angina\", \"non-anginal pain\", \"asymptomatic\")\n)\n\n\n# recode heart_disease into 2 classes\ndat$heart_disease &lt;- ifelse(dat$heart_disease == 0,\n  0,\n  1\n)\n\n\n# set labels for heart_disease\ndat$heart_disease &lt;- factor(dat$heart_disease,\n  levels = c(0, 1),\n  labels = c(\"no disease\", \"disease\")\n)\n\n\nlevels(dat$heart_disease)\n\n[1] \"no disease\" \"disease\"   \n\n\n\n# save model\nm1 &lt;- glm(heart_disease ~ age,\n  data = dat,\n  family = \"binomial\"\n)\n\n\nsummary(m1)\n\n\nCall:\nglm(formula = heart_disease ~ age, family = \"binomial\", data = dat)\n\nCoefficients:\n            Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept) -3.05122    0.76862  -3.970  7.2e-05 ***\nage          0.05291    0.01382   3.829 0.000128 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 409.95  on 296  degrees of freedom\nResidual deviance: 394.25  on 295  degrees of freedom\nAIC: 398.25\n\nNumber of Fisher Scoring iterations: 4\n\n\n\n# OR for age\nexp(coef(m1)[\"age\"])\n\n     age \n1.054331 \n\n\n\n# prob(heart disease) for age = 0\nexp(coef(m1)[1]) / (1 + exp(coef(m1)[1]))\n\n(Intercept) \n 0.04516478 \n\n\n\n# 95% CI for the OR for age\nexp(confint(m1,\n  parm = \"age\"\n))\n\n   2.5 %   97.5 % \n1.026699 1.083987 \n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m1,\n  newdata = data.frame(age = c(30)),\n  type = \"response\"\n)\n\n\npred\n\n        1 \n0.1878525 \n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m1,\n  newdata = data.frame(age = c(30)),\n  type = \"response\",\n  se = TRUE\n)\n\n\npred$fit\n\n        1 \n0.1878525 \n\n\n\n# 95% confidence interval for the prediction\nlower &lt;- pred$fit - (qnorm(0.975) * pred$se.fit)\nupper &lt;- pred$fit + (qnorm(0.975) * pred$se.fit)\nc(lower, upper)\n\n         1          1 \n0.07873357 0.29697138 \n\n\n\n# 95% confidence interval for the prediction\nlower &lt;- pred$fit - (1.96 * pred$se.fit)\nupper &lt;- pred$fit + (1.96 * pred$se.fit)\nc(lower, upper)\n\n         1          1 \n0.07873156 0.29697339 \n\n\n\nlibrary(sjPlot)\n\nInstall package \"strengejacke\" from GitHub (`devtools::install_github(\"strengejacke/strengejacke\")`) to load all sj-packages at once!\n\nlibrary(ggplot2)\n\n\n# plot\nplot_model(m1,\n  type = \"pred\",\n  terms = \"age\"\n) +\n  labs(y = \"Prob(heart disease)\") + theme_bw()\n\n\n\n\n\n\n\n\n\n# levels for sex\nlevels(dat$sex)\n\n[1] \"female\" \"male\"  \n\n\n\n# save model\nm2 &lt;- glm(heart_disease ~ sex,\n  data = dat,\n  family = \"binomial\"\n)\n\n\nsummary(m2)\n\n\nCall:\nglm(formula = heart_disease ~ sex, family = \"binomial\", data = dat)\n\nCoefficients:\n            Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  -1.0438     0.2326  -4.488 7.18e-06 ***\nsexmale       1.2737     0.2725   4.674 2.95e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 409.95  on 296  degrees of freedom\nResidual deviance: 386.12  on 295  degrees of freedom\nAIC: 390.12\n\nNumber of Fisher Scoring iterations: 4\n\n\n\nexp(coef(m2)[\"sexmale\"])\n\n sexmale \n3.573933 \n\n\n\n# prob(disease) for sex = female\nexp(coef(m2)[1]) / (1 + exp(coef(m2)[1]))\n\n(Intercept) \n  0.2604167 \n\n\n\nchisq.test(table(dat$heart_disease, dat$sex))\n\n\n    Pearson's Chi-squared test with Yates' continuity correction\n\ndata:  table(dat$heart_disease, dat$sex)\nX-squared = 21.852, df = 1, p-value = 2.946e-06\n\n\n\n# predict probability to develop heart disease\npred &lt;- predict(m2,\n  newdata = data.frame(sex = c(\"male\")),\n  type = \"response\"\n)\npred\n\n        1 \n0.5572139 \n\n\n\n# plot\nplot_model(m2,\n  type = \"pred\",\n  terms = \"sex\"\n) +\n  labs(y = \"Prob(heart disease)\")\n\n\n\n\n\n\n\n\n\n# create data frame of new patient\nnew_patient &lt;- data.frame(\n  age = 32,\n  sex = \"female\"\n)\n\n\nm3 &lt;- glm(heart_disease ~ sex + age,\n  data = dat,\n  family = \"binomial\"\n)\n# predict probability to develop heart disease\npred &lt;- predict(m3,\n  newdata = new_patient,\n  type = \"response\"\n)\n# print prediction\npred\n\n         1 \n0.06224456 \n\n\n\n# 1. age, sex and chest pain on prob of disease\nplot_model(m3,\n  type = \"pred\",\n  terms = c(\"age\",  \"sex\"),\n  ci.lvl = NA # remove confidence bands\n) +\n  labs(y = \"Prob(heart disease)\")\n\nData were 'prettified'. Consider using `terms=\"age [all]\"` to get smooth\n  plots.\n\n\n\n\n\n\n\n\n\n\ntab_model(m3, m2,\n  show.ci = FALSE, # remove CI\n  show.aic = TRUE, # display AIC\n  p.style = \"numeric_stars\" # display p-values and stars\n)\n\n\n\n\n \nheart disease\nheart disease\n\n\nPredictors\nOdds Ratios\np\nOdds Ratios\np\n\n\n(Intercept)\n0.01 ***\n&lt;0.001\n0.35 ***\n&lt;0.001\n\n\nsex [male]\n4.47 ***\n&lt;0.001\n3.57 ***\n&lt;0.001\n\n\nage\n1.07 ***\n&lt;0.001\n\n\n\n\nObservations\n297\n297\n\n\nR2 Tjur\n0.142\n0.078\n\n\nAIC\n370.435\n390.118\n\n\n* p&lt;0.05   ** p&lt;0.01   *** p&lt;0.001\n\n\n\n\n\n\n\n\nlibrary(pROC)\n\n\n# save roc object\nres &lt;- roc(heart_disease ~ fitted(m3),\n  data = dat\n)\n# plot ROC curve\nggroc(res, legacy.axes = TRUE)\n\n\n\n\n\n\n\n\n\nres$auc\n\nArea under the curve: 0.713\n\n\n\n# plot ROC curve with AUC in title\nggroc(res, legacy.axes = TRUE) +\n  labs(title = paste0(\"AUC = \", round(res$auc, 2)))\n\n\n\n\n\n\n\n\n\nlibrary(gtsummary)\n\n\n# print table of results\ntbl_regression(m3, exponentiate = TRUE)\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOR1\n95% CI1\np-value\n\n\n\n\nsex\n\n\n\n\n\n\n\n\n    female\n—\n—\n\n\n\n\n    male\n4.47\n2.57, 8.05\n&lt;0.001\n\n\nage\n1.07\n1.04, 1.10\n&lt;0.001\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval\n\n\n\n\n\n\n\n\n\nlibrary(finalfit)\n# set variables\ndependent &lt;- \"heart_disease\"\nindependent &lt;- c(\"age\", \"sex\")\nindependent_final &lt;- c(\"age\", \"sex\", \"chest_pain\")\n\ndat %&gt;% or_plot(dependent, independent,\n  table_text_size = 3.5 # reduce text size\n)",
+    "crumbs": [
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Logistic Regression Example</span>"
     ]
   }
 ]

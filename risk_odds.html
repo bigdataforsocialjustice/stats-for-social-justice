@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Risk and Odds</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Gia Barboza-Salerno, MA, MS, JD, PhD" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/middlebury-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Risk and Odds
+]
+.subtitle[
+## Stats II
+]
+.author[
+### Gia Barboza-Salerno, MA, MS, JD, PhD
+]
+.institute[
+### OSU, CPH
+]
+.date[
+### 2025/01/16 (updated: 2025-02-23)
+]
+
+---
+
+
+class: inverse, center, middle
+
+# Quantifying Risk and Uncertainty
+
+---
+
+# Review: Categorical Measures of Association
+Information on the effect of a potential risk factor or beneficial treatment can be presented in several different ways:
+- Relative Risk (RR)
+- Odds Ratio (OR)
+- Percent decrease or increase in Odds
+
+The way risk information is presented and interpreted can have a profound effect on decision-making processes with implications for policy and treatment outcomes
+
+---
+# Review: Categorical Measures of Association
+
+Risk ratios (RR) and odds ratios (OR) are measures of association
+
+Measures of association quantify the potential relationship between “exposure” and “outcome” among two groups.
+
+Recall there are two types of association (+) and (-)
+
+---
+# Risk Ratios
+`\(RR\)` is the ratio of the prevalence of an outcome for the primary group of interest divided by the prevalence of an outcome in a comparison group, `\(RR = {P_p \over P_c}\)`
+
+A `\(RR\)` = 1.0 the risk is the same for both groups, if `\(RR\)` &gt; 1.0 the risk is greater for group in numerator and if `\(RR\)` &lt; 1.0 it indicates decreased risk for group in numerator.
+---
+# Risk Ratios (Example)
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/hiv_inmates.png" alt="hiv" title="hiv"  width="75%" height="75%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+What is the risk ratio (RR) of developing tuberculosis among inmates in the east wing compared to the west wing?
+- Step 1: What percentage of East Wing inmates developed tuberculosis? This is also the ‘risk’: 
+
+--
+  - 28/157 = 17.8%
+
+---
+# Risk Ratios (Example)
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/hiv_inmates.png" alt="hiv" title="hiv"  width="75%" height="75%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+What is the risk ratio (RR) of developing tuberculosis among inmates in the east wing compared to the west wing?
+
+- Step 2: What percentage of West Wing inmates developed tuberculosis? This is also the ‘risk’: 
+
+--
+  - 4/137 = 2.9%
+  
+---
+# Risk Ratios (Example)
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/hiv_inmates.png" alt="hiv" title="hiv"  width="75%" height="75%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+What is the risk ratio (RR) of developing tuberculosis among inmates in the east wing compared to the west wing?
+
+- Step 3: Compute the `\(RR \rightarrow {17.8 \over 2.9} = 6.1\)` 
+
+--
+- Step 4: (Harder): Interpret the `\(RR\)`
+
+---
+# Your Turn
+Below is a table describing the number of persons who developed COVID-19 by vaccination status.
+
+What is the relative risk of developing COVID-19 among individuals who have been vaccinated (compared to those who have not?
+
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/covid_vaccinated.png" alt="hiv" title="hiv"  width="50%" height="50%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+
+--
+
+What percent of vaccinated persons developed corona?
+
+What percent of unvaccinated persons developed corona?
+
+Compute and interpret the relative risk…
+
+--
+
+The risk of developing COVID-19 among those who are vaccinated by the Pfizer vaccine is .28 times that of those who are not.
+
+---
+# Review Odds &amp; Odds Ratios
+Recall the odds of an event or outcome, `\(A\)`, is defined as
+
+`$$Odds(A) = \large {p_A \over {1-p}_A}$$`
+
+--
+
+For example, suppose we roll a single (fair) die, compute the odds of rolling a 3:
+
+Let `\(A\)` be the event of rolling a "3", then:
+
+`$$P(A) = {1 \over 6}$$`
+
+`$$1 - P(A) = {5 \over 6}$$`
+
+`$$Odds(A) =  {\large p_A \over {1-p}_A} = { {\large 1\over 6} \over {\large 5\over 6}} \rightarrow {1:5}$$`
+
+--
+
+Interpret: The odds of rolling "3" are 1 in 5
+
+---
+# Odds Ratio (Step 1: Conditional Probability)
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/odds_tuber.png" alt="hiv" title="hiv"  width="75%" height="75%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+
+---
+# The Odds Ratio
+The Odds Ratio (OR) is ratio of the odds for the outcome for those with risk factor to the odds for the outcome for those without the risk factor
+
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/odds_def.png" alt="hiv" title="hiv"  width="75%" height="75%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+
+---
+# Example
+For the following data, compute the odds ratio of having a 1st preg. before (or at) age 25 (the outcome) among women who have cervical cancer (risk factor) and those who do not 
+
+BE CAREFUL -- Cancer can be a risk factor *OR* an outcome. Here it is a risk factor.
+
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/age_cervical.png" alt="hiv" title="hiv"  width="50%" height="50%"&gt;&lt;/center&gt;
+&lt;/figure&gt;  
+
+
+---
+# Example
+
+Step 1: What is the Pr(Age `\(\le\)` 25|cancer)?
+
+--
+`$${42 \over 49} = .857$$`
+
+Step 2: What is the Pr(Age `\(\le\)` 25|not cancer)?
+
+--
+`$${203  \over 317} = .640$$`
+
+What are the odds(Age `\(\le\)` 25|cancer)?
+Odds of having a 1st pregnancy before (or at) age 25 among women with cervical cancer:
+--
+
+`$$5.99$$`
+
+What are the odds(Age `\(\le\)` 25|no cancer)? 
+Odds of having a 1st pregnancy before (or at) age 25 among women without cervical cancer:
+--
+
+`$$1.78$$`
+---
+
+What is the odds ratio for Age `\(\le\)` 25 for women and other pregnant persons with cancer compared to Age `\(\le\)` 25 for those without cancer?
+
+`$${5.99 \over 1.78} = 3.37$$`
+**Interpretation**: The odds ratio of approximately 3.37 indicates that women with cervical cancer are about 3.37 times more likely to have had their first pregnancy before (or at) age 25 compared to women without cervical cancer.
+---
+# Short cut formula
+
+You are probably used to seeing the shortcut formula
+
+The problem with shortcuts is that you do not understand how it was derived
+
+Make sure you can compute the odds 'by hand'
+
+The easy way is to use this formula
+
+`$$OR = {a \times d \over b \times c}$$`
+&lt;figure&gt;
+ &lt;center&gt; &lt;img src="img/01/easyodds.png" alt="hiv" title="hiv "width="50%" height="50%"&gt;&lt;/center&gt;
+&lt;/figure&gt; 
+
+---
+# Making Odds Interpretable
+Compute the odds as a percent increase or decrease (this is often the better interpretation because people understand percentages better than they understand odds)
+
+The percent change in the odds is defined as `$$|{(OR−1) \times 100}|$$`
+*Example*: Odds ratio = 1.89 calculate the percent change in the odds
+`$$|(1 – 1.89)| \times 100 = 89\%$$` 
+**Note:** the odds have *increased* why?
+
+*Example*: the odds of a first pregnancy among women aged 25 or younger is [(3.4 - 1) * 100 =] 240% higher among women who had cervical cancer compared to those who have not.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
