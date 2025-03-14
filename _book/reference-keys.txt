@@ -102,3 +102,8 @@ room-6-visualizing-the-data-1
 importance-of-visualization-1
 example-code-3
 congratulations-1
+dataset-pregnancy-risk-assessment-monitoring-system-prams
+objectives
+statistical-analysis
+results
+conclusion

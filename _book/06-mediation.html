@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to the Course – Statistics for Social Justice</title>
+<title>Mediation – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./02-simple-regression.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./10-moderation.html" rel="next">
+<link href="./07-logistic-regression.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./01-introduction.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-mediation.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mediation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="./01-introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
   </div>
 </li>
@@ -150,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-mediation.html" class="sidebar-item-text sidebar-link">
+  <a href="./06-mediation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Mediation</span></span></a>
   </div>
 </li>
@@ -278,7 +298,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#course-goals-and-objectives" id="toc-course-goals-and-objectives" class="nav-link active" data-scroll-target="#course-goals-and-objectives">Course Goals and Objectives</a></li>
+  <li><a href="#week-9-march-3-2025" id="toc-week-9-march-3-2025" class="nav-link active" data-scroll-target="#week-9-march-3-2025">Week 9: March 3, 2025</a>
+  <ul class="collapse">
+  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a></li>
+  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts:</a></li>
+  <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance:</a></li>
+  <li><a href="#why-this-is-important" id="toc-why-this-is-important" class="nav-link" data-scroll-target="#why-this-is-important">Why This Is Important:</a></li>
+  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a></li>
+  <li><a href="#an-example-of-logistic-regression-from-last-week" id="toc-an-example-of-logistic-regression-from-last-week" class="nav-link" data-scroll-target="#an-example-of-logistic-regression-from-last-week">An example of logistic regression from last week</a>
+  <ul class="collapse">
+  <li><a href="#in-class-files-and-data-sets" id="toc-in-class-files-and-data-sets" class="nav-link" data-scroll-target="#in-class-files-and-data-sets">In-Class Files and Data Sets</a></li>
+  </ul></li>
+  <li><a href="#a-note-on-linear-transformations" id="toc-a-note-on-linear-transformations" class="nav-link" data-scroll-target="#a-note-on-linear-transformations">A Note on Linear Transformations</a></li>
+  <li><a href="#lab-files" id="toc-lab-files" class="nav-link" data-scroll-target="#lab-files">Lab Files</a>
+  <ul class="collapse">
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
+  <li><a href="#r-code" id="toc-r-code" class="nav-link" data-scroll-target="#r-code">R Code</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -287,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Introduction to the Course</span></h1>
+<h1 class="title"><span class="chapter-title">Mediation</span></h1>
 </div>
 
 
@@ -304,14 +344,104 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="course-goals-and-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="course-goals-and-objectives">Course Goals and Objectives</h2>
-<p>The course, Statistics II focuses on an equitable approach to data analysis. It aims to equip students with advanced statistical techniques while fostering critical thinking about how to apply those models to social work applications. I have tried to find a good balance of instruction, innovation, and hands-on learning. I want you to be excited about statistics and data; hence, I have tried to stucture the course in a way that encourages you to explore regression, measurement, and latent variable models in the context of social justice. By emphasizing storytelling and data interpretation, students will develop the skills needed to reclaim and communicate narratives of oppression, focusing on equity and systemic challenges. The course also focuses on practical applications, such as building models and interpreting statistical findings to support policy changes and advocate for marginalized communities.</p>
-<p>One of the course’s primary objectives is to prepare students to use statistics as a tool for actionable change. Weekly sessions integrate technical skills, such as using R for data analysis and visualization, with real-world social work challenges. Activities like the “Data Makeover Challenge” and “Latent Storytelling” push students to think creatively about data, while assignments emphasize ethical implications and advocacy. My idea about writing an oped comes from the workshop I did in the summer of 2024, where I learned how to write one effectively. You can read it <a href="https://msmagazine.com/2024/10/15/abortion-bans-domestic-violence-women-die/">here</a>.</p>
-<p>I have also tried very hard to make the course integrative. That is the reason for this website. There are (and will be) links between modules, readings, and assignments so that everything is connected as it should be. This is obviously a lot of work, so I appreciate your patience, and consideration.</p>
-<p>Hopefully, by the end of the semester, students will have gained not only proficiency in statistical methods but also the confidence to apply them meaningfully to address pressing social issues.</p>
+<section id="week-9-march-3-2025" class="level1">
+<h1>Week 9: March 3, 2025</h1>
+<section id="reading" class="level2">
+<h2 class="anchored" data-anchor-id="reading">Reading</h2>
+<ul>
+<li><p>Hayes, Andrew. (2018). <a href="https://github.com/bigdataforsocialjustice/SWK8408/blob/master/Mediation%2C%20Moderation%20and%20Conditional%20Process%20Models.pdf">Introduction to Mediation, Moderation, and Conditional Process Analysis</a> Chapters 1 - 4.</p></li>
+<li><p><a href="static/medex.pdf">Here</a> is an applied paper in Social Work that you <em>should</em> be able to understand after going through this week’s materials.</p></li>
+</ul>
+</section>
+<section id="introduction-to-the-topic" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
+<p>This week, we explore <strong>mediation analysis</strong>, a statistical approach used to understand the mechanisms through which an independent variable influences a dependent variable via a third variable, known as the mediator. Mediation analysis is essential for uncovering causal pathways in research.</p>
+<hr>
+</section>
+<section id="key-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts:</h2>
+<ul>
+<li><strong>Direct Effects</strong>: The relationship between the independent variable and the dependent variable, excluding the mediator.</li>
+<li><strong>Indirect Effects</strong>: The portion of the relationship explained through the mediator.</li>
+<li><strong>Total Effects</strong>: The combined impact of direct and indirect effects.</li>
+<li><strong>Bootstrapping</strong>: A resampling method for testing the significance of indirect effects.</li>
+</ul>
+<hr>
+</section>
+<section id="relevance" class="level2">
+<h2 class="anchored" data-anchor-id="relevance">Relevance:</h2>
+<ul>
+<li>Students will learn how to identify and test mediating variables in a causal framework. Make sure you review our discussion of confounding</li>
+<li>Students will explore how to decompose total effects into direct and indirect components to better understand relationships among variables.</li>
+</ul>
+<hr>
+</section>
+<section id="why-this-is-important" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-is-important">Why This Is Important:</h2>
+<ul>
+<li>Mediation analysis allows researchers to move beyond simple relationships to uncover <em>how</em> and <em>why</em> effects occur.</li>
+<li>Understanding mediation is critical for testing theoretical models in fields like psychology, sociology, and public health.</li>
+</ul>
+<hr>
+</section>
+<section id="how-this-ties-into-the-overall-course" class="level2">
+<h2 class="anchored" data-anchor-id="how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</h2>
+<ul>
+<li>Builds upon previous topics, such as <a href="./03-multiple-regression.html">regression</a> and <a href="./04-effect-sizes.html">effect sizes</a>, by extending these tools to explore causal pathways.</li>
+<li>Prepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where mediation analysis is a core component.</li>
+</ul>
+<p>By the end of this week, students will be able to conduct mediation analyses, interpret direct and indirect effects, and evaluate the significance of mediators using bootstrapping methods.</p>
+</section>
+<section id="an-example-of-logistic-regression-from-last-week" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-of-logistic-regression-from-last-week">An example of logistic regression from last week</h2>
+<p>We ran out of time last week but I put together an example and write up of <a href="./07-logistic-regression.html">logistic regression</a>. This uses the PRAMS dataset to inquire about whether stress during pregnancy predicts IPV exposure during pregnancy. Recall the variable measurements which we noted <a href="./PRAMS_Correlation_Analysis.html">here</a>. The JASP file is <a href="slides/medmod/KPRAMS_IPV_STRESS.jasp">here</a> and it is fully annotated.</p>
+<section id="in-class-files-and-data-sets" class="level3">
+<h3 class="anchored" data-anchor-id="in-class-files-and-data-sets">In-Class Files and Data Sets</h3>
+</section>
+</section>
+<section id="a-note-on-linear-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-on-linear-transformations">A Note on Linear Transformations</h2>
+<p><strong>Linear Transformations:</strong> We start class today with a quick example of how to transform variables when the model assumptions are violated. As I mentioned in class, this trick has almost never worked with the datasets I use. However, I was successful in transforming the dependent variable once, using a cultivated dataset on area deprivation, housing, and “child maltreatment” substantiations which can be accessed <a href="data/all-data.hti.sav">here</a>. I have used these data often see <span class="citation" data-cites="elisebarboza-salernoMaterialHardshipLabor2024">Elise Barboza-Salerno (<a href="#ref-elisebarboza-salernoMaterialHardshipLabor2024" role="doc-biblioref">2024</a>)</span> for an example.</p>
+<p>The cultivated dataset comes from many sources. The H+T index comes from <a href="https://htaindex.cnt.org/">this website</a>. The ADI comes from the <code>sociome</code> package in R, and we saw an example when we learned how to quantify effect sizes with <a href="https://bigdataforsocialjustice.github.io/stats-for-social-justice/cohensd.html">Cohen’s D</a>. I calculated the distances to SNAP retail locations from home addresses based on information from the SNAP retail locator, which can be accessed <a href="https://www.fns.usda.gov/snap/retailer/historical-data">here</a>.</p>
+<p><strong>Test yourself on partial mediation, full mediation, and supression:</strong> I created <a href="static/medmodsup.docx">sample output for each effect</a>, can you select the correct model that illustrates each mechanism?</p>
+<p><strong>Mediation:</strong> We will use a subset of the <a href="data/NSCAWI_subset.sav">NSCAW I</a> to examine whether symptoms of post-traumatic stress mediate the association between exposure to violence at Wave I and child externalizing behaviors at Wave III. Now DON’T LOOK at the model write-up until AFTER you have the analysis done. Then, and only then, can you take a gander at my write-up <a href="slides/medmod/Mediation_Analysis_Results.docx">here</a></p>
+</section>
+<section id="lab-files" class="level2">
+<h2 class="anchored" data-anchor-id="lab-files">Lab Files</h2>
+<p>After we do the above example together, we have an in-class assessment to get a sense of how well you are comprehending the analyses. This includes some multiple choice questions along with an analysis of the <a href="data/waves 1 and 3 merged.sav">Adolescent Health Survey Data</a> which is a longitudinal dataset that has been collected since about 1995 when youth were 15 years of age. Please download the assessment <a href="data/inclass-mediation.docx">here</a>. See <span class="citation" data-cites="elisebarbozaChildMaltreatmentSchool2021">Elise Barboza &amp; Siller (<a href="#ref-elisebarbozaChildMaltreatmentSchool2021" role="doc-biblioref">2021</a>)</span> for a similar analysis published in the Journal of Interpersonal Violence, or this paper <span class="citation" data-cites="barbozaChildMaltreatmentDelinquent2020">Barboza (<a href="#ref-barbozaChildMaltreatmentDelinquent2020" role="doc-biblioref">2020</a>)</span> that also used these data.</p>
+<section id="lecture-notes" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
+<ul>
+<li>Download today’s slides <a href="slides/medmod/lecture.pptx">here</a></li>
+</ul>
+</section>
+<section id="r-code" class="level3">
+<h3 class="anchored" data-anchor-id="r-code">R Code</h3>
+<p>I wrote the code to show you how to use PROCESS in R. Yes, R has a package that runs the same macro that SPSS can run. The example is based on the NSCAW dataset as well. Check it out <a href="./slides/medmod/mediationR.html">here</a></p>
+</section>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<p>This is an amazing resources from UCLA on introduction to <a href="https://stats.oarc.ucla.edu/other/mult-pkg/seminars/spss-process/">mediation, moderation and conditional process models</a>. The website has a tutorial that I am strongly suggesting you do, and also additional powerpoint slides for <a href="https://github.com/bigdataforsocialjustice/SWK8408/blob/master/Mediation%2C%20Moderation%20and%20Conditional%20Process%20Models.pdf">Andrew Hayes’ book</a>.</p>
+<hr>
+</section>
+<section id="additional-notes" class="level2">
+<h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
+<p>Stay calm and do everything in moderation.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-barbozaChildMaltreatmentDelinquent2020" class="csl-entry" role="listitem">
+Barboza, G. E. (2020). Child <span>Maltreatment</span>, <span>Delinquent Behavior</span>, and <span>School Factors</span> as <span>Predictors</span> of <span>Depressive Symptoms</span> from <span>Adolescence</span> to <span>Adulthood</span>: <span>A Growth Mixture Model</span>. <em>Youth &amp; Society</em>, <em>52</em>(1), 27–54. <a href="https://doi.org/10.1177/0044118X17721803">https://doi.org/10.1177/0044118X17721803</a><div class="csl-block">Previous methodological approaches have not been flexible enough to model the heterogeneity of depressive symptoms or to identify variations between prototypical trajectories conditional on risk and protective factors. The current study examined latent class trajectories of depressive symptoms using data from 3,819 respondents of the Adolescent Health Survey. Four trajectory profiles of depressive symptoms were identified: low-stable, high-decreasing, low-increasing, and moderate-decreasing. A broad array of risk factors were included into the modeling procedure to identify predictors of group membership. Relative to the low-stable group, membership in one of the three symptomatic groups (i.e., heightened depressive symptoms) was predicted by poverty, low self-esteem, gender, drinking frequency, poor academic outcomes, delinquency, and child maltreatment type. This study contributes to our understanding about the longitudinal manifestations of depression and identifies a broad array of factors significantly related to pathways of resilience.</div>
+</div>
+<div id="ref-elisebarbozaChildMaltreatmentSchool2021" class="csl-entry" role="listitem">
+Elise Barboza, G., &amp; Siller, L. A. (2021). Child <span>Maltreatment</span>, <span>School Bonds</span>, and <span>Adult Violence</span>: <span>A Serial Mediation Model</span>. <em>Journal of Interpersonal Violence</em>, <em>36</em>(11-12), NP5839–NP5873. <a href="https://doi.org/10.1177/0886260518805763">https://doi.org/10.1177/0886260518805763</a><div class="csl-block">Physically abused youth are vulnerable to experiencing difficulties across multiple domains of school functioning. Most of the literature examining the relationship between child physical abuse (CPA) and adult violence has focused narrowly on academic outcomes rather than taking a broader view that explores the processes undergirding school engagement and connections. The present study adopted Connell?s model of school engagement, connectedness and outcomes within a social bond framework to examine (a) the link between CPA and school social bonds, (b) the link between CPA and adult violence persistence, and (c) the mediational (parallel, serial) effects of school bonds (engagement, connection, and achievement) on violence perpetration in adulthood. Consistent with previous research, results indicated that children who experience physical abuse have poorer academic performance, which, in turn, is related to future violent trajectories. We further found that the relationship between CPA and violence persistence is mediated by a process of bonding to school that begins with being actively engaged in school activities and ends with higher levels of academic achievement. In particular, some of the ?school achievement? effect found in previous research operates through behavioral and emotional manifestations and may be partly explained through physically abused children?s lessened ability to be engaged with and connected to school activities. We conclude with a discussion of the policy implications stemming from our findings.</div>
+</div>
+<div id="ref-elisebarboza-salernoMaterialHardshipLabor2024" class="csl-entry" role="listitem">
+Elise Barboza-Salerno, G. (2024). Material <span>Hardship</span>, <span>Labor Market Characteristics</span> and <span>Substantiated Child Maltreatment</span>: <span>A Bayesian Spatiotemporal Analysis</span>. <em>Children and Youth Services Review</em>, <em>157</em>, 107371. <a href="https://doi.org/10.1016/j.childyouth.2023.107371">https://doi.org/10.1016/j.childyouth.2023.107371</a><div class="csl-block">Child maltreatment is a critical public health problem whose structural underpinnings underscore the need to move prevention efforts from individual-level risk factors to social policy. Despite previous studies exploring the evolution of child maltreatment risk in socially vulnerable contexts, little is known about how neighborhood level material deprivation and job market characteristics, beyond the employment context, impact substantiated maltreatment risk. The present analysis integrates multiple streams of data to explore the complexity of child maltreatment in the most populous county in New Mexico as a case-study. A geospatial model was used to produce posterior risk estimates and exceedance probabilities of substantiated child maltreatment derived from administrative records controlling for financial strength, economic inequality and hardship, educational attainment, housing and food insecurity and labor market characteristics. Findings showed that over the nine-year study period, the average relative risk of child maltreatment increased substantially, however, there was substantial regional and temporal heterogeneity. More specifically, substantiated child maltreatment risk became more highly concentrated into the most deprived 20% of neighborhoods over time. The results showed a very strong area deprivation effect such that: (1) the risk of maltreatment in the most deprived 20% of neighborhoods on financial strength was 130.78% higher compared to the least deprived 20% of neighborhoods; and (2) maltreatment rates in the bottom 20% of neighborhoods on economic inequality and hardship were 40.52% higher compared to the least deprived 20% of neighborhoods. Finally, substantiated child maltreatment was significantly associated with multiple labor market characteristics including commuting times to work, origin–destination job flows, and mode of transportation to work. From a policy perspective, the results of this study support structural interventions aimed at reducing neighborhood-level material hardship and labor market disadvantage as avenues to support parents so that children and families can thrive.</div>
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -737,13 +867,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Statistics for Social Justice">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Statistics for Social Justice</span></span>
+      <a href="./07-logistic-regression.html" class="pagination-link" aria-label="Logistic Regression">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Logistic Regression</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./02-simple-regression.html" class="pagination-link" aria-label="Introduction to Simple Linear Regression">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Introduction to Simple Linear Regression</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./10-moderation.html" class="pagination-link" aria-label="Moderation">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Moderation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
