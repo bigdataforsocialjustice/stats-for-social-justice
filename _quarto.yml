@@ -1,0 +1,35 @@
+project:
+  type: book
+
+book:
+  title: "Statistics for Social Justice"
+  author: "Your Name"
+  chapters:
+    - index.qmd
+    - 01-introduction.qmd
+    - 02-simple-regression.qmd
+    - 03-multiple-regression.qmd
+    - 04-effect-sizes.qmd
+    - 05-assumptions.qmd
+    - 07-logistic-regression.qmd
+    - 06-mediation.qmd
+    - 10-moderation.qmd
+    - 11-efa.qmd
+    - 12-cfa.qmd
+    - 08-measurement-scale.qmd
+    - 13-lca.qmd
+    - 14-final-project.qmd
+    - syllabus.qmd
+    - Assignments.qmd
+    - reading.qmd
+    - infant_mortality.qmd
+    - PRAMS_Correlation_Analysis.qmd
+    - admissions_R_ex.qmd
+    - cohensd.qmd
+    - references.qmd
+    - nscaw.qmd
+    - slides/inclass.qmd
+    - assignment.qmd
+    - logistic.qmd
+    - slides/medmod/mediationR.qmd
+    - ass1writeup.qmd
