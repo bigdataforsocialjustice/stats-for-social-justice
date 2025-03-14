@@ -356,7 +356,7 @@
     "section": "",
     "text": "Miscellaneous Course Policies\nPlease download the OSU and CSW course policies that are incorporated by reference within this course.",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -366,7 +366,7 @@
     "section": "Course Information",
     "text": "Course Information\nCourse Title: Statistics II: Equity-Focused Data Analysis\nInstructor: Dr. Gia Elise Barboza-Salerno\nInstitution: College of Social Work, The Ohio State University\nTerm: Spring 2025",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -376,7 +376,7 @@
     "section": "Contact Information",
     "text": "Contact Information\nOffice Hours: Mondays 2–4 PM, or by appointment.\nEmail: barboza-salerno@osu.edu",
     "crumbs": [
-      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -1266,7 +1266,7 @@
     "section": "",
     "text": "Install libraries\nThe assignment assumes the following packages have been installed:\nlibrary(emoji)\nlibrary(emoji)\nlibrary(dplyr)\nlibrary(gt)\nlibrary(gtsummary)\nlibrary(officer)\nlibrary(flextable)\nlibrary(ppcor)\nlibrary(ggcorrplot)\nlibrary(fastDummies)\nlibrary(emmeans)\nlibrary(gtsummary)\nlibrary(flextable)\nlibrary(performance)",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1276,7 +1276,7 @@
     "section": "1. Data Preparation and Descriptive Statistics",
     "text": "1. Data Preparation and Descriptive Statistics\n\n1.1 Load and Clean the Data\n\ndata &lt;- read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")\n\n# Selecting relevant variables \ndata &lt;- data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) \n\nBefore removing the missing data, let’s get a sense of the missingness across race & ethnicity. What is the distribution of missing respondents by race? Are there any implications?\n\n# Select only rows with missing data\ndf_missing &lt;- data[!complete.cases(data), ]\ndf_missing |&gt; tbl_summary(include = c(Race_Ethnicity))\n\n\n\n1.2 Missing Data Analysis\nHow many cases are missing? Calculate the number of omitted cases due to missing values:\n\ndata &lt;- data %&gt;% na.omit()\nnum_omitted &lt;- nrow(read.csv(\"C:/Users/barboza-salerno.1/Downloads/KSPRAMS_SUB_WEIGHT_ANALYSIS.csv\")) - nrow(data)\ncat(\"Number of omitted cases:\", num_omitted, \"\\n\")",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1286,7 +1286,7 @@
     "section": "2. Correlation Analysis",
     "text": "2. Correlation Analysis\n\n2.1 Which variables are significantly correlated?\n\n\n2.2 Why are we using Spearman and not Pearson Correlaion?\n\n\n2.3 What variable changes the least after partialing out the other variables?\n\n# Compute correlation matrix\ncor_matrix &lt;- cor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale), use = \"complete.obs\", method = \"spearman\")\n\nggplot_correlation &lt;- ggcorrplot(cor_matrix, lab = TRUE, title = \"Correlation Matrix\")\nprint(ggplot_correlation)\n\n\n\n\n\n\n\nprint(cor_matrix)\n# Compute partial correlations\npartial_corrs &lt;- pcor(data %&gt;% dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale))\nprint(partial_corrs)",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1296,7 +1296,7 @@
     "section": "3. Creating Dummy Variables for Categorical Data",
     "text": "3. Creating Dummy Variables for Categorical Data\n\n3.1 Frequency of Race/Ethnicity Categories\nWhat is the distribution by race?\n\ntable(data$Race_Ethnicity)\n\n\n\n3.2 Creating Dummy Variables\nRace/Ethnicity is categorical. We need to create dummies to include them into the model. The best way to do this is by using fastDummies. Follow this below. Describe exactly what this line of code is doing, word by word.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)\n\nExplanation: This function converts categorical Race_Ethnicity into binary variables while removing the first level as a reference category.\n\n\n3.3 Re-leveling Race/Ethnicity\nSometimes its nice to re-level the variable. The original variable distribution is given above.\n\ndata$Race_Ethnicity &lt;- relevel(factor(data$Race_Ethnicity), ref = \"NH White\")\n\nThis reorders the levels so that “NH White” is the reference category in our regression model.\n\ndata &lt;- dummy_cols(data, select_columns = \"Race_Ethnicity\", remove_first_dummy = TRUE)",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1306,7 +1306,7 @@
     "section": "4. Running Regression Models",
     "text": "4. Running Regression Models\nWe are predicting cigartette use during pregnancy by whether the pregnant person experienced any abuse during pregnancy, ACEs, is depressed (BPG_DEPRS8), and by race/ethnicity. Fit progressively more complex models: starting with Any_Abuse, etc…\n\nmodel0 &lt;- lm(CIG_1TRI ~ Any_Abuse, data = data)\nmodel1 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale, data = data)\nmodel2 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8, data = data)\nmodel3 &lt;- lm(CIG_1TRI ~ Any_Abuse + ACEs_Scale + BPG_DEPRS8 + Race_Ethnicity_Hispanic + `Race_Ethnicity_NH Black` + Race_Ethnicity_Other, data = data)\n\nsummary(model3)\n\nWhat variable is omitted, and why? How much more of the variance is explained by ACEs_Scale, BPG_DEPRS8, and Race_Ethnicity compared to just Any_Abuse?",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1316,7 +1316,7 @@
     "section": "5. Model Diagnostics",
     "text": "5. Model Diagnostics\nThe performance package is a very cool package in R. It facilitates model diagnostics. Then, plots it. Follow along.\n\n5.1 Checking Assumptions\n\ncheck_collinearity(model3)\ncheck_heteroscedasticity(model3)\ncheck_normality(model3)\ncheck_outliers(model3)\n\n\n\n5.2 Visualizing Diagnostic Plots\n\ndiagnostic_plots &lt;- plot(check_model(model3, panel = FALSE))\n\n# Display plots\nprint(diagnostic_plots[[2]]) # Q-Q plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[3]]) # Residuals vs Fitted plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[4]]) # Scale-location plot\n\n\n\n\n\n\n\nprint(diagnostic_plots[[5]]) # Cook’s distance",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1326,7 +1326,7 @@
     "section": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)",
     "text": "6. Post-Hoc Analysis Using Estimated Marginal Means (EMMs)\nThe emmeans package allows us to predict cigarette use by any variable, here race/ethnicity. Then, we can use the confint to get confidence intervals.\n\nemm &lt;- emmeans(model3, pairwise ~ Race_Ethnicity_Hispanic)\nprint(emm)\nconfint(emm, level = 0.95)",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1336,7 +1336,7 @@
     "section": "7. Saving Results to a Word Document",
     "text": "7. Saving Results to a Word Document\nCreate a structured report including tables and regression results:\n\ndata %&gt;%\n  dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n  tbl_summary(include = c(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity)) %&gt;%\n  as_flex_table() %&gt;%\n  print()\n\n\ndoc &lt;- read_docx()\n\ndoc1 &lt;- doc %&gt;%\n  body_add_par(\"Descriptive Statistics\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    data %&gt;%\n      dplyr::select(CIG_1TRI, BPG_DEPRS8, Any_Abuse, ACEs_Scale, Race_Ethnicity) %&gt;%\n      tbl_summary(\n        type = all_continuous() ~ \"continuous2\",\n        statistic = all_continuous() ~ c(\n          \"{N_nonmiss}\",\n          \"{median} ({p25}, {p75})\",\n          \"{min}, {max}\"\n        ),\n        missing = \"no\"\n      ) %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Regression Model Summary\", style = \"heading 1\") %&gt;%\n  body_add_flextable(\n    tbl_regression(model3) %&gt;%  # Corrected function placement\n      add_global_p() %&gt;%\n      as_flex_table()\n  ) %&gt;%\n  body_add_par(\"Correlation Analysis\", style = \"heading 1\") %&gt;%\n  body_add_gg(ggplot_correlation)\n\nprint(doc1, target = \"C:/Users/barboza-salerno.1/Downloads/Regression_Report_FINAL.docx\")",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1346,7 +1346,7 @@
     "section": "7. Write-Up Guidelines",
     "text": "7. Write-Up Guidelines\n\nWrite a report that includes:\n\nIntroduction: Briefly describe the purpose of the analysis.\nData Description: Briefly explain the data set and key variables used, including how they were coded and re-coded as applicable.\nStatistical Analysis: Describe the analytic approach taken. This includes descriptive statistics, regression analysis, diagnostic assessment, and marginal means.\nDescriptive Statistics: Present summary statistics and missing data analysis (Table 1 in Word). Correlation analysis (Figure 1).\nRegression Models: Interpret key findings from each model. Describe how the models change. Present final model (Table 2 in Word).\nModel Assumption Checks: Discuss the model’s validity based on assumption checks. Include plots as appendix.\nPost-Hoc Analysis: Interpret estimated marginal means. Create a table of the estimated marginal means for smoking by Race/Ethnicity (By hand - Table 3).\nConclusion: Summarize key insights and possible limitations. Suggest two policy recommendations for addressing smoking during pregnancy.",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1356,7 +1356,7 @@
     "section": "Submission Instructions:",
     "text": "Submission Instructions:\n\nSubmit both the .R script and the Word document.\nEnsure all tables and plots are properly formatted.\nAssignment due by email by end of Week 9.",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1364,9 +1364,9 @@
     "href": "assignment.html#grading-criteria",
     "title": "Assignment 1",
     "section": "Grading Criteria:",
-    "text": "Grading Criteria:\n\n\n\nSection\nPoints\n\n\n\n\nData Cleaning & Preparation\n20\n\n\nDescriptive Statistics\n20\n\n\nRegression Models\n20\n\n\nModel Diagnostics\n20\n\n\nWrite-Up & Interpretation\n20\n\n\nTotal\n100\n\n\n\nGood luck with your analysis!",
+    "text": "Grading Criteria:\n\n\n\nSection\nPoints\n\n\n\n\nData Cleaning & Preparation\n20\n\n\nDescriptive Statistics\n20\n\n\nRegression Models\n20\n\n\nModel Diagnostics\n20\n\n\nWrite-Up & Interpretation\n20\n\n\nTotal\n100\n\n\n\nGood luck with your analysis!\nSee my sample write-up",
     "crumbs": [
-      "<span class='chapter-number'>26</span>  <span class='chapter-title'>Assignment 1</span>"
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>Assignment 1</span>"
     ]
   },
   {
@@ -1627,6 +1627,26 @@
     "text": "Lab Files\nAfter we do the above example together, we have an in-class assessment to get a sense of how well you are comprehending the analyses. This includes some multiple choice questions along with an analysis of the Adolescent Health Survey Data which is a longitudinal dataset that has been collected since about 1995 when youth were 15 years of age. Please download the assessment here. See Elise Barboza & Siller (2021) for a similar analysis published in the Journal of Interpersonal Violence, or this paper Barboza (2020) that also used these data.\n\nLecture Notes\n\nDownload today’s slides here\n\n\n\nR Code\nI wrote the code to show you how to use PROCESS in R. Yes, R has a package that runs the same macro that SPSS can run. The example is based on the NSCAW dataset as well. Check it out here",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+    ]
+  },
+  {
+    "objectID": "ass1writeup.html",
+    "href": "ass1writeup.html",
+    "title": "Assignment 1 Write-up",
+    "section": "",
+    "text": "Dataset: Pregnancy Risk Assessment Monitoring System (PRAMS)\nThe data for this study were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS), a state-based surveillance system that collects data on maternal behaviors and experiences before, during, and shortly after pregnancy. The dataset used in this study, KSPRAMS_SUB_WEIGHT_ANALYSIS.csv, included key variables such as maternal smoking during the first trimester (CIG_1TRI), history of abuse (Any_Abuse), Adverse Childhood Experiences (ACEs_Scale), perinatal depression (BPG_DEPRS8), and race/ethnicity (Race_Ethnicity). To ensure data integrity, cases with missing values were omitted, resulting in a final analytical sample of 5,172 participants.",
+    "crumbs": [
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
+    ]
+  },
+  {
+    "objectID": "ass1writeup.html#bonus",
+    "href": "ass1writeup.html#bonus",
+    "title": "Assignment 1 Write-up",
+    "section": "Bonus",
+    "text": "Bonus\n\nAPHA Abstract\nThe APHA abstracts are due at the end of March. If the assumptions of this model were not violated we could submit an abstract based on these results. Here is my sample abstract (~250 words) based on the above write-up, and formatted for the conference.\n\nBackground\nMaternal smoking during pregnancy remains a significant public health concern, with implications for both maternal and child health. Psychosocial risk factors such as adverse childhood experiences (ACEs), a history of abuse, and perinatal depression may contribute to smoking behaviors. This study investigates the association between these factors and smoking during the first trimester of pregnancy while also examining racial/ethnic disparities.\n\n\nMethods\nData were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS). The final analytical sample consisted of 5,172 participants. Linear regression models were used to examine the association between smoking during the first trimester and key psychosocial risk factors. Race/ethnicity was included to assess disparities. Diagnostic tests were performed to evaluate model assumptions, including multicollinearity, normality, and heteroscedasticity.\n\n\nResults\nA history of abuse was associated with a 2.29-unit increase in smoking (p &lt; 0.001). Each additional ACE was linked to a 0.44-unit increase (p &lt; 0.001), with a one standard deviation increase (1.41 points) predicting a 0.62-unit increase and an interquartile range increase (2 points) predicting a 0.89-unit increase. Perinatal depression was associated with a 1.04-unit increase in smoking (p &lt; 0.001). Mothers with a history of abuse smoked 1.85 more cigarettes per day than those without abuse. Hispanic mothers exhibited significantly lower smoking rates compared to Non-Hispanic Whites (p &lt; 0.001).\n\n\nConclusion\nPsychosocial factors play a crucial role in maternal smoking behaviors. Targeted interventions incorporating mental health and trauma-informed care are essential in reducing prenatal smoking rates, particularly among at-risk populations.",
+    "crumbs": [
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
     ]
   }
 ]
