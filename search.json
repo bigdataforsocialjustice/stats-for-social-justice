@@ -126,7 +126,7 @@
     "section": "",
     "text": "Week 4: January 27, 2025",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -136,7 +136,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\n\nDiez et al., Chapter 8, pp. 304-340. Intro to linear regression. Be sure to check out the embedded videos.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -146,7 +146,7 @@
     "section": "Simple Linear Regression – Introduction to the Topic",
     "text": "Simple Linear Regression – Introduction to the Topic\nThis week, we will delve into Simple Linear Regression, a foundational tool in statistical analysis that allows us to model relationships between two variables. Students will learn how to interpret the slope, intercept, and residuals, and use regression output to draw meaningful conclusions about data. Through this process, students will develop a deeper understanding of how regression can be used to predict outcomes and test hypotheses in social work research.\nIn this unit we will learn to quantify the relationship between two numerical variables, as well as modeling numerical response variables using a numerical or categorical explanatory variable.\n\n\nWhat will students learn this week?\n\nThe fundamental components of a simple linear regression model (slope, intercept, and residuals).\nHow to interpret regression output, including unstandardized and standardized coefficients.\nThe practical steps to fit a simple linear regression model in R using lm().\nHow to visualize regression results and residuals using ggplot2.\n\n\n\n\nWhy is this topic important?\nSimple Linear Regression serves as the building block for more advanced statistical methods, such as multiple regression, moderation, and mediation analysis. It allows social work researchers to identify relationships between variables, predict outcomes, and inform data-driven decision-making. Mastering this concept is essential for understanding more complex techniques later in the course.\n\n\n\nHow does it relate to previous or future content?\n\nTies to previous content: Builds upon last week’s review of descriptive statistics and introduces the concept of relationships between variables.\nPrepares for future topics: Provides a foundation for upcoming topics like multiple regression (Week 5), where we will expand from one predictor to multiple predictors, and interaction effects (Week 9), where regression will be used to explore moderating relationships.\n\n\nThis session emphasizes the practical and theoretical importance of regression analysis, helping students connect statistical techniques to real-world social work applications.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -156,7 +156,7 @@
     "section": "Class Files",
     "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nIntroduction to R",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -166,7 +166,7 @@
     "section": "Resources",
     "text": "Resources\n\nHere is my annotated file for correlation and SLR\nHere is the data I used if you want to replicate it in SPSS",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -176,7 +176,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\n\nPrimary Reading: Simple Linear Regression\nOptional Reading: Extrapolatoin - an example of what not to do despite the potential publication in a highly regarded journal",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -186,7 +186,7 @@
     "section": "R Lab Files",
     "text": "R Lab Files\n\nLab Instructions\nLab Dataset\nThe Escape Room Exercise",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -196,7 +196,7 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nRemain calm",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
   {
@@ -206,7 +206,8 @@
     "section": "",
     "text": "Week 7: February 17, 2025",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -216,7 +217,8 @@
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nToday we are finishing up last week’s discussion of effect sizes and regression assumptions. Then we will turn to an even more exciting topic: dummy variables. Regression assumptions are foundational principles that must be met for linear regression models to provide valid and reliable results. Understanding and testing these assumptions is essential for sound statistical inference.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -226,7 +228,8 @@
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nLinearity: The relationship between predictors and the outcome variable should be linear.\nIndependence: Observations should be independent of each other.\nHomoscedasticity: The variance of errors should be consistent across levels of predictors.\nNormality of Residuals: Residuals (errors) should follow a normal distribution.\nMulticollinearity: Predictors should not be highly correlated with each other.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -236,7 +239,8 @@
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to evaluate each regression assumption using diagnostic tests and visualizations.\nStudents will gain skills to address violations of assumptions, such as transforming variables or using robust regression methods.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -246,7 +250,8 @@
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nViolations of regression assumptions can lead to biased estimates, incorrect conclusions, and reduced model reliability.\nBy understanding these assumptions, students can ensure the validity of their regression analyses and effectively communicate findings.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -256,7 +261,8 @@
     "section": "How This Ties Into the Overall Course:",
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like linear regression by adding a deeper layer of model evaluation and diagnostics.\nPrepares students for advanced topics like generalized linear models and robust regression techniques, which relax some assumptions.\n\nBy the end of this week, students will be able to test and address regression assumptions, ensuring their models meet the necessary criteria for accurate and reliable results.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -356,7 +362,8 @@
     "section": "",
     "text": "Miscellaneous Course Policies\nPlease download the OSU and CSW course policies that are incorporated by reference within this course.",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "**Course Overview**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -366,7 +373,8 @@
     "section": "Course Information",
     "text": "Course Information\nCourse Title: Statistics II: Equity-Focused Data Analysis\nInstructor: Dr. Gia Elise Barboza-Salerno\nInstitution: College of Social Work, The Ohio State University\nTerm: Spring 2025",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "**Course Overview**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -376,7 +384,8 @@
     "section": "Contact Information",
     "text": "Contact Information\nOffice Hours: Mondays 2–4 PM, or by appointment.\nEmail: barboza-salerno@osu.edu",
     "crumbs": [
-      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
+      "**Course Overview**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Syllabus: Statistics for Social Justice</span>"
     ]
   },
   {
@@ -676,6 +685,7 @@
     "section": "",
     "text": "Week 12: March 24, 2025",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -686,6 +696,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\n\nHayes Chapter 7,8",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -696,6 +707,7 @@
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nThis week, we focus on moderation analysis, a statistical approach used to examine whether the relationship between an independent variable and a dependent variable depends on the value of a third variable, known as the moderator. Moderation analysis is key for understanding conditional effects in research.",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -706,6 +718,7 @@
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nInteraction Effects: How the relationship between two variables changes depending on the level of the moderator.\nModerators: Variables that influence the strength or direction of an effect.\nCentering: Preparing variables to reduce multicollinearity in moderation models.\nSimple Slopes Analysis: Breaking down interaction effects to interpret conditional relationships.",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -716,6 +729,7 @@
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to test for and interpret interaction effects in moderation models.\nStudents will explore tools like simple slopes analysis and visualization to communicate results effectively.",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -726,6 +740,7 @@
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nModeration analysis provides insights into when and for whom certain effects occur, enabling more nuanced interpretations of data.\nUnderstanding moderation is critical in areas like policy evaluation, intervention design, and theory testing.",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -736,6 +751,7 @@
     "section": "How This Ties Into the Overall Course:",
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like regression and effect sizes by extending these methods to account for conditional effects.\nSets the stage for future topics like moderated mediation and multilevel modeling, where interaction effects are a core focus.\n\nBy the end of this week, students will be able to identify and test moderation effects, interpret interaction terms, and visualize conditional relationships to better understand complex variable interactions.",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -746,6 +762,7 @@
     "section": "Class Files",
     "text": "Class Files\n\nLecture Notes\n\n\nR Code\n\n\nData Sets",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -756,6 +773,7 @@
     "section": "Resources",
     "text": "Resources",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -766,6 +784,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -776,6 +795,7 @@
     "section": "R Lab Files",
     "text": "R Lab Files",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -786,6 +806,7 @@
     "section": "Additional Notes",
     "text": "Additional Notes",
     "crumbs": [
+      "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Moderation</span>"
     ]
   },
@@ -794,9 +815,10 @@
     "href": "infant_mortality.html",
     "title": "Infant Mortality Example",
     "section": "",
-    "text": "Odds and Risk ratios\nRisk ratios are tricky because they are invariant, but odds ratios are not. By using risk ratios, the data can show BOTH gross disparities of infant mortality by race and also show no racial disparities at the same time. The reason comes down to the invariance property.\nOdds ratios and risk ratios are both measures used in statistics to compare the likelihood of an event occurring between two groups. However, they have different properties when it comes to interpretation.",
+    "text": "Odds and Risk ratios\nOdds ratios and risk ratios are both measures used in statistics to compare the likelihood of an event occurring between two groups. However, they have different properties when it comes to interpretation.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Infant Mortality Example</span>"
+      "Case Studies & Data Applications",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Infant Mortality Example</span>"
     ]
   },
   {
@@ -806,7 +828,8 @@
     "section": "Mortality Rates per 1,000 births",
     "text": "Mortality Rates per 1,000 births\nThe interpretation is: in California, there are about 3.04 infant deaths per 1,000. What is going on with Indiana?\n\n(df$inf_mort_white_1000 &lt;- (\n  df$white_infant_deaths/df$white_births)*1000\n )\n\n[1] 3.047175 3.522871 2.247074 6.016995 3.653389 5.047984 5.131467 4.275928\n\n\n\nknitr::kable(\n  df[, c(1,8)],  \n  col.names = c(\n    'State', \n    'White Infant Mortality per 1,000'\n    ), \n  align = \"lc\"\n  )\n\n\n\n\nState\nWhite Infant Mortality per 1,000\n\n\n\n\nCalifornia\n3.047175\n\n\nColorado\n3.522871\n\n\nConnecticut\n2.247074\n\n\nIndiana\n6.016995\n\n\nMaryland\n3.653389\n\n\nMichigan\n5.047984\n\n\nOhio\n5.131467\n\n\nPennsylvania\n4.275928\n\n\n\n\n\nThe infant mortality rate for Black infants is substantially higher. In Michigan, there are 14.2 Black infants who die for every 1,000 births.",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Infant Mortality Example</span>"
+      "Case Studies & Data Applications",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Infant Mortality Example</span>"
     ]
   },
   {
@@ -816,7 +839,8 @@
     "section": "Mortality Ratios",
     "text": "Mortality Ratios\n\n(df$inf_mort_black_1000 &lt;- (\n  df$black_infant_deaths/df$black_births)*1000\n )\n\n[1]  9.066566 11.713521  8.951113 11.710539  9.584821 14.162292 13.206092\n[8] 10.747552\n\n\n\nknitr::kable(\n  df[, c(1,9)],  \n  col.names = c(\n    'State', \n    'Black Infant Mortality per 1,000'\n    ), \n  align = \"lc\"\n  )\n\n\n\n\nState\nBlack Infant Mortality per 1,000\n\n\n\n\nCalifornia\n9.066566\n\n\nColorado\n11.713521\n\n\nConnecticut\n8.951113\n\n\nIndiana\n11.710539\n\n\nMaryland\n9.584821\n\n\nMichigan\n14.162292\n\n\nOhio\n13.206092\n\n\nPennsylvania\n10.747552\n\n\n\n\n\nBelow, I calculate the relative risk ratio for Black infants compared to Whites. You can see very large disparities. For example, in California the relative risk of death for Black infants is almost three times higher than for White infants (2.975)\n\n(df$RR_mort_black_white &lt;- \n   df$inf_mort_black_1000/df$inf_mort_white_1000)\n\n[1] 2.975401 3.324993 3.983454 1.946244 2.623542 2.805535 2.573551 2.513502",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Infant Mortality Example</span>"
+      "Case Studies & Data Applications",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Infant Mortality Example</span>"
     ]
   },
   {
@@ -826,7 +850,8 @@
     "section": "Survivorship Ratios",
     "text": "Survivorship Ratios\nLet’s calculate the survivorship ratio\n\ndf$inf_surv_white &lt;- \n  df$white_births - df$white_infant_deaths\ndf$inf_surv_black  &lt;- \n   df$black_births - df$black_infant_deaths\n\ndf$inf_surv_white_1000 &lt;- \n    (df$white_births/df$inf_surv_white)*1000\ndf$inf_surv_black_1000 &lt;- \n    (df$black_births/df$inf_surv_black)*1000\n\n\n(df$RR_surv_black_white &lt;- \n   df$inf_surv_black_1000/df$inf_surv_white_1000)\n\n[1] 1.006074 1.008288 1.006765 1.005761 1.005989 1.009245 1.008183 1.006542\n\n\n\nggplot(\n  df, \n  aes(x = as.factor(Location), \n      y = RR_mort_black_white, \n      group = 1)\n) +\n  geom_line() +\n  ylim(0, 4) +\n  labs(\n    title = \"Relative Risk of Infant Mortality: Black - White\",\n    x = \"Location\",\n    y = \"Relative Risk\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\nggplot(\n  df, \n  aes(x = as.factor(Location), \n      y = RR_surv_black_white, \n      group = 1)\n) +\n  geom_line() +\n  ylim(0, 1.1) +\n  labs(\n    title = \"Relative Risk of Infant Survival: Black - White\",\n    x = \"Location\",\n    y = \"Relative Risk\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGGthemes\n\n\n\nWe can make nicer charts with the add-on package called ggthemes. Let’s install it and see if we can make prettier charts. install.packages(ggthemes) then library(ggthemes)\n\n\n\nPlotting the differences\nBelow, I am selecting the theme called theme_stata which makes the output look like a stata graph.\n\nlibrary(ggthemes)\n\nWarning: package 'ggthemes' was built under R version 4.3.3\n\nggplot(df, \n  aes(x=as.factor(Location), \n  y=RR_surv_black_white, group=1))  + \n  geom_line(color = \"midnightblue\") + \n  ylim(0, 1.1) + \n  theme_stata() +\n  labs(title = \"Black-White Survivorship\", x = \"Location\", y = \"Relative Risk\")\n\n\n\n\n\n\n\nggplot(df, \n  aes(x=as.factor(Location), \n  y=RR_mort_black_white, group=1))  + \n  geom_line(color = \"darkred\") + \n  ylim(1, 4) + \n  theme_stata() +\n  labs(\n    title = \"Black-White Mortality\", \n    x = \"Location\", \n    y = \"Relative Risk\"\n    )\n\n\n\n\n\n\n\n\n\nYour tasks\nIt is very reasonable to examine these data further.\n\nWhat research questions would you propose to examine infant mortality disparities across states?\nWould the research question be the same if you were examining survivorship versus mortality?",
     "crumbs": [
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Infant Mortality Example</span>"
+      "Case Studies & Data Applications",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Infant Mortality Example</span>"
     ]
   },
   {
@@ -1046,7 +1071,8 @@
     "section": "",
     "text": "Introduction\nThis code analyzes admissions data, focusing on predicting SAT Math scores using SAT Verbal scores and high school class size. The analysis employs linear regression models, including simple linear regression, multiple linear regression, correlation assessments, and visualizations to explore the relationships between these variables.\nHere is the admissions data and you can download the script to run in R here\n\n\nLoad Necessary Libraries\n\nlibrary(foreign)    # For reading .sav files\nlibrary(ggplot2)    # For visualization\n\nWarning: package 'ggplot2' was built under R version 4.3.3\n\nlibrary(dplyr)      # For data manipulation\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(gtsummary)  # For creating regression tables\nlibrary(officer)    # For exporting to Word\n\nWarning: package 'officer' was built under R version 4.3.3\n\nlibrary(flextable)  # For table formatting\n\n\nAttaching package: 'flextable'\n\n\nThe following objects are masked from 'package:gtsummary':\n\n    as_flextable, continuous_summary\n\n\n\n\nLoad and Inspect Data\n\nadmissions &lt;- read.spss(\"data/admissions.sav\", to.data.frame = TRUE)\nhead(admissions) # Display first few rows\n\n  row_number paiddeposit scholarship_yes_no Type_of_scholarship_offered Female\n1          7           1                  0                                  0\n2         12           0                  0                                  0\n3         19           1                  0                                  0\n4         23           1                  0                                  0\n5         25           0                  0                                  0\n6         28           0                  0                                  1\n             Race HS_rank HS_class_size HS_Quintile HS_CODE\n1 white               190           281        4/5   392835\n2 white               111           223        3/5   393655\n3 white               109           371        2/5    51830\n4 Asian                88           266        2/5   390527\n5 white                NA            NA              390870\n6 white                59           382        1/5   392655\n                  HS_NAME SAT_verbal ACT Honors_college_eligible\n1 FRANKLIN_REGIONAL_SR_HI        560  NA                     no \n2 CENTRAL_CATHOLIC_HIGH_S        600  NA                     no \n3 WESTCHESTER_HIGH_SCHOOL        550  NA                     no \n4 CEDAR_CLIFF_HIGH_SCHOOL        520  NA                     no \n5 HOLY_GHOST_PREPARATORY         650  NA                     no \n6 PENN_MANOR_HIGH_SCHOOL         460  20                     no \n  distancefromPitt state Number_of_family_alumni father_alumni grand_alumni\n1        14.228946    PA                       0             0            0\n2         7.162134    PA                       0             0            0\n3       232.363382    PA                       0             0            0\n4       163.462296    PA                       0             0            0\n5       261.534151    PA                       0             0            0\n6       192.493359    PA                       0             0            0\n  mother_alumni sibling_alumni step_parent_alumni other_family_alumni\n1             0              0                  0                   0\n2             0              0                  0                   0\n3             0              0                  0                   0\n4             0              0                  0                   0\n5             0              0                  0                   0\n6             0              0                  0                   0\n  SAT_composite ACT_as_SAT Max_Test_Score Training from_PA\n1          1180         NA           1180        0       1\n2          1150         NA           1150        0       1\n3          1190         NA           1190        0       1\n4          1140         NA           1140        0       1\n5          1200         NA           1200        0       1\n6           940        950            950        0       1\n               alumniYN SAT_math\n1 Family is not an alum      620\n2 Family is not an alum      550\n3 Family is not an alum      640\n4 Family is not an alum      620\n5 Family is not an alum      550\n6 Family is not an alum      480\n\n\n\n\nData Preprocessing\n\nadmissions_clean &lt;- admissions %&gt;% \n  dplyr::select(SAT_math, SAT_verbal, HS_class_size) %&gt;% \n  na.omit()\n\n\n\nSimple Linear Regression: SAT Math ~ SAT Verbal\n\nsimple_model &lt;- lm(SAT_math ~ SAT_verbal, data = admissions_clean)\nsummary(simple_model) # Regression summary\n\n\nCall:\nlm(formula = SAT_math ~ SAT_verbal, data = admissions_clean)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-168.125  -43.568   -1.667   41.119  188.462 \n\nCoefficients:\n             Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) 329.24934   19.49133   16.89   &lt;2e-16 ***\nSAT_verbal    0.45572    0.03448   13.22   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 61.42 on 689 degrees of freedom\nMultiple R-squared:  0.2023,    Adjusted R-squared:  0.2011 \nF-statistic: 174.7 on 1 and 689 DF,  p-value: &lt; 2.2e-16\n\n\n\nInterpretation:\n\nSAT Verbal has a positive effect on SAT Math scores (Estimate = 0.45572, p &lt; 0.001).\nModel explains ~20.2% of variance in SAT Math scores (Adjusted R² = 0.2011), meaning SAT Verbal alone is a moderate predictor.\nResiduals appear reasonably distributed, suggesting no major violations of normality assumptions.\n\n\n\n\nCompute Fitted Values and Residuals\n\nadmissions_clean$fitted_simple &lt;- fitted(simple_model)\nadmissions_clean$residuals_simple &lt;- residuals(simple_model)\n\n\n\nCompute Standardized Values\n\nadmissions_clean$std_fitted_simple &lt;- scale(admissions_clean$fitted_simple)\nadmissions_clean$std_residuals_simple &lt;- scale(admissions_clean$residuals_simple)\n\n\n\nVisualization: Residuals vs. Fitted\n\nggplot(admissions_clean, aes(x = std_fitted_simple, y = std_residuals_simple)) +\n  geom_point(color = \"blue\") +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"red\") +\n  labs(title = \"Standardized Residuals vs. Standardized Fitted Values (Simple Model)\",\n       x = \"Standardized Fitted Values\", y = \"Standardized Residuals\")\n\n\n\n\n\n\n\n\n\nInterpretation:\n\nResiduals are fairly symmetrically distributed around zero, suggesting the linear model is appropriate.\nNo major patterns in residuals indicate homoscedasticity.\n\n\n\n\nHistogram of Residuals\n\nggplot(admissions_clean, aes(x = residuals_simple)) +\n  geom_histogram(bins = 30, fill = \"lightblue\", color = \"black\") +\n  labs(title = \"Histogram of Residuals (Simple Model)\", x = \"Residuals\", y = \"Frequency\")\n\n\n\n\n\n\n\n\n\nInterpretation:\n\nResiduals follow a normal-like distribution, supporting the assumption of normality.\n\n\n\n\nCorrelation Analysis\n\ncor(admissions_clean[, c(\"SAT_math\", \"SAT_verbal\", \"fitted_simple\", \"residuals_simple\")], use = \"complete.obs\")\n\n                  SAT_math    SAT_verbal fitted_simple residuals_simple\nSAT_math         1.0000000  4.497305e-01  4.497305e-01     8.931643e-01\nSAT_verbal       0.4497305  1.000000e+00  1.000000e+00    -5.014076e-16\nfitted_simple    0.4497305  1.000000e+00  1.000000e+00    -1.828283e-15\nresiduals_simple 0.8931643 -5.014076e-16 -1.828283e-15     1.000000e+00\n\n\n\nInterpretation:\n\nStrong positive correlation between SAT Math and SAT Verbal (r ≈ 0.45).\nFitted values highly correlate with SAT Verbal, confirming its predictive power.\n\n\n\n\nMultiple Linear Regression: SAT Math ~ SAT Verbal + HS Class Size\n\nmultiple_model &lt;- lm(SAT_math ~ SAT_verbal + HS_class_size, data = admissions_clean)\nsummary(multiple_model)\n\n\nCall:\nlm(formula = SAT_math ~ SAT_verbal + HS_class_size, data = admissions_clean)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-165.924  -44.589   -1.418   40.825  197.261 \n\nCoefficients:\n               Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)   314.14654   19.47735  16.129  &lt; 2e-16 ***\nSAT_verbal      0.44864    0.03401  13.192  &lt; 2e-16 ***\nHS_class_size   0.06030    0.01295   4.656 3.88e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 60.52 on 688 degrees of freedom\nMultiple R-squared:  0.2266,    Adjusted R-squared:  0.2244 \nF-statistic: 100.8 on 2 and 688 DF,  p-value: &lt; 2.2e-16\n\n\n\nInterpretation:\n\nHS Class Size has a small but significant positive effect (Estimate = 0.06030, p &lt; 0.001).\nExplained variance increases to 22.4%, showing a slight improvement over the simple model.\n\n\n\n\nVisualization of SAT Verbal Effect\n\nggplot(admissions_clean, aes(x = SAT_verbal, y = SAT_math)) +\n  geom_point(alpha = 0.5) +\n  geom_smooth(method = \"lm\", col = \"blue\") +\n  labs(title = \"Effect of SAT Verbal on SAT Math\", x = \"SAT Verbal\", y = \"SAT Math\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\nGenerate Regression Summary Table\n\nmlr_table &lt;- multiple_model %&gt;% \n  tbl_regression(label = list(SAT_verbal = \"SAT Verbal Score\", HS_class_size = \"High School Class Size\")) %&gt;%\n  modify_caption(\"Table 1: Multiple Linear Regression Results\") %&gt;%\n  add_n()\n\n\n\nSave Table to Word\n\nmlr_flextable &lt;- as_flex_table(mlr_table)\ndoc &lt;- read_docx()\ndoc &lt;- body_add_flextable(doc, value = mlr_flextable)\nprint(doc, target = \"MLR_Results.docx\")\n\n\n\nConclusion\n\nKey Findings:\n\nSAT Verbal scores significantly predict SAT Math scores, explaining ~20% of the variance.\nAdding HS Class Size improves the model slightly, raising the explained variance to 22.4%.\nBoth models suggest a linear relationship, with residuals showing normality and no major violations.\n\n\n\nImplications:\n\nSchools aiming to improve SAT Math scores may focus on strengthening verbal skills.\nClass size appears to play a small but relevant role in performance.\nFurther research could explore additional predictors (e.g., socioeconomic factors, study habits).",
     "crumbs": [
-      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Admissions Data Analysis</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>Admissions Data Analysis</span>"
     ]
   },
   {
@@ -1096,7 +1122,8 @@
     "section": "",
     "text": "Introduction\nThis exercise explores child aggression and trauma using the NSCAW I dataset. Because this is designed for you to do, I supressed all of the output. The chunks of code give you a hints regarding the code that will answer each question. Create an R script and answer each question below. Cut and paste the chunk of code into your script, and fill it in so that it runs.",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1106,7 +1133,8 @@
     "section": "Step 1: Load the Data",
     "text": "Step 1: Load the Data\nMake sure all of these libraries are installed or you will not be able to run the code. Also, make sure that your data set is in a subdirectory called data in the same directory as the one in which your R script is saved.\n\n# Load necessary libraries\nlibrary(foreign)    # For reading SPSS files\nlibrary(dplyr)      # For data manipulation\nlibrary(ggplot2)    # For visualization\nlibrary(gtsummary)  # For creating regression tables\nlibrary(officer)    # For exporting tables to Word\nlibrary(flextable)  # For table formatting\n\n# Load NSCAW I dataset\nnscaw &lt;- read.spss(\"data/nscaw.sav\", to.data.frame = TRUE)\n\n# Inspect the first few rows\nhead(nscaw)\n\nQuestion: What type of variables are included in the dataset?\nTo get a sense of the variables in the dataset click here.",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1116,7 +1144,8 @@
     "section": "Step 2: Select Variables & Handle Missing Data",
     "text": "Step 2: Select Variables & Handle Missing Data\n\n# Select relevant variables\nnscaw_clean &lt;- nscaw %&gt;% \n  dplyr::select(FILL THE VARIABLES IN HERE) \n\n# Remove missing values\nnscaw_clean &lt;- na.omit(nscaw_clean)\n\n# View summary statistics\nsummary(nscaw_clean)\n\nHint: Look at the summary statistics—do any variables have extreme values?",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1126,7 +1155,8 @@
     "section": "Step 3: Compute Correlations",
     "text": "Step 3: Compute Correlations\n\n# Compute correlation matrix\ncor(nscaw_clean, use = \"complete.obs\")\n\nQuestion: Which variables are most strongly correlated? Does the direction make sense?\n\nRun the regression of child aggression on trauma score and age",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1136,7 +1166,8 @@
     "section": "Step 4: Run a Multiple Regression Model",
     "text": "Step 4: Run a Multiple Regression Model\n\n# Run regression: Predict aggression using trauma score and age\nreg_model &lt;- lm(WRITE THE CODE TO RUN THE REGRESSION)\n\n# Display model summary\nsummary(reg_model)\n\nHint: Examine the coefficients and p-values. Is trauma a significant predictor of aggression?",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1146,7 +1177,8 @@
     "section": "Step 5: Compute Fitted Values & Residuals",
     "text": "Step 5: Compute Fitted Values & Residuals\n\n# Compute fitted values and residuals\nnscaw_clean$fitted &lt;- fitted(PROVIDE THE CODE HERE)\nnscaw_clean$residuals &lt;- residuals(reg_model)\n\n# Compute standardized residuals\nnscaw_clean$std_residuals &lt;- PROVIDE THE CODE HERE(nscaw_clean$residuals)\n\nQuestion: Why do we standardize residuals? What does this help us understand?",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1156,7 +1188,8 @@
     "section": "Step 6: Visualize Residuals",
     "text": "Step 6: Visualize Residuals\n\n# Plot histogram of residuals\nggplot(nscaw_clean, aes(x = residuals)) +\n  PROVIDE THE CODE HERE(bins = 30, fill = \"lightblue\", color = \"black\") +\n  labs(title = \"Histogram of Residuals\", x = \"Residuals\", y = \"Frequency\")\n\nHint: Look for skewness—are residuals normally distributed?\n\n\n# Plot standardized residuals vs. predicted values\nggplot(nscaw_clean, aes(x = fitted, y = std_residuals)) +\n  geom_point(PROVIDE THE CODE HERE) +\n  geom_hline(yintercept = 0, linetype = \"dashed\", color = \"red\") +\n  labs(PROVIDE THE CODE HERE)\n\nHint: If you see patterns in the residuals, what assumption may be violated?",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1166,7 +1199,8 @@
     "section": "Step 7: Create & Export Regression Table",
     "text": "Step 7: Create & Export Regression Table\n\n# Generate regression summary table\nreg_table &lt;- reg_model %&gt;% \n  tbl_regression(\n    label = list(tra1 = \"PTS Score\", bcagg1 = \"Aggressive Behavior\", ageY = \"Age\")\n  ) %&gt;% \n  modify_caption(\"Table 1: Regression Results for Aggression\")\n\n# Convert to flextable and export to Word\nreg_flextable &lt;- as_flex_table(reg_table)\ndoc &lt;- read_docx()\ndoc &lt;- body_add_flextable(doc, value = reg_flextable)\nprint(doc, target = \"Regression_Results.docx\")\n\nHint: Where does the p-value appear in the regression table? How does it inform significance?",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1176,7 +1210,8 @@
     "section": "Deliverables",
     "text": "Deliverables\nDiscuss the following:\n\nCorrelation matrix output\nRegression model summary\nHistogram of residuals\nResiduals vs. fitted plot\nRegression results table (Word document)",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1186,7 +1221,8 @@
     "section": "Discussion Questions",
     "text": "Discussion Questions\n\nBased on your results, does trauma significantly predict aggression?\nHow does child age influence the relationship between trauma and aggression?\nAre the residuals normally distributed? If not, what would you do differently?\nIf the p-value for trauma is significant, what does that imply in real-world terms?\nHow could you improve this model?\n\nFinal Thought: This exercise helps you develop a deeper understanding of how trauma influences child behavior. Future analyses could incorporate more variables (e.g., social support, environment) for better predictions.",
     "crumbs": [
-      "<span class='chapter-number'>23</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
+      "**Case Studies & Data Applications**",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>NSCAW I In-Class Exercise</span>"
     ]
   },
   {
@@ -1226,7 +1262,8 @@
     "section": "Class Files",
     "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nScript 1: CLT Application of Central Limit Theorem to A$AP Rocky’s case: Should he get a new trial?\nScript 2: CLT More CLT Fun\nDirected Acyclic Graph - DAGS And even more fun, check out how you can create diagrams, including DAGS, in R.\n\n\n\nData Sets\n\nNational Survey of Child and Adolescent Well-Being: We are going to examine the following research question using a subset of the dataset: Do children who are removed from the home have higher levels of post-traumatic stress controlling for demographic and exposure variables?\nInfluence, Outliers, and Leverage Part I, Part II, Part III, Part IV",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -1236,7 +1273,8 @@
     "section": "R Lab Files",
     "text": "R Lab Files\n\nLab Instructions We are going to run some simple and multiple regressions using R with the NSCAW data.\nHere is a partially annotated data file to get us started.\nLab Dataset\nAnother practice assignment that we never got it. Check it out and see if you can answer the questions.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -1246,7 +1284,8 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nKeep calm and be influential.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -1256,7 +1295,8 @@
     "section": "Dummy Variables",
     "text": "Dummy Variables\nIn regression analysis, many predictors are categorical rather than numerical. However, standard regression models require numerical inputs. Dummy variables are a way to include categorical variables in a regression model by converting them into numerical representations.\n\nWhat are Dummy Variables?\nA dummy variable is a binary variable (0 or 1) that represents different categories of a categorical predictor. It allows regression models to account for group differences. We will learn how to recode variables in SPSS, and R, and include them in our models. This requires understanding how to select the reference category. Read this article for a social justice application of selecting reference variables in regression models. I used this idea to code trans man as the reference category in this paper .\n\nWhy Use Dummy Variables?\n\nThey quantify categorical differences in a regression model.\nThey allow us to compare groups while controlling for other factors.\nThey help capture interaction effects when combined with numerical predictors.\n\n\n\nExtending Dummy Variables:\n\nFor variables with more than two categories, we create multiple dummy variables (e.g., for “Region: North, South, West,” we need two dummy variables to represent three categories).\nReference category: One category is omitted to prevent multicollinearity, and all other categories are compared against it.",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Regression Assumptions</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Regression Assumptions</span>"
     ]
   },
   {
@@ -1376,7 +1416,8 @@
     "section": "",
     "text": "Week 8: February 24, 2025",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1386,7 +1427,8 @@
     "section": "Reading",
     "text": "Reading\n\nDiez et al. Chapter 9: Logistic Regression, from pp 371; sec. 9.5\nSee resources",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1396,7 +1438,8 @@
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nThis week, we focus on logistic regression, a statistical method used to model binary outcomes and predict probabilities. Logistic regression is a cornerstone technique in statistical modeling, particularly for research questions involving categorical dependent variables.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1406,7 +1449,8 @@
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nLogistic Regression Models: Analyze the relationship between independent variables and a binary dependent variable (e.g., success vs. failure).\nOdds Ratios: Interpret the effect of predictors on the likelihood of the outcome.\nModel Fit and Diagnostics: Evaluate the accuracy and robustness of logistic regression models.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1416,7 +1460,8 @@
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to build logistic regression models and interpret their results, including coefficients, odds ratios, and predicted probabilities.\nStudents will explore model evaluation techniques, such as goodness-of-fit measures and ROC curves.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1426,7 +1471,8 @@
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nLogistic regression is widely used in various fields, including social sciences, medicine, and marketing, to answer questions about classification and prediction.\nUnderstanding logistic regression provides the foundation for advanced modeling techniques like multinomial and ordinal regression.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1436,7 +1482,8 @@
     "section": "How This Ties Into the Overall Course:",
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous weeks’ focus on linear regression and effect sizes, extending these concepts to binary outcomes.\nPrepares students for upcoming topics like machine learning classification models and survival analysis, where logistic regression plays a foundational role.\n\nBy the end of this week, students will be able to confidently apply logistic regression to real-world problems, interpret model outputs, and evaluate model performance for binary classification tasks.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1446,7 +1493,8 @@
     "section": "Class Files",
     "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes and a review of risk and odds calculations using contingency tables\n\n\n\nR Code\n\nScript 1: Logistic Regression Application of Logistic Regression using R\n\n\n\nData Sets\n\nGPA-College Enrollment Example: In class example showing the mechanics of logistic regression?\nPredicting Probabilities with Logistic Regression Here is an excel file illustrating the math behind predicting probabilities\nAn annotated jasp file of logistic regression output including how to do the log-likelihood test\n\n\n\nResources\n\nThere are a million ways to recode variables in R\nNow that you are familiar with using R, check out this amazing book called R for Data Science which is written by the Hadley who co-authored the tidyverse suite.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1456,7 +1504,8 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nKeep calm and don’t be a dummy.",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Logistic Regression</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Logistic Regression</span>"
     ]
   },
   {
@@ -1492,91 +1541,100 @@
   {
     "objectID": "06-mediation.html",
     "href": "06-mediation.html",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "",
     "text": "Week 9: March 3, 2025",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#reading",
     "href": "06-mediation.html#reading",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Reading",
     "text": "Reading\n\nHayes, Andrew. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis Chapters 1 - 4.\nHere is an applied paper in Social Work that you should be able to understand after going through this week’s materials.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#introduction-to-the-topic",
     "href": "06-mediation.html#introduction-to-the-topic",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nThis week, we explore mediation analysis, a statistical approach used to understand the mechanisms through which an independent variable influences a dependent variable via a third variable, known as the mediator. Mediation analysis is essential for uncovering causal pathways in research.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#key-concepts",
     "href": "06-mediation.html#key-concepts",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nDirect Effects: The relationship between the independent variable and the dependent variable, excluding the mediator.\nIndirect Effects: The portion of the relationship explained through the mediator.\nTotal Effects: The combined impact of direct and indirect effects.\nBootstrapping: A resampling method for testing the significance of indirect effects.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#relevance",
     "href": "06-mediation.html#relevance",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to identify and test mediating variables in a causal framework. Make sure you review our discussion of confounding\nStudents will explore how to decompose total effects into direct and indirect components to better understand relationships among variables.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#why-this-is-important",
     "href": "06-mediation.html#why-this-is-important",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nMediation analysis allows researchers to move beyond simple relationships to uncover how and why effects occur.\nUnderstanding mediation is critical for testing theoretical models in fields like psychology, sociology, and public health.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#how-this-ties-into-the-overall-course",
     "href": "06-mediation.html#how-this-ties-into-the-overall-course",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "How This Ties Into the Overall Course:",
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous topics, such as regression and effect sizes, by extending these tools to explore causal pathways.\nPrepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where mediation analysis is a core component.\n\nBy the end of this week, students will be able to conduct mediation analyses, interpret direct and indirect effects, and evaluate the significance of mediators using bootstrapping methods.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#an-example-of-logistic-regression-from-last-week",
     "href": "06-mediation.html#an-example-of-logistic-regression-from-last-week",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "An example of logistic regression from last week",
     "text": "An example of logistic regression from last week\nWe ran out of time last week but I put together an example and write up of logistic regression. This uses the PRAMS dataset to inquire about whether stress during pregnancy predicts IPV exposure during pregnancy. Recall the variable measurements which we noted here. The JASP file is here and it is fully annotated.\n\nIn-Class Files and Data Sets",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#a-note-on-linear-transformations",
     "href": "06-mediation.html#a-note-on-linear-transformations",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "A Note on Linear Transformations",
     "text": "A Note on Linear Transformations\nLinear Transformations: We start class today with a quick example of how to transform variables when the model assumptions are violated. As I mentioned in class, this trick has almost never worked with the datasets I use. However, I was successful in transforming the dependent variable once, using a cultivated dataset on area deprivation, housing, and “child maltreatment” substantiations which can be accessed here. I have used these data often see Elise Barboza-Salerno (2024) for an example.\nThe cultivated dataset comes from many sources. The H+T index comes from this website. The ADI comes from the sociome package in R, and we saw an example when we learned how to quantify effect sizes with Cohen’s D. I calculated the distances to SNAP retail locations from home addresses based on information from the SNAP retail locator, which can be accessed here.\nTest yourself on partial mediation, full mediation, and supression: I created sample output for each effect, can you select the correct model that illustrates each mechanism?\nMediation: We will use a subset of the NSCAW I to examine whether symptoms of post-traumatic stress mediate the association between exposure to violence at Wave I and child externalizing behaviors at Wave III. Now DON’T LOOK at the model write-up until AFTER you have the analysis done. Then, and only then, can you take a gander at my write-up here",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
@@ -1602,31 +1660,34 @@
   {
     "objectID": "06-mediation.html#resources",
     "href": "06-mediation.html#resources",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Resources",
     "text": "Resources\nThis is an amazing resources from UCLA on introduction to mediation, moderation and conditional process models. The website has a tutorial that I am strongly suggesting you do, and also additional powerpoint slides for Andrew Hayes’ book.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#additional-notes",
     "href": "06-mediation.html#additional-notes",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Additional Notes",
     "text": "Additional Notes\nStay calm and do everything in moderation.\n\n\n\n\nBarboza, G. E. (2020). Child Maltreatment, Delinquent Behavior, and School Factors as Predictors of Depressive Symptoms from Adolescence to Adulthood: A Growth Mixture Model. Youth & Society, 52(1), 27–54. https://doi.org/10.1177/0044118X17721803Previous methodological approaches have not been flexible enough to model the heterogeneity of depressive symptoms or to identify variations between prototypical trajectories conditional on risk and protective factors. The current study examined latent class trajectories of depressive symptoms using data from 3,819 respondents of the Adolescent Health Survey. Four trajectory profiles of depressive symptoms were identified: low-stable, high-decreasing, low-increasing, and moderate-decreasing. A broad array of risk factors were included into the modeling procedure to identify predictors of group membership. Relative to the low-stable group, membership in one of the three symptomatic groups (i.e., heightened depressive symptoms) was predicted by poverty, low self-esteem, gender, drinking frequency, poor academic outcomes, delinquency, and child maltreatment type. This study contributes to our understanding about the longitudinal manifestations of depression and identifies a broad array of factors significantly related to pathways of resilience.\n\n\nElise Barboza, G., & Siller, L. A. (2021). Child Maltreatment, School Bonds, and Adult Violence: A Serial Mediation Model. Journal of Interpersonal Violence, 36(11-12), NP5839–NP5873. https://doi.org/10.1177/0886260518805763Physically abused youth are vulnerable to experiencing difficulties across multiple domains of school functioning. Most of the literature examining the relationship between child physical abuse (CPA) and adult violence has focused narrowly on academic outcomes rather than taking a broader view that explores the processes undergirding school engagement and connections. The present study adopted Connell?s model of school engagement, connectedness and outcomes within a social bond framework to examine (a) the link between CPA and school social bonds, (b) the link between CPA and adult violence persistence, and (c) the mediational (parallel, serial) effects of school bonds (engagement, connection, and achievement) on violence perpetration in adulthood. Consistent with previous research, results indicated that children who experience physical abuse have poorer academic performance, which, in turn, is related to future violent trajectories. We further found that the relationship between CPA and violence persistence is mediated by a process of bonding to school that begins with being actively engaged in school activities and ends with higher levels of academic achievement. In particular, some of the ?school achievement? effect found in previous research operates through behavioral and emotional manifestations and may be partly explained through physically abused children?s lessened ability to be engaged with and connected to school activities. We conclude with a discussion of the policy implications stemming from our findings.\n\n\nElise Barboza-Salerno, G. (2024). Material Hardship, Labor Market Characteristics and Substantiated Child Maltreatment: A Bayesian Spatiotemporal Analysis. Children and Youth Services Review, 157, 107371. https://doi.org/10.1016/j.childyouth.2023.107371Child maltreatment is a critical public health problem whose structural underpinnings underscore the need to move prevention efforts from individual-level risk factors to social policy. Despite previous studies exploring the evolution of child maltreatment risk in socially vulnerable contexts, little is known about how neighborhood level material deprivation and job market characteristics, beyond the employment context, impact substantiated maltreatment risk. The present analysis integrates multiple streams of data to explore the complexity of child maltreatment in the most populous county in New Mexico as a case-study. A geospatial model was used to produce posterior risk estimates and exceedance probabilities of substantiated child maltreatment derived from administrative records controlling for financial strength, economic inequality and hardship, educational attainment, housing and food insecurity and labor market characteristics. Findings showed that over the nine-year study period, the average relative risk of child maltreatment increased substantially, however, there was substantial regional and temporal heterogeneity. More specifically, substantiated child maltreatment risk became more highly concentrated into the most deprived 20% of neighborhoods over time. The results showed a very strong area deprivation effect such that: (1) the risk of maltreatment in the most deprived 20% of neighborhoods on financial strength was 130.78% higher compared to the least deprived 20% of neighborhoods; and (2) maltreatment rates in the bottom 20% of neighborhoods on economic inequality and hardship were 40.52% higher compared to the least deprived 20% of neighborhoods. Finally, substantiated child maltreatment was significantly associated with multiple labor market characteristics including commuting times to work, origin–destination job flows, and mode of transportation to work. From a policy perspective, the results of this study support structural interventions aimed at reducing neighborhood-level material hardship and labor market disadvantage as avenues to support parents so that children and families can thrive.",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
     "objectID": "06-mediation.html#lab-files",
     "href": "06-mediation.html#lab-files",
-    "title": "Mediation",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 1)",
     "section": "Lab Files",
     "text": "Lab Files\nAfter we do the above example together, we have an in-class assessment to get a sense of how well you are comprehending the analyses. This includes some multiple choice questions along with an analysis of the Adolescent Health Survey Data which is a longitudinal dataset that has been collected since about 1995 when youth were 15 years of age. Please download the assessment here. See Elise Barboza & Siller (2021) for a similar analysis published in the Journal of Interpersonal Violence, or this paper Barboza (2020) that also used these data.\n\nLecture Notes\n\nDownload today’s slides here\n\n\n\nR Code\nI wrote the code to show you how to use PROCESS in R. Yes, R has a package that runs the same macro that SPSS can run. The example is based on the NSCAW dataset as well. Check it out here",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Mediation</span>"
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 1)</span>"
     ]
   },
   {
@@ -1636,6 +1697,7 @@
     "section": "",
     "text": "Dataset: Pregnancy Risk Assessment Monitoring System (PRAMS)\nThe data for this study were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS), a state-based surveillance system that collects data on maternal behaviors and experiences before, during, and shortly after pregnancy. The dataset used in this study, KSPRAMS_SUB_WEIGHT_ANALYSIS.csv, included key variables such as maternal smoking during the first trimester (CIG_1TRI), history of abuse (Any_Abuse), Adverse Childhood Experiences (ACEs_Scale), perinatal depression (BPG_DEPRS8), and race/ethnicity (Race_Ethnicity). To ensure data integrity, cases with missing values were omitted, resulting in a final analytical sample of 5,172 participants.",
     "crumbs": [
+      "**Assignment\nSolutions**",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
     ]
   },
@@ -1646,7 +1708,129 @@
     "section": "Bonus",
     "text": "Bonus\n\nAPHA Abstract\nThe APHA abstracts are due at the end of March. If the assumptions of this model were not violated we could submit an abstract based on these results. Here is my sample abstract (~250 words) based on the above write-up, and formatted for the conference.\n\nBackground\nMaternal smoking during pregnancy remains a significant public health concern, with implications for both maternal and child health. Psychosocial risk factors such as adverse childhood experiences (ACEs), a history of abuse, and perinatal depression may contribute to smoking behaviors. This study investigates the association between these factors and smoking during the first trimester of pregnancy while also examining racial/ethnic disparities.\n\n\nMethods\nData were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS). The final analytical sample consisted of 5,172 participants. Linear regression models were used to examine the association between smoking during the first trimester and key psychosocial risk factors. Race/ethnicity was included to assess disparities. Diagnostic tests were performed to evaluate model assumptions, including multicollinearity, normality, and heteroscedasticity.\n\n\nResults\nA history of abuse was associated with a 2.29-unit increase in smoking (p &lt; 0.001). Each additional ACE was linked to a 0.44-unit increase (p &lt; 0.001), with a one standard deviation increase (1.41 points) predicting a 0.62-unit increase and an interquartile range increase (2 points) predicting a 0.89-unit increase. Perinatal depression was associated with a 1.04-unit increase in smoking (p &lt; 0.001). Mothers with a history of abuse smoked 1.85 more cigarettes per day than those without abuse. Hispanic mothers exhibited significantly lower smoking rates compared to Non-Hispanic Whites (p &lt; 0.001).\n\n\nConclusion\nPsychosocial factors play a crucial role in maternal smoking behaviors. Targeted interventions incorporating mental health and trauma-informed care are essential in reducing prenatal smoking rates, particularly among at-risk populations.",
     "crumbs": [
+      "**Assignment\nSolutions**",
       "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html",
+    "href": "07-moderation.html",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "",
+    "text": "Week 11: March 17, 2025",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#reading",
+    "href": "07-moderation.html#reading",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Reading",
+    "text": "Reading\n\nHayes, Andrew. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis Chapters 7 - 10.\nI have used these methods on several occasions, check out Barboza-Salerno & Meshelemiah (2024) and Elise Barboza & Siller (2021).",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#introduction-to-the-topic",
+    "href": "07-moderation.html#introduction-to-the-topic",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we explore moderation analysis, a statistical approach used to understand how the relationship between two variables changes depending on a third variable, known as the moderator. Unlike simple regression, where we assess a direct relationship between an independent and dependent variable, moderation analysis allows us to examine whether this relationship varies in strength or direction based on different levels of another variable.\nModeration is particularly useful in social sciences, public health, and policy research, where the effect of an intervention or exposure may differ depending on contextual factors such as age, gender, socioeconomic status, or environmental conditions. For example, in public health studies, we might investigate whether the relationship between neighborhood poverty and child maltreatment rates is moderated by community resources or green space availability.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#key-concepts",
+    "href": "07-moderation.html#key-concepts",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nDefinition: Moderation occurs when the strength or direction of the relationship between an independent variable X and a dependent variable Y depends on a third variable W, called the moderator.\nInteraction/Effect moderation: The key indicator of moderation is a statistically significant interaction term, X * W, in a regression model, suggesting that the effect of X on Y varies depending on W.\nVisualization: Simple slopes analysis and interaction plots help visualize and interpret moderation effects.\nProbing Interactions: This is an extremely useful technique in which you can detect statistically significant regions of the interaction. Super exciting!\nDistinguishing Moderation from Mediation:\n\nModeration affects the strength of the relationship between X and Y.\nMediation explains the mechanism through which X affects Y via an intermediate variable.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#relevance",
+    "href": "07-moderation.html#relevance",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to use PROCESS in R and SPSS to test effect moderation to examine when or for whom an effect occurs (e.g., does the effect of stress on mental health differ based on social support?)\nStudents will begin to understand what conditional (i.e., moderation) indirect effects (i.e., mediation) are and how to use them to test innovative hypotheses in social work (i.e., moderated mediation).",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#why-this-is-important",
+    "href": "07-moderation.html#why-this-is-important",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nMediation analysis, as we saw last week, allows researchers to move beyond simple relationships to uncover how and why effects occur.\nUnderstanding mediation is critical for testing theoretical models in fields like social work, psychology, sociology, and public health.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#how-this-ties-into-the-overall-course",
+    "href": "07-moderation.html#how-this-ties-into-the-overall-course",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous topics, such as regression and effect sizes, by extending these tools to explore conditional effects.\nPrepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where interaction terms can be useful.\n\nBy the end of this week, students will be able to conduct moderation analyses, interpret conditional effects, and evaluate the significance of effect moderation using SPSS and R.\n\nIn-Class Files and Data Sets\nData sets: We will use datasets from Hayes on workplace related stress: estress.sav and presumed media influence on the intention to purchase: pmi.sav.\nMediation Extensions: First, are going to extend the simple mediation model we learned last time by incorporating multiple mediators. I have saved the SPSS output for several different examples:\n\nExample 1: Dichotomous Predictor, Simple Mediation, The PMI study\nExample 2: Continuous Predictor, Economic Stress Among Small Business Owners\nExample 3 Continuous Predictor with controls, Economic Stress Among Small Business Owners (same data set as above)\n\nNext, we extend the simple case using examples representing parallel, serial mediation and serial mediation with contrasts.\nModeration: Finally, we end today with an example of how to implement moderation. We will use these files:\n\nExample 1: Dichotomous Moderation Effect, Sexual Minority. I saved the SPSS output\nExample 2: Continuous Moderation Effect, NSCAW",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#lab-files",
+    "href": "07-moderation.html#lab-files",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Lab Files",
+    "text": "Lab Files\nMediation: You are going to do this lab using the NSCAW data to examine whether (1) children investigated for abuse or neglect who have witnessed severe violence at Wave 1 (EV_W1) are more likely to engage in externalizing behavior at Wave 3 (bcext3); and (2) post-traumatic stress at Wave 1 (tra1) is the mechanism violence exposure is linked to externalizing behavior.\nModeration: I have created some Excel output so you can learn how to take the output and visualize the results. One file plots the effect moderation for age on the association between post-traumatic stress and delinquent behaviors using a subset of the NSCAW. Now, you can use this file to practice making a similar chart using excel to answer the question: What is the effect moderation of sexual minority status on the association between post-traumatic stress and delinquent behavior?\n\nLecture Notes & Class Files\n\nDownload today’s slides here\nCheck out my annotated Word document interpreting parallel mediation (with sample write-up) here",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#resources",
+    "href": "07-moderation.html#resources",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Resources",
+    "text": "Resources\nThere are a number of mediation, moderation, and mediated moderation models that you can use to test various hypotheses. Once you have a basic familairity of the models they become intuitive. Model templates are located here.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#additional-notes",
+    "href": "07-moderation.html#additional-notes",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Additional Notes",
+    "text": "Additional Notes\nStay calm and remove interactions with toxic people.\n\n\n\n\nBarboza-Salerno, G. E., & Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. Child Abuse & Neglect, 149, 106705.\n\n\nElise Barboza, G., & Siller, L. A. (2021). Child Maltreatment, School Bonds, and Adult Violence: A Serial Mediation Model. Journal of Interpersonal Violence, 36(11-12), NP5839–NP5873. https://doi.org/10.1177/0886260518805763Physically abused youth are vulnerable to experiencing difficulties across multiple domains of school functioning. Most of the literature examining the relationship between child physical abuse (CPA) and adult violence has focused narrowly on academic outcomes rather than taking a broader view that explores the processes undergirding school engagement and connections. The present study adopted Connell’s model of school engagement, connectedness and outcomes within a social bond framework to examine (a) the link between CPA and school social bonds, (b) the link between CPA and adult violence persistence, and (c) the mediational (parallel, serial) effects of school bonds (engagement, connection, and achievement) on violence perpetration in adulthood. Consistent with previous research, results indicated that children who experience physical abuse have poorer academic performance, which, in turn, is related to future violent trajectories. We further found that the relationship between CPA and violence persistence is mediated by a process of bonding to school that begins with being actively engaged in school activities and ends with higher levels of academic achievement. In particular, some of the “school achievement” effect found in previous research operates through behavioral and emotional manifestations and may be partly explained through physically abused children’s lessened ability to be engaged with and connected to school activities. We conclude with a discussion of the policy implications stemming from our findings.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07-moderation.html#throughout-this-week-we-will-discuss-how-to-interpret-interaction-effects-visualize-moderation-using-interaction-plots-and-apply-these-concepts-using-statistical-software.-by-the-end-of-the-module-you-will-be-able-to-identify-when-moderation-is-appropriate-test-for-moderation-effects-and-communicate-findings-effectively-in-research-and-policy-contexts",
+    "href": "07-moderation.html#throughout-this-week-we-will-discuss-how-to-interpret-interaction-effects-visualize-moderation-using-interaction-plots-and-apply-these-concepts-using-statistical-software.-by-the-end-of-the-module-you-will-be-able-to-identify-when-moderation-is-appropriate-test-for-moderation-effects-and-communicate-findings-effectively-in-research-and-policy-contexts",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
+    "section": "Throughout this week, we will discuss how to interpret interaction effects, visualize moderation using interaction plots, and apply these concepts using statistical software. By the end of the module, you will be able to identify when moderation is appropriate, test for moderation effects, and communicate findings effectively in research and policy contexts",
+    "text": "Throughout this week, we will discuss how to interpret interaction effects, visualize moderation using interaction plots, and apply these concepts using statistical software. By the end of the module, you will be able to identify when moderation is appropriate, test for moderation effects, and communicate findings effectively in research and policy contexts",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
     ]
   }
 ]
