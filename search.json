@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Statistics for Social Justice",
     "section": "",
-    "text": "1 Welcome to SW 8409: Statistics II\nThis book integrates statistical concepts with real-world social justice applications, focusing on equitable data analysis and actionable insights. It is designed for social work researchers, activists, and students seeking to harness the power of data for transformative change.\nThe book is built for my Stats II course in the College of Social Work at The Ohio State University.",
+    "text": "Welcome to SW 8409: Statistics II\nThis book integrates statistical concepts with real-world social justice applications, focusing on equitable data analysis and actionable insights. It is designed for social work researchers, activists, and students seeking to harness the power of data for transformative change.\nThe book is built for my Stats II course in the College of Social Work at The Ohio State University.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Statistics for Social Justice</span>"
     ]
@@ -1728,7 +1728,7 @@
     "href": "07-moderation.html#reading",
     "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
     "section": "Reading",
-    "text": "Reading\n\nHayes, Andrew. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis Chapters 7 - 10.\nI have used these methods on several occasions, check out Barboza-Salerno & Meshelemiah (2024) and Elise Barboza & Siller (2021).",
+    "text": "Reading\n\nHayes, Andrew. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis Chapters 7 - 10.\nI have used these methods on several occasions, check out Barboza-Salerno & Meshelemiah (2024) and Elise Barboza & Siller (2021).\n\nBarboza-Salerno, G. E., & Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. Child Abuse & Neglect, 149, 106705.\nBarboza, G., & Siller, L. A. (2021). Child Maltreatment, School Bonds, and Adult Violence: A Serial Mediation Model. Journal of Interpersonal Violence, 36(11–12), NP5839–NP5873. https://doi.org/10.1177/0886260518805763",
     "crumbs": [
       "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
@@ -1739,7 +1739,7 @@
     "href": "07-moderation.html#introduction-to-the-topic",
     "title": "Mediation, Moderation, and Conditional Process Models (Part 2)",
     "section": "Introduction to the Topic",
-    "text": "Introduction to the Topic\nThis week, we explore moderation analysis, a statistical approach used to understand how the relationship between two variables changes depending on a third variable, known as the moderator. Unlike simple regression, where we assess a direct relationship between an independent and dependent variable, moderation analysis allows us to examine whether this relationship varies in strength or direction based on different levels of another variable.\nModeration is particularly useful in social sciences, public health, and policy research, where the effect of an intervention or exposure may differ depending on contextual factors such as age, gender, socioeconomic status, or environmental conditions. For example, in public health studies, we might investigate whether the relationship between neighborhood poverty and child maltreatment rates is moderated by community resources or green space availability.",
+    "text": "Introduction to the Topic\nThis week, we explore moderation analysis, a statistical approach used to understand how the relationship between two variables changes depending on a third variable, known as the moderator. Unlike simple regression, where we assess a direct relationship between an independent and dependent variable, moderation analysis allows us to examine whether this relationship varies in strength or direction based on different levels of another variable.\nModeration is particularly useful in social sciences, public health, and policy research, where the effect of an intervention or exposure may differ depending on contextual factors such as age, gender, socioeconomic status, or environmental conditions. For example, in public health studies, we might investigate whether the relationship between neighborhood poverty and child maltreatment rates is moderated by community resources or green space availability.\nThroughout this week, we will discuss how to interpret interaction effects, visualize moderation using interaction plots, and apply these concepts using statistical software. By the end of the module, you will be able to identify when moderation is appropriate, test for moderation effects, and communicate findings effectively in research and policy contexts",
     "crumbs": [
       "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
@@ -1831,6 +1831,171 @@
     "crumbs": [
       "**Advanced Regression Techniques**",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 2)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html",
+    "href": "07a-moderation.html",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "",
+    "text": "Week 12: March 23, 2025",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#reading",
+    "href": "07a-moderation.html#reading",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Reading",
+    "text": "Reading\n\nHayes, Andrew. (2018). Introduction to Mediation, Moderation, and Conditional Process Analysis Chapters 7 - 10.\nI have used these methods on several occasions, check out Barboza-Salerno & Remillard (2023).\n\nBarboza-Salerno, G. E., & Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: do future expectations and sexual identity moderate the mediating role of posttraumatic stress?. Journal of Child & Adolescent Trauma, 16(4), 945-957.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#introduction-to-the-topic",
+    "href": "07a-moderation.html#introduction-to-the-topic",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week we continue to learn about advanced mediation models and effect moderation. To review, please see last week’s page\n\nIn-Class Files and Data Sets\nData sets:\n– Our first example uses the presumed media influence study: pmi.sav to estimate a serial mediation of article importance and PMI jointly. – Next, we are going to use PRAMS data to examine potential pathways by which intimate partner violence prior to pregnancy impacts poor birth outcomes, i.e., low birth weight in infants. Please note that this is not only a public health issue, low birth weight disproportionately effects persons on the basis of race, and so it qualifies as a civil rights issue.\nModeration: Finally, we will learn about moderation effects, which we did not get to last week. We will use these files:\n\nExample 1: Dichotomous Moderation Effect, Sexual Minority. I saved the SPSS output\nExample 2: Continuous Moderation Effect, NSCAW",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#key-concepts",
+    "href": "07a-moderation.html#key-concepts",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nDefinition: Moderation occurs when the strength or direction of the relationship between an independent variable X and a dependent variable Y depends on a third variable W, called the moderator.\nInteraction/Effect moderation: The key indicator of moderation is a statistically significant interaction term, X * W, in a regression model, suggesting that the effect of X on Y varies depending on W.\nVisualization: Simple slopes analysis and interaction plots help visualize and interpret moderation effects.\nProbing Interactions: This is an extremely useful technique in which you can detect statistically significant regions of the interaction. Super exciting!\nDistinguishing Moderation from Mediation:\n\nModeration affects the strength of the relationship between X and Y.\nMediation explains the mechanism through which X affects Y via an intermediate variable.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#relevance",
+    "href": "07a-moderation.html#relevance",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to use PROCESS in R and SPSS to test effect moderation to examine when or for whom an effect occurs (e.g., does the effect of stress on mental health differ based on social support?)\nStudents will begin to understand what conditional (i.e., moderation) indirect effects (i.e., mediation) are and how to use them to test innovative hypotheses in social work (i.e., moderated mediation).",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#why-this-is-important",
+    "href": "07a-moderation.html#why-this-is-important",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nMediation analysis, as we saw last week, allows researchers to move beyond simple relationships to uncover how and why effects occur.\nUnderstanding mediation is critical for testing theoretical models in fields like social work, psychology, sociology, and public health.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#how-this-ties-into-the-overall-course",
+    "href": "07a-moderation.html#how-this-ties-into-the-overall-course",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon previous topics, such as regression and effect sizes, by extending these tools to explore conditional effects.\nPrepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where interaction terms can be useful.\n\nBy the end of this week, students will be able to conduct moderation analyses, interpret conditional effects, and evaluate the significance of effect moderation using SPSS and R.\n\nIn-Class Files and Data Sets\nData sets:\n– Our first example uses the presumed media influence study: pmi.sav to estimate a serial mediation of article importance and PMI jointly. – Next, we are going to use PRAMS data to examine potential pathways by which intimate partner violence prior to pregnancy impacts poor birth outcomes, i.e., low birth weight in infants. Please note that this is not only a public health issue, low birth weight disproportionately effects persons on the basis of race, and so it qualifies as a civil rights issue.\nModeration: Finally, we will learn about moderation effects, which we did not get to last week. We will use these files:\n\nExample 1: Dichotomous Moderation Effect, Sexual Minority. I saved the SPSS output\nExample 2: Continuous Moderation Effect, NSCAW",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#lab-files",
+    "href": "07a-moderation.html#lab-files",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Lab Files",
+    "text": "Lab Files\nMediation: You are going to do this lab using the NSCAW data to examine whether (1) children investigated for abuse or neglect who have witnessed severe violence at Wave 1 (EV_W1) are more likely to engage in externalizing behavior at Wave 3 (bcext3); and (2) post-traumatic stress at Wave 1 (tra1) is the mechanism violence exposure is linked to externalizing behavior.\nModeration: I have created some Excel output so you can learn how to take the output and visualize the results. One file plots the effect moderation for age on the association between post-traumatic stress and delinquent behaviors using a subset of the NSCAW. Now, you can use this file to practice making a similar chart using excel to answer the question: What is the effect moderation of sexual minority status on the association between post-traumatic stress and delinquent behavior?\nModeration in R: I have written the code to show you how to implement moderation in R. ### Lecture Notes & Class Files\n\nDownload today’s slides here\nI want us to assess our knowledge of mediation today",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#resources",
+    "href": "07a-moderation.html#resources",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Resources",
+    "text": "Resources\nThere are a number of mediation, moderation, and mediated moderation models that you can use to test various hypotheses. Once you have a basic familairity of the models they become intuitive. Model templates are located here.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "07a-moderation.html#additional-notes",
+    "href": "07a-moderation.html#additional-notes",
+    "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
+    "section": "Additional Notes",
+    "text": "Additional Notes\nStay calm and remove interactions with toxic people.\n\n\n\n\nBarboza-Salerno, G. E., & Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: Do future expectations and sexual identity moderate the mediating role of posttraumatic stress? Journal of Child & Adolescent Trauma, 16(4), 945–957.",
+    "crumbs": [
+      "**Advanced Regression Techniques**",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
+    ]
+  },
+  {
+    "objectID": "slides/moderation/moderation.html",
+    "href": "slides/moderation/moderation.html",
+    "title": "Moderation Analysis",
+    "section": "",
+    "text": "Prelims\ninstall.packages(c(“haven”, “interactions”, “ggplot2”, “jtools”))\n# Load libraries\nlibrary(haven)         # For reading SPSS files\nlibrary(ggplot2)       # For plotting\nlibrary(jtools)        # For interaction and J-N plot\nlibrary(interactions)  # For Johnson-Neyman analysis\n\n# Load the data\ndata &lt;- read_sav(\"../../slides/medmod2/sexmin_pts_delinq.sav\")\n# Check variable types\nstr(data)\n\ntibble [126 × 3] (S3: tbl_df/tbl/data.frame)\n $ sexmin: num [1:126] 0 1 0 0 0 0 0 1 0 0 ...\n  ..- attr(*, \"format.spss\")= chr \"F1.0\"\n $ delinq: num [1:126] 0 0 2 4 5 0 0 0 0 0 ...\n  ..- attr(*, \"format.spss\")= chr \"F2.0\"\n $ ptss  : num [1:126] 2 2 2 2 2 3 3 3 4 4 ...\n  ..- attr(*, \"format.spss\")= chr \"F2.0\"",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "slides/moderation/moderation.html#data-types",
+    "href": "slides/moderation/moderation.html#data-types",
+    "title": "Moderation Analysis",
+    "section": "Data types",
+    "text": "Data types\nSexual minority is binary coded as 0/1. This does not make for a nice plot, but the JN method does not accept factor variables. So, for plotting, you can convert sexmin to factor and use labels (i.e., “Sexual Minority” “Not a Sexual Minority”), otherwise skip it. Try it yourself to see what happens.\n\ndata$sexmin1 &lt;- as.factor(data$sexmin)\ndata$sexmin1 &lt;- ifelse(data$sexmin1 == 1, \"Sexual Minority\", \"Not a Sexual Minority\")",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "slides/moderation/moderation.html#the-linear-regression-model",
+    "href": "slides/moderation/moderation.html#the-linear-regression-model",
+    "title": "Moderation Analysis",
+    "section": "The Linear Regression Model",
+    "text": "The Linear Regression Model\n\n# Fit moderation model\nmod &lt;- lm(delinq ~ ptss * sexmin, data = data)\n\n# Summary of model\nsummary(mod)\n\n\nCall:\nlm(formula = delinq ~ ptss * sexmin, data = data)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-4.8245 -1.7327 -0.7327  1.4922 11.4534 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  2.13733    0.61912   3.452 0.000767 ***\nptss        -0.04496    0.06167  -0.729 0.467336    \nsexmin      -0.72060    1.39755  -0.516 0.607066    \nptss:sexmin  0.25795    0.12457   2.071 0.040517 *  \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 2.511 on 121 degrees of freedom\n  (1 observation deleted due to missingness)\nMultiple R-squared:  0.1406,    Adjusted R-squared:  0.1193 \nF-statistic: 6.599 on 3 and 121 DF,  p-value: 0.0003623\n\n\n\n\n\nTable 1. Regression Coefficients\n\n\n\n\n\n\n\n\n\n\nPredictor\nEstimate\nStd..Error\nt.value\np.value\nSignificance\n\n\n\n\nIntercept\n2.137\n0.619\n3.452\n0.001\n***\n\n\nPTSS\n-0.045\n0.062\n-0.729\n0.467\n\n\n\nSexual Minority (vs. non-minority)\n-0.721\n1.398\n-0.516\n0.607\n\n\n\nPTSS × Sexual Minority\n0.258\n0.125\n2.071\n0.041\n*\n\n\n\n\n\nThis should look familiar. The model predicts delinquent behavior using PTSS, sexual minority status, and their interaction as predictors.\nREVIEW:\n\nIntercept (2.14): This is the expected value of the outcome when PTSS = 0 and the individual is not a sexual minority.\nPTSS (-0.045): Among non-sexual minority individuals, PTSS is not significantly associated with the outcome (p = 0.467).\nSexual Minority main effect (-0.721): Among individuals with PTSS = 0, being a sexual minority is not significantly associated with the outcome (p = 0.607).\nPTSS × Sexual Minority interaction (0.258): This term is statistically significant (p = 0.041), indicating that the association between PTSS and the outcome differs by sexual minority status. Specifically, PTSS has a stronger positive effect on the outcome for sexual minority individuals.\n\n\nReminder: All model assumptions (?) must be met, unfortunately.\n\n# Visualize interaction effect\ninteract_plot(mod,\n              pred = ptss,\n              modx = sexmin,\n              plot.points = F,\n              interval = TRUE,\n              int.width = 0.95,\n              main.title = \"Moderation of PTSS and Sexual Minority Status on Delinquency\",\n              legend.main = \"Identity\",\n              x.label = \"PTSS\",\n              y.label = \"Delinquency\")",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "slides/moderation/moderation.html#interpretation",
+    "href": "slides/moderation/moderation.html#interpretation",
+    "title": "Moderation Analysis",
+    "section": "Interpretation",
+    "text": "Interpretation\nThis plot shows how post-traumatic stress symptoms (PTSS) predict delinquency, and how this relationship differs by sexual minority status.\nSolid Line (sexmin = 1) → Sexual minority individuals\n\nThe slope is positive, indicating that as PTSS increases, delinquency increases for sexual minority youth.\nThis relationship is statistically significant. Note that you can assess significance from the plot because the confidence band (shaded area) does not cross zero\n\nDashed Line (sexmin = 0) → Non-sexual minority individuals\n\nThe slope is slightly negative, mostly flat, suggesting that PTSS is not associated with delinquency in this group.\n\nInteraction effect: The effect of PTSS on delinquency depends on sexual minority status. More PTSS = More delinquency for sexual minority youth, more PTSS has no effect for youth who do not identify as a sexual minority.\n\n# Johnson-Neyman technique\njohnson_neyman(mod, pred = sexmin, modx = ptss)\n\nJOHNSON-NEYMAN INTERVAL \n\nWhen ptss is OUTSIDE the interval [-164.38, 7.60], the slope of sexmin is p\n&lt; .05.\n\nNote: The range of observed values of ptss is [2.00, 17.00]",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "slides/moderation/moderation.html#interpretation-of-the-johnson-neyman-plot-j-n",
+    "href": "slides/moderation/moderation.html#interpretation-of-the-johnson-neyman-plot-j-n",
+    "title": "Moderation Analysis",
+    "section": "Interpretation of the Johnson-Neyman Plot (J-N)",
+    "text": "Interpretation of the Johnson-Neyman Plot (J-N)\nThis J-N plot shows how the effect of sexual minority status on delinquency changes depending on the level of PTSS.\nKey Interpretation: - The red shade shows where the effect of sexual minority status on delinquency is not statistically significant (p &gt; .05). - The blue shade shows where the effect *is** statistically significant (p &lt; .05). - The dashed vertical line marks the (J-N — the *threshold of PTSS** where the effect of sexmin becomes significant. - The black horizontal bar along the x-axis shows the *observed range of PTSS in the data**.\n\nRegions of significance\nFor individuals with PTSS scores below ~8, the difference in delinquency between sexual minority and non-minority youth is not statistically significant. However, when PTSS exceeds ~8, sexual minority youth show significantly higher delinquency compared to their peers.\n\n\nLink to policy and practice\nI have several published articles using this type of methodology. In one article Barboza-Salerno & Remillard (2023) we examined the impact of future orientation in buffering the effect of early child adversity on delinquent behavior. Read it, you should be able to write the paper now.\n\n\n\n\nBarboza-Salerno, G. E., & Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: Do future expectations and sexual identity moderate the mediating role of posttraumatic stress? Journal of Child & Adolescent Trauma, 16(4), 945–957.",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
     ]
   }
 ]

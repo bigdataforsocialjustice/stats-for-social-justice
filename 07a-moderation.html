@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mediation, Moderation, and Conditional Process Models (Part 2) – Statistics for Social Justice</title>
+<title>Mediation, Moderation, and Conditional Process Models (Part 3) – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./07a-moderation.html" rel="next">
-<link href="./06-mediation.html" rel="prev">
+<link href="./08-measurement-scale.html" rel="next">
+<link href="./07-moderation.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -101,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-logistic-regression.html"><strong>Advanced Regression Techniques</strong></a></li><li class="breadcrumb-item"><a href="./07-moderation.html"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-logistic-regression.html"><strong>Advanced Regression Techniques</strong></a></li><li class="breadcrumb-item"><a href="./07a-moderation.html"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -209,12 +209,12 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-moderation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></a>
+  <a href="./07-moderation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07a-moderation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></a>
+  <a href="./07a-moderation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></a>
   </div>
 </li>
       </ul>
@@ -374,21 +374,14 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#week-11-march-17-2025" id="toc-week-11-march-17-2025" class="nav-link active" data-scroll-target="#week-11-march-17-2025">Week 11: March 17, 2025</a>
+  <li><a href="#week-12-march-23-2025" id="toc-week-12-march-23-2025" class="nav-link active" data-scroll-target="#week-12-march-23-2025">Week 12: March 23, 2025</a>
   <ul class="collapse">
   <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
-  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts:</a></li>
-  <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance:</a></li>
-  <li><a href="#why-this-is-important" id="toc-why-this-is-important" class="nav-link" data-scroll-target="#why-this-is-important">Why This Is Important:</a></li>
-  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a>
+  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a>
   <ul class="collapse">
   <li><a href="#in-class-files-and-data-sets" id="toc-in-class-files-and-data-sets" class="nav-link" data-scroll-target="#in-class-files-and-data-sets">In-Class Files and Data Sets</a></li>
   </ul></li>
-  <li><a href="#lab-files" id="toc-lab-files" class="nav-link" data-scroll-target="#lab-files">Lab Files</a>
-  <ul class="collapse">
-  <li><a href="#lecture-notes-class-files" id="toc-lecture-notes-class-files" class="nav-link" data-scroll-target="#lecture-notes-class-files">Lecture Notes &amp; Class Files</a></li>
-  </ul></li>
+  <li><a href="#lab-files" id="toc-lab-files" class="nav-link" data-scroll-target="#lab-files">Lab Files</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
   </ul></li>
@@ -398,9 +391,9 @@ div.csl-indent {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-logistic-regression.html"><strong>Advanced Regression Techniques</strong></a></li><li class="breadcrumb-item"><a href="./07-moderation.html"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-logistic-regression.html"><strong>Advanced Regression Techniques</strong></a></li><li class="breadcrumb-item"><a href="./07a-moderation.html"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></h1>
+<h1 class="title"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></h1>
 </div>
 
 
@@ -417,74 +410,26 @@ div.csl-indent {
 </header>
 
 
-<section id="week-11-march-17-2025" class="level1">
-<h1>Week 11: March 17, 2025</h1>
+<section id="week-12-march-23-2025" class="level1">
+<h1>Week 12: March 23, 2025</h1>
 <section id="reading" class="level2">
 <h2 class="anchored" data-anchor-id="reading">Reading</h2>
 <ul>
 <li><p>Hayes, Andrew. (2018). <a href="https://github.com/bigdataforsocialjustice/SWK8408/blob/master/Mediation%2C%20Moderation%20and%20Conditional%20Process%20Models.pdf">Introduction to Mediation, Moderation, and Conditional Process Analysis</a> Chapters 7 - 10.</p></li>
-<li><p>I have used these methods on several occasions, check out <span class="citation" data-cites="barboza-salernoAssociationsEarlyChild2024a">Barboza-Salerno &amp; Meshelemiah (<a href="#ref-barboza-salernoAssociationsEarlyChild2024a" role="doc-biblioref">2024</a>)</span> and <span class="citation" data-cites="elise_barboza_child_2021">Elise Barboza &amp; Siller (<a href="#ref-elise_barboza_child_2021" role="doc-biblioref">2021</a>)</span>.</p>
+<li><p>I have used these methods on several occasions, check out <span class="citation" data-cites="barboza2023early">Barboza-Salerno &amp; Remillard (<a href="#ref-barboza2023early" role="doc-biblioref">2023</a>)</span>.</p>
 <ul>
-<li><p>Barboza-Salerno, G. E., &amp; Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. Child Abuse &amp; Neglect, 149, 106705.</p></li>
-<li><p>Barboza, G., &amp; Siller, L. A. (2021). Child Maltreatment, School Bonds, and Adult Violence: A Serial Mediation Model. Journal of Interpersonal Violence, 36(11–12), NP5839–NP5873. https://doi.org/10.1177/0886260518805763</p></li>
+<li>Barboza-Salerno, G. E., &amp; Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: do future expectations and sexual identity moderate the mediating role of posttraumatic stress?. Journal of Child &amp; Adolescent Trauma, 16(4), 945-957.</li>
 </ul></li>
 </ul>
 </section>
 <section id="introduction-to-the-topic" class="level2">
 <h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
-<p>This week, we explore <strong>moderation analysis</strong>, a statistical approach used to understand how the relationship between two variables changes depending on a third variable, known as the moderator. Unlike simple regression, where we assess a direct relationship between an independent and dependent variable, moderation analysis allows us to examine whether this relationship varies in strength or direction based on different levels of another variable.</p>
-<p>Moderation is particularly useful in social sciences, public health, and policy research, where the effect of an intervention or exposure may differ depending on contextual factors such as age, gender, socioeconomic status, or environmental conditions. For example, in public health studies, we might investigate whether the relationship between neighborhood poverty and child maltreatment rates is moderated by community resources or green space availability.</p>
-<p>Throughout this week, we will discuss how to interpret interaction effects, visualize moderation using interaction plots, and apply these concepts using statistical software. By the end of the module, you will be able to identify when moderation is appropriate, test for moderation effects, and communicate findings effectively in research and policy contexts</p>
-</section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts:</h2>
-<ul>
-<li><strong>Definition</strong>: Moderation occurs when the strength or direction of the relationship between an independent variable <em>X</em> and a dependent variable <em>Y</em> depends on a third variable <em>W</em>, called the moderator.</li>
-<li><strong>Interaction/Effect moderation</strong>: The key indicator of moderation is a statistically significant interaction term, <em>X</em> * <em>W</em>, in a regression model, suggesting that the effect of <em>X</em> on <em>Y</em> varies depending on <em>W</em>.</li>
-<li><strong>Visualization</strong>: Simple slopes analysis and interaction plots help visualize and interpret moderation effects.</li>
-<li><strong>Probing Interactions</strong>: This is an extremely useful technique in which you can detect statistically significant regions of the interaction. Super exciting!</li>
-<li><strong>Distinguishing Moderation from Mediation</strong>:
-<ul>
-<li>Moderation affects the strength of the relationship between <em>X</em> and <em>Y</em>.</li>
-<li>Mediation explains the mechanism through which <em>X</em> affects <em>Y</em> via an intermediate variable.</li>
-</ul></li>
-</ul>
-<hr>
-</section>
-<section id="relevance" class="level2">
-<h2 class="anchored" data-anchor-id="relevance">Relevance:</h2>
-<ul>
-<li>Students will learn how to use PROCESS in R and SPSS to test effect moderation to examine when or for whom an effect occurs (e.g., does the effect of stress on mental health differ based on social support?)</li>
-<li>Students will begin to understand what conditional (i.e., moderation) indirect effects (i.e., mediation) are and how to use them to test innovative hypotheses in social work (i.e., moderated mediation).</li>
-</ul>
-<hr>
-</section>
-<section id="why-this-is-important" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-is-important">Why This Is Important:</h2>
-<ul>
-<li><a href="./06-mediation.html">Mediation analysis</a>, as we saw last week, allows researchers to move beyond simple relationships to uncover <em>how</em> and <em>why</em> effects occur.</li>
-<li>Understanding mediation is critical for testing theoretical models in fields like social work, psychology, sociology, and public health.</li>
-</ul>
-<hr>
-</section>
-<section id="how-this-ties-into-the-overall-course" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</h2>
-<ul>
-<li>Builds upon previous topics, such as <a href="./03-multiple-regression.html">regression</a> and <a href="./04-effect-sizes.html">effect sizes</a>, by extending these tools to explore conditional effects.</li>
-<li>Prepares students for advanced concepts like moderated mediation and structural equation modeling (SEM), where interaction terms can be useful.</li>
-</ul>
-<p>By the end of this week, students will be able to conduct moderation analyses, interpret conditional effects, and evaluate the significance of effect moderation using SPSS and R.</p>
+<p>This week we continue to learn about advanced mediation models and effect moderation. To review, please see last <a href="./07-moderation.html">week’s page</a></p>
 <section id="in-class-files-and-data-sets" class="level3">
 <h3 class="anchored" data-anchor-id="in-class-files-and-data-sets">In-Class Files and Data Sets</h3>
-<p><strong>Data sets:</strong> We will use datasets from Hayes on <a href="slides/medmod2/estress.sav">workplace related stress: estress.sav</a> and <a href="slides/medmod2/pmi.sav">presumed media influence on the intention to purchase: pmi.sav</a>.</p>
-<p><strong>Mediation Extensions:</strong> First, are going to extend the simple mediation model we learned last time by incorporating multiple mediators. I have saved the SPSS output for several different examples:</p>
-<ul>
-<li><a href="slides/medmod2/Simple Mediation Example 1.spv">Example 1</a>: Dichotomous Predictor, Simple Mediation, <a href="slides/medmod2/pmi.sav">The PMI study</a></li>
-<li><a href="slides/medmod2/Simple Mediation Example 2.spv">Example 2</a>: Continuous Predictor, <a href="slides/medmod2/estress.sav">Economic Stress Among Small Business Owners</a></li>
-<li><a href="slides/medmod2/Simple Mediation Example 3 with covariates.spv">Example 3</a> Continuous Predictor with controls, Economic Stress Among Small Business Owners (same data set as above)</li>
-</ul>
-<p>Next, we extend the simple case using examples representing <a href="slides/medmod2/Parallel Mediation Example 4.spv">parallel</a>, <a href="slides/medmod2/Serial Mediation Example 5.spv">serial mediation</a> and <a href="slides/medmod2/Serial Mediation Example 6 with contrasts.spv">serial mediation with contrasts</a>.</p>
-<p><strong>Moderation:</strong> Finally, we end today with an example of how to implement moderation. We will use these files:</p>
+<p><strong>Data sets:</strong></p>
+<p>– Our first example uses the <a href="slides/medmod2/pmi.sav">presumed media influence study: pmi.sav</a> to estimate a serial mediation of article importance and PMI jointly. – Next, we are going to use <a href="slides/moderation/fullprams.sav">PRAMS data</a> to examine potential pathways by which intimate partner violence prior to pregnancy impacts poor birth outcomes, i.e., low birth weight in infants. <strong>Please note</strong> that this is not only a public health issue, low birth weight disproportionately effects persons on the basis of race, and so it qualifies as a civil rights issue.</p>
+<p><strong>Moderation:</strong> Finally, we will learn about moderation effects, which we did not get to last week. We will use these files:</p>
 <ul>
 <li>Example 1: Dichotomous Moderation Effect, <a href="slides/medmod2/sexmin_pts_delinq.sav">Sexual Minority</a>. I saved the <a href="slides/medmod2/Simple Moderation Example 7.spv">SPSS output</a></li>
 <li><a href="slides/medmod2/pts vex mod mediation.sav">Example 2</a>: Continuous Moderation Effect, <a href="slides/medmod2/pts vex mod mediation.sav">NSCAW</a></li>
@@ -495,13 +440,11 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="lab-files">Lab Files</h2>
 <p><strong>Mediation:</strong> You are going to do this lab using the <a href="slides/medmod2/pts vex mod mediation.sav">NSCAW data</a> to examine whether (1) children investigated for abuse or neglect who have witnessed severe violence at Wave 1 (EV_W1) are more likely to engage in externalizing behavior at Wave 3 (bcext3); and (2) post-traumatic stress at Wave 1 (tra1) is the mechanism violence exposure is linked to externalizing behavior.</p>
 <p><strong>Moderation:</strong> I have created some Excel output so you can learn how to take the output and visualize the results. One file <a href="slides/medmod2/plotting effects moderation age pts and delinq.xlsx">plots the effect moderation</a> for age on the association between post-traumatic stress and delinquent behaviors using a subset of the NSCAW. Now, you can use <a href="slides/medmod2/plotting effects moderation.xlsx">this file</a> to practice making a similar chart using excel to answer the question: <em>What is the effect moderation of sexual minority status on the association between post-traumatic stress and delinquent behavior?</em></p>
-<section id="lecture-notes-class-files" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-notes-class-files">Lecture Notes &amp; Class Files</h3>
+<p><strong>Moderation in R:</strong> I have written the code to show you how to implement <a href="./slides/moderation/moderation.html">moderation in R</a>. ### Lecture Notes &amp; Class Files</p>
 <ul>
-<li>Download today’s slides <a href="slides/medmod2/mediation_moderation.pptx">here</a></li>
-<li>Check out my annotated Word document interpreting parallel mediation (with sample write-up) <a href="slides/medmod2/Annotated Output of Parallel Mediation Analysis.docx">here</a></li>
+<li>Download today’s slides <a href="slides/moderation/Mediation and Moderation (Part 3).pptx">here</a></li>
+<li>I want us to <a href="data/inclass-mediation.docx">assess our knowledge</a> of mediation today</li>
 </ul>
-</section>
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources</h2>
@@ -514,11 +457,8 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-barboza-salernoAssociationsEarlyChild2024a" class="csl-entry" role="listitem">
-Barboza-Salerno, G. E., &amp; Meshelemiah, J. C. (2024). Associations between early child adversity and lifetime suicide attempts among gender diverse individuals: A moderated mediation. <em>Child Abuse &amp; Neglect</em>, <em>149</em>, 106705.
-</div>
-<div id="ref-elise_barboza_child_2021" class="csl-entry" role="listitem">
-Elise Barboza, G., &amp; Siller, L. A. (2021). Child <span>Maltreatment</span>, <span>School Bonds</span>, and <span>Adult Violence</span>: <span>A Serial Mediation Model</span>. <em>Journal of Interpersonal Violence</em>, <em>36</em>(11-12), NP5839–NP5873. <a href="https://doi.org/10.1177/0886260518805763">https://doi.org/10.1177/0886260518805763</a><div class="csl-block">Physically abused youth are vulnerable to experiencing difficulties across multiple domains of school functioning. Most of the literature examining the relationship between child physical abuse (CPA) and adult violence has focused narrowly on academic outcomes rather than taking a broader view that explores the processes undergirding school engagement and connections. The present study adopted Connell’s model of school engagement, connectedness and outcomes within a social bond framework to examine (a) the link between CPA and school social bonds, (b) the link between CPA and adult violence persistence, and (c) the mediational (parallel, serial) effects of school bonds (engagement, connection, and achievement) on violence perpetration in adulthood. Consistent with previous research, results indicated that children who experience physical abuse have poorer academic performance, which, in turn, is related to future violent trajectories. We further found that the relationship between CPA and violence persistence is mediated by a process of bonding to school that begins with being actively engaged in school activities and ends with higher levels of academic achievement. In particular, some of the <span>“school achievement”</span> effect found in previous research operates through behavioral and emotional manifestations and may be partly explained through physically abused children’s lessened ability to be engaged with and connected to school activities. We conclude with a discussion of the policy implications stemming from our findings.</div>
+<div id="ref-barboza2023early" class="csl-entry" role="listitem">
+Barboza-Salerno, G. E., &amp; Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: Do future expectations and sexual identity moderate the mediating role of posttraumatic stress? <em>Journal of Child &amp; Adolescent Trauma</em>, <em>16</em>(4), 945–957.
 </div>
 </div>
 </section>
@@ -947,13 +887,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./06-mediation.html" class="pagination-link" aria-label="Mediation, Moderation, and Conditional Process Models (Part 1)">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 1)</span></span>
+      <a href="./07-moderation.html" class="pagination-link" aria-label="Mediation, Moderation, and Conditional Process Models (Part 2)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 2)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./07a-moderation.html" class="pagination-link" aria-label="Mediation, Moderation, and Conditional Process Models (Part 3)">
-        <span class="nav-page-text"><span class="chapter-title">Mediation, Moderation, and Conditional Process Models (Part 3)</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./08-measurement-scale.html" class="pagination-link" aria-label="Measurement and Scale Creation">
+        <span class="nav-page-text"><span class="chapter-title">Measurement and Scale Creation</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
