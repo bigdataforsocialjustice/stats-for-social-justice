@@ -34,7 +34,6 @@ book:
 
     - part: "**Measurement & Factor Analysis**"
       chapters:
-        - 08-measurement-scale.qmd
         - 11-efa.qmd
         - 12-cfa.qmd
         - 13-lca.qmd
@@ -61,6 +60,7 @@ book:
         - reading.qmd
         - references.qmd
 
-    - part: "**Assignment\nSolutions**"
+    - part: "**Assignments**"
       chapters:
         - ass1writeup.qmd
+        - assign2.qmd
