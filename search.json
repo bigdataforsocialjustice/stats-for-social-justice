@@ -420,7 +420,7 @@
     "text": "Week 13: March 31, 2025",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -431,7 +431,7 @@
     "text": "Reading\n\nPituch et al. Chapter 9: Exploratory Factor Analysis, from pp 339\nHahs-Vaughn. Chapter 9: Applied Multivariate Statistical Concepts, from pp 362\nYong and Pearce - 2013 - A beginner’s guide to factor analysis",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -442,7 +442,7 @@
     "text": "Introduction to the Topic\nThis week, we focus on Exploratory Factor Analysis (EFA), a statistical method used to uncover the underlying structure of a set of observed variables. EFA is a critical tool for identifying latent constructs in datasets.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -453,7 +453,7 @@
     "text": "Key Concepts:\n\nLatent Variables: Unobserved factors inferred from observed variables.\nFactor Loadings: The relationship between observed variables and underlying factors.\nEigenvalues and Scree Plots: Tools for determining the number of factors to retain.\nRotation Methods: Techniques (e.g., Varimax, Promax) to simplify factor structure.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -464,7 +464,7 @@
     "text": "Relevance:\n\nStudents will learn how to conduct EFA to explore latent structures in data.\nStudents will gain skills to evaluate factor solutions and interpret factor loadings.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -475,7 +475,7 @@
     "text": "Why This Is Important:\n\nEFA helps researchers identify patterns and groupings in data without predefined hypotheses.\nIt is widely used in psychology, education, and social sciences to develop and validate measurement tools.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -486,7 +486,7 @@
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like correlations and covariance by introducing latent structures.\nPrepares students for Confirmatory Factor Analysis (CFA), where hypothesized factor structures are tested.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -2028,7 +2028,7 @@
     "text": "Lab Files\n\nSAQ-8: First, we illustrate factor analysis with a simple example from UCLA which you can read more about here. It uses the SAQ-8 to examine the latent structure of LOVING statistics.\nPIAAC: Then, we will use read data from the Program for the International Assessment of Adult Competencies (PIAAC) located here. From the website, the PIAAC survey seeks to answer the following policy questions:\n\nHow are skills distributed? A comparison of skill levels, skill requirements, investments in education and training across countries, investment mismatches across countries, as well as of investments and mismatches within countries, across demographic categories, regions, sectors of industry, levels and fields of schooling.\n\nWhy are skills important? The relation of skills to relevant labor market outcomes such as employment opportunities, earnings, job security, and skill utilization, as well as to other outcomes such as health, civic engagement, and social trust.\nWhat factors are related to skill acquisition and decline? The relation between various learning activities – education, training, informal learning activities – and skill acquisition. The relation of experiences at work, in education and everyday life to skill decline among older individuals.\n\nWe are using a subsetted spss file from the USA that you can download here and I also created a JASP file of the same data that is fully annotated here. The final, reduced model output with the variables that did not load highly on the factors is here in case you are interested.\n\nGenerations: A Study of the Life and Health of LGB People in a Changing Society: We will conduct a full FA using a dataset called Generations:A Study of the Life and Health of LGB People in a Changing Society We will use these data wo explore the factor structure of an ethnic identity scale and differences in the structure across race. The analysis is based on a paper by Johnson et al. (2022) that you can download here called The Group-Based Law Enforcement Mistrust Scale: Psychometric Properties of an Adapted Scale and Implications for Public Health and Harm Reduction Research\n\n\nLecture Notes\n\nDownload today’s slides here",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -2039,7 +2039,7 @@
     "text": "Resources",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -2050,7 +2050,7 @@
     "text": "Additional Notes\nStay calm and and let your life unfold one factor at a time.\n\n\n\n\nJohnson, L. M., Devereux, P. G., & Wagner, K. D. (2022). The group-based law enforcement mistrust scale: Psychometric properties of an adapted scale and implications for public health and harm reduction research. Harm Reduction Journal, 19(1), 60.",
     "crumbs": [
       "**Measurement & Factor Analysis**",
-      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
