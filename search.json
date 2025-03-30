@@ -126,6 +126,7 @@
     "section": "",
     "text": "Week 4: January 27, 2025",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -136,6 +137,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\n\nDiez et al., Chapter 8, pp. 304-340. Intro to linear regression. Be sure to check out the embedded videos.",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -146,6 +148,7 @@
     "section": "Simple Linear Regression – Introduction to the Topic",
     "text": "Simple Linear Regression – Introduction to the Topic\nThis week, we will delve into Simple Linear Regression, a foundational tool in statistical analysis that allows us to model relationships between two variables. Students will learn how to interpret the slope, intercept, and residuals, and use regression output to draw meaningful conclusions about data. Through this process, students will develop a deeper understanding of how regression can be used to predict outcomes and test hypotheses in social work research.\nIn this unit we will learn to quantify the relationship between two numerical variables, as well as modeling numerical response variables using a numerical or categorical explanatory variable.\n\n\nWhat will students learn this week?\n\nThe fundamental components of a simple linear regression model (slope, intercept, and residuals).\nHow to interpret regression output, including unstandardized and standardized coefficients.\nThe practical steps to fit a simple linear regression model in R using lm().\nHow to visualize regression results and residuals using ggplot2.\n\n\n\n\nWhy is this topic important?\nSimple Linear Regression serves as the building block for more advanced statistical methods, such as multiple regression, moderation, and mediation analysis. It allows social work researchers to identify relationships between variables, predict outcomes, and inform data-driven decision-making. Mastering this concept is essential for understanding more complex techniques later in the course.\n\n\n\nHow does it relate to previous or future content?\n\nTies to previous content: Builds upon last week’s review of descriptive statistics and introduces the concept of relationships between variables.\nPrepares for future topics: Provides a foundation for upcoming topics like multiple regression (Week 5), where we will expand from one predictor to multiple predictors, and interaction effects (Week 9), where regression will be used to explore moderating relationships.\n\n\nThis session emphasizes the practical and theoretical importance of regression analysis, helping students connect statistical techniques to real-world social work applications.",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -156,6 +159,7 @@
     "section": "Class Files",
     "text": "Class Files\n\nLecture Notes\n\nToday’s Lecture Notes\n\n\n\nR Code\n\nIntroduction to R",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -166,6 +170,7 @@
     "section": "Resources",
     "text": "Resources\n\nHere is my annotated file for correlation and SLR\nHere is the data I used if you want to replicate it in SPSS",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -176,6 +181,7 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\n\nPrimary Reading: Simple Linear Regression\nOptional Reading: Extrapolatoin - an example of what not to do despite the potential publication in a highly regarded journal",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -186,6 +192,7 @@
     "section": "R Lab Files",
     "text": "R Lab Files\n\nLab Instructions\nLab Dataset\nThe Escape Room Exercise",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -196,6 +203,7 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nRemain calm",
     "crumbs": [
+      "**Regression Mechanics**",
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Introduction to Simple Linear Regression</span>"
     ]
   },
@@ -272,7 +280,8 @@
     "section": "",
     "text": "Week 5: February 3, 2025",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -282,7 +291,8 @@
     "section": "Reading",
     "text": "Reading\n\nDiez et al. Chapter 9: Multiple Regression, up through pp 371; sec. 9.5",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -292,7 +302,8 @@
     "section": "Week 5: Multiple Linear Regression – Introduction to the Topic",
     "text": "Week 5: Multiple Linear Regression – Introduction to the Topic\nThis week, we will explore Multiple Linear Regression, a powerful extension of simple regression that allows us to analyze relationships between a dependent variable and multiple predictors. Students will learn how to specify, fit, and interpret multiple regression models, including how to assess their statistical significance and practical relevance. This week’s focus is on building and refining regression models that capture the complexity of real-world social work research.\n\n\nWhat will students learn this week?\n\nThe core components of multiple regression models, including F-tests, p-values, R², and adjusted R².\n\nHow to specify hypotheses in a multiple regression context.\n\nHow to fit and interpret multiple regression models in R using lm().\n\nTechniques to evaluate assumptions and diagnose issues in multiple regression models.\n\n\n\n\nWhy is this topic important?\nMultiple Linear Regression is one of the most widely used tools in statistical analysis. It enables social work researchers to: - Explore complex relationships between multiple predictors and outcomes. - Control for confounding variables and better isolate the effect of specific predictors. - Answer nuanced research questions that cannot be addressed with simple regression.\nBy mastering multiple regression, students gain the ability to analyze more realistic and multifaceted data, making their findings more robust and applicable to real-world settings.\n\n\n\nHow does it relate to previous or future content?\n\nTies to previous content: Builds on the foundation of Simple Linear Regression by introducing multiple predictors and exploring how they contribute to variance in outcomes.\n\nPrepares for future topics: Sets the stage for advanced methods like Effect Sizes and Confidence Intervals, Mediation Analysis, and Hierarchical Regression, where multiple predictors and their relationships play an even greater role.\n\n\nThis week’s topic bridges the gap between basic ## Class Files\n\n\nLecture Notes\n\nIntroduction to MLR\n\n\n\nR Code\n\nCorrelation and Regression\n\n\n\nData Sets\n\nPregnancy Risk Assessment Monitoring System Data file: Use this file to run correlate.R\nAnnotated JASP file for PRAMS data\nAnnotated JASP file (in lecture notes)\nGRE-GPA Example Data (in lecture notes)\nAdmissions Data (in lecture notes)",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -302,7 +313,8 @@
     "section": "Resources",
     "text": "Resources\nI have put together a detailed explanation that explains correlation, partial correlation, semipartial correlation using the PRAMS dataset\nAlso check out the video on semi-partial correlations. This is a key idea behind regression",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -312,7 +324,8 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\nA few years ago I wrote a paper examining classes of adversity and comparing the ACEs sum score across classes. Since the analyses we use today examine ACEs using the sum score, I thought it would be a good idea to have you reflect more about the methodology, and in particular how the choice of methodology can not only be not useful, it can be damaging. I will leave you to ask me about this so we can further talk about it from a social justice perspective.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -332,7 +345,8 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nKeep calm and be significant.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Multiple Linear Regression</span>"
     ]
   },
   {
@@ -405,7 +419,8 @@
     "section": "",
     "text": "Week 13: March 31, 2025",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -413,9 +428,10 @@
     "href": "11-efa.html#reading",
     "title": "EFA",
     "section": "Reading",
-    "text": "Reading\n\nPituch et al. Chapter 9: Exploratory Factor Analysis, from pp 339",
+    "text": "Reading\n\nPituch et al. Chapter 9: Exploratory Factor Analysis, from pp 339\nHahs-Vaughn. Chapter 9: Applied Multivariate Statistical Concepts, from pp 362\nYong and Pearce - 2013 - A beginner’s guide to factor analysis",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -425,7 +441,8 @@
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nThis week, we focus on Exploratory Factor Analysis (EFA), a statistical method used to uncover the underlying structure of a set of observed variables. EFA is a critical tool for identifying latent constructs in datasets.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -435,7 +452,8 @@
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nLatent Variables: Unobserved factors inferred from observed variables.\nFactor Loadings: The relationship between observed variables and underlying factors.\nEigenvalues and Scree Plots: Tools for determining the number of factors to retain.\nRotation Methods: Techniques (e.g., Varimax, Promax) to simplify factor structure.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -445,7 +463,8 @@
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to conduct EFA to explore latent structures in data.\nStudents will gain skills to evaluate factor solutions and interpret factor loadings.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -455,7 +474,8 @@
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nEFA helps researchers identify patterns and groupings in data without predefined hypotheses.\nIt is widely used in psychology, education, and social sciences to develop and validate measurement tools.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -463,9 +483,10 @@
     "href": "11-efa.html#how-this-ties-into-the-overall-course",
     "title": "EFA",
     "section": "How This Ties Into the Overall Course:",
-    "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like correlations and covariance by introducing latent structures.\nPrepares students for Confirmatory Factor Analysis (CFA), where hypothesized factor structures are tested.\n\nBy the end of this week, students will be able to perform EFA, determine the number of factors to retain, and interpret factor loadings to uncover meaningful constructs.",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like correlations and covariance by introducing latent structures.\nPrepares students for Confirmatory Factor Analysis (CFA), where hypothesized factor structures are tested.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>EFA</span>"
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
     ]
   },
   {
@@ -1698,8 +1719,8 @@
     "section": "",
     "text": "Dataset: Pregnancy Risk Assessment Monitoring System (PRAMS)\nThe data for this study were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS), a state-based surveillance system that collects data on maternal behaviors and experiences before, during, and shortly after pregnancy. The dataset used in this study, KSPRAMS_SUB_WEIGHT_ANALYSIS.csv, included key variables such as maternal smoking during the first trimester (CIG_1TRI), history of abuse (Any_Abuse), Adverse Childhood Experiences (ACEs_Scale), perinatal depression (BPG_DEPRS8), and race/ethnicity (Race_Ethnicity). To ensure data integrity, cases with missing values were omitted, resulting in a final analytical sample of 5,172 participants.",
     "crumbs": [
-      "**Assignment\nSolutions**",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
+      "**Assignments**",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
     ]
   },
   {
@@ -1709,8 +1730,8 @@
     "section": "Bonus",
     "text": "Bonus\n\nAPHA Abstract\nThe APHA abstracts are due at the end of March. If the assumptions of this model were not violated we could submit an abstract based on these results. Here is my sample abstract (~250 words) based on the above write-up, and formatted for the conference.\n\nBackground\nMaternal smoking during pregnancy remains a significant public health concern, with implications for both maternal and child health. Psychosocial risk factors such as adverse childhood experiences (ACEs), a history of abuse, and perinatal depression may contribute to smoking behaviors. This study investigates the association between these factors and smoking during the first trimester of pregnancy while also examining racial/ethnic disparities.\n\n\nMethods\nData were drawn from the Kentucky Pregnancy Risk Assessment Monitoring System (PRAMS). The final analytical sample consisted of 5,172 participants. Linear regression models were used to examine the association between smoking during the first trimester and key psychosocial risk factors. Race/ethnicity was included to assess disparities. Diagnostic tests were performed to evaluate model assumptions, including multicollinearity, normality, and heteroscedasticity.\n\n\nResults\nA history of abuse was associated with a 2.29-unit increase in smoking (p &lt; 0.001). Each additional ACE was linked to a 0.44-unit increase (p &lt; 0.001), with a one standard deviation increase (1.41 points) predicting a 0.62-unit increase and an interquartile range increase (2 points) predicting a 0.89-unit increase. Perinatal depression was associated with a 1.04-unit increase in smoking (p &lt; 0.001). Mothers with a history of abuse smoked 1.85 more cigarettes per day than those without abuse. Hispanic mothers exhibited significantly lower smoking rates compared to Non-Hispanic Whites (p &lt; 0.001).\n\n\nConclusion\nPsychosocial factors play a crucial role in maternal smoking behaviors. Targeted interventions incorporating mental health and trauma-informed care are essential in reducing prenatal smoking rates, particularly among at-risk populations.",
     "crumbs": [
-      "**Assignment\nSolutions**",
-      "<span class='chapter-number'>28</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
+      "**Assignments**",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Assignment 1 Write-up</span>"
     ]
   },
   {
@@ -1916,7 +1937,7 @@
     "href": "07a-moderation.html#lab-files",
     "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
     "section": "Lab Files",
-    "text": "Lab Files\nMediation: You are going to do this lab using the NSCAW data to examine whether (1) children investigated for abuse or neglect who have witnessed severe violence at Wave 1 (EV_W1) are more likely to engage in externalizing behavior at Wave 3 (bcext3); and (2) post-traumatic stress at Wave 1 (tra1) is the mechanism violence exposure is linked to externalizing behavior.\nModeration: I have created some Excel output so you can learn how to take the output and visualize the results. One file plots the effect moderation for age on the association between post-traumatic stress and delinquent behaviors using a subset of the NSCAW. Now, you can use this file to practice making a similar chart using excel to answer the question: What is the effect moderation of sexual minority status on the association between post-traumatic stress and delinquent behavior?\nModeration in R: I have written the code to show you how to implement moderation in R. ### Lecture Notes & Class Files\n\nDownload today’s slides here\nI want us to assess our knowledge of mediation today",
+    "text": "Lab Files\nMediation: You are going to do this lab using the NSCAW data to examine whether (1) children investigated for abuse or neglect who have witnessed severe violence at Wave 1 (EV_W1) are more likely to engage in externalizing behavior at Wave 3 (bcext3); and (2) post-traumatic stress at Wave 1 (tra1) is the mechanism violence exposure is linked to externalizing behavior.\nModeration: I have created some Excel output so you can learn how to take the output and visualize the results. One file plots the effect moderation for age on the association between post-traumatic stress and delinquent behaviors using a subset of the NSCAW. Now, you can use this file to practice making a similar chart using excel to answer the question: What is the effect moderation of sexual minority status on the association between post-traumatic stress and delinquent behavior?\nModeration in R: I have written the code to show you how to implement moderation in R.\n\nLecture Notes & Class Files\n\nDownload today’s slides here\nI want us to assess our knowledge of mediation today",
     "crumbs": [
       "**Advanced Regression Techniques**",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
@@ -1938,7 +1959,7 @@
     "href": "07a-moderation.html#additional-notes",
     "title": "Mediation, Moderation, and Conditional Process Models (Part 3)",
     "section": "Additional Notes",
-    "text": "Additional Notes\nStay calm and remove interactions with toxic people.\n\n\n\n\nBarboza-Salerno, G. E., & Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: Do future expectations and sexual identity moderate the mediating role of posttraumatic stress? Journal of Child & Adolescent Trauma, 16(4), 945–957.",
+    "text": "Additional Notes\nStay calm and BE BRAVE.\n\n\n\n\nBarboza-Salerno, G. E., & Remillard, A. (2023). Early child adversity and delinquent behavior in foster care youth: Do future expectations and sexual identity moderate the mediating role of posttraumatic stress? Journal of Child & Adolescent Trauma, 16(4), 945–957.",
     "crumbs": [
       "**Advanced Regression Techniques**",
       "<span class='chapter-number'>12</span>  <span class='chapter-title'>Mediation, Moderation, and Conditional Process Models (Part 3)</span>"
@@ -1997,6 +2018,50 @@
     "crumbs": [
       "**Applications**",
       "<span class='chapter-number'>22</span>  <span class='chapter-title'>Moderation Analysis</span>"
+    ]
+  },
+  {
+    "objectID": "11-efa.html#lab-files",
+    "href": "11-efa.html#lab-files",
+    "title": "EFA",
+    "section": "Lab Files",
+    "text": "Lab Files\n\nSAQ-8: First, we illustrate factor analysis with a simple example from UCLA which you can read more about here. It uses the SAQ-8 to examine the latent structure of LOVING statistics.\nPIAAC: Then, we will use read data from the Program for the International Assessment of Adult Competencies (PIAAC) located here. From the website, the PIAAC survey seeks to answer the following policy questions:\n\nHow are skills distributed? A comparison of skill levels, skill requirements, investments in education and training across countries, investment mismatches across countries, as well as of investments and mismatches within countries, across demographic categories, regions, sectors of industry, levels and fields of schooling.\n\nWhy are skills important? The relation of skills to relevant labor market outcomes such as employment opportunities, earnings, job security, and skill utilization, as well as to other outcomes such as health, civic engagement, and social trust.\nWhat factors are related to skill acquisition and decline? The relation between various learning activities – education, training, informal learning activities – and skill acquisition. The relation of experiences at work, in education and everyday life to skill decline among older individuals.\n\nWe are using a subsetted spss file from the USA that you can download here and I also created a JASP file of the same data that is fully annotated here. The final, reduced model output with the variables that did not load highly on the factors is here in case you are interested.\n\nGenerations: A Study of the Life and Health of LGB People in a Changing Society: We will conduct a full FA using a dataset called Generations:A Study of the Life and Health of LGB People in a Changing Society We will use these data wo explore the factor structure of an ethnic identity scale and differences in the structure across race. The analysis is based on a paper by Johnson et al. (2022) that you can download here called The Group-Based Law Enforcement Mistrust Scale: Psychometric Properties of an Adapted Scale and Implications for Public Health and Harm Reduction Research\n\n\nLecture Notes\n\nDownload today’s slides here",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+    ]
+  },
+  {
+    "objectID": "11-efa.html#resources",
+    "href": "11-efa.html#resources",
+    "title": "EFA",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+    ]
+  },
+  {
+    "objectID": "11-efa.html#additional-notes",
+    "href": "11-efa.html#additional-notes",
+    "title": "EFA",
+    "section": "Additional Notes",
+    "text": "Additional Notes\nStay calm and and let your life unfold one factor at a time.\n\n\n\n\nJohnson, L. M., Devereux, P. G., & Wagner, K. D. (2022). The group-based law enforcement mistrust scale: Psychometric properties of an adapted scale and implications for public health and harm reduction research. Harm Reduction Journal, 19(1), 60.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA</span>"
+    ]
+  },
+  {
+    "objectID": "assign2.html",
+    "href": "assign2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Instructions\nAssignment 2 uses several datasets. Please read the instructions carefully. There are five questions. The first question asks you to perform a multiple linear regression analysis. The second question asks you to conduct a logistic regression. The third question is a latent class analysis. The fourth question is a factor analysis. And finally, a mediation, moderation, and mediated moderation (the last of which is optional).\n\n\nData\n\nQuestion 1: social2.sav\nQuestion 2: depress.sav\nQuestion 3: lca.csv\nQuestion 4: wiscsem.sav\nQuestion 5: employee.sav\n\n\n\nVideo\nAfter our review session, I will post the video here.",
+    "crumbs": [
+      "**Assignment\nSolutions**",
+      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Assignment 2</span>"
     ]
   }
 ]

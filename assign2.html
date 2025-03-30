@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EFA – Statistics for Social Justice</title>
+<title>Assignment 2 – Statistics for Social Justice</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./12-cfa.html" rel="next">
-<link href="./08-measurement-scale.html" rel="prev">
+<link href="./ass1writeup.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -101,7 +80,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-measurement-scale.html">**Measurement &amp; Factor Analysis**</a></li><li class="breadcrumb-item"><a href="./11-efa.html"><span class="chapter-title">EFA</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ass1writeup.html"><strong>Assignment Solutions</strong></a></li><li class="breadcrumb-item"><a href="./assign2.html"><span class="chapter-title">Assignment 2</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -235,7 +214,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./11-efa.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">EFA</span></a>
+  <a href="./11-efa.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">EFA</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -351,7 +330,7 @@ div.csl-indent {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text"><strong>Assignments</strong></span></a>
+ <span class="menu-text"><strong>Assignment Solutions</strong></span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -364,7 +343,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assign2.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Assignment 2</span></a>
+  <a href="./assign2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Assignment 2</span></a>
   </div>
 </li>
       </ul>
@@ -379,30 +358,18 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#week-13-march-31-2025" id="toc-week-13-march-31-2025" class="nav-link active" data-scroll-target="#week-13-march-31-2025">Week 13: March 31, 2025</a>
-  <ul class="collapse">
-  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
-  <li><a href="#introduction-to-the-topic" id="toc-introduction-to-the-topic" class="nav-link" data-scroll-target="#introduction-to-the-topic">Introduction to the Topic</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts:</a></li>
-  <li><a href="#relevance" id="toc-relevance" class="nav-link" data-scroll-target="#relevance">Relevance:</a></li>
-  <li><a href="#why-this-is-important" id="toc-why-this-is-important" class="nav-link" data-scroll-target="#why-this-is-important">Why This Is Important:</a></li>
-  <li><a href="#how-this-ties-into-the-overall-course" id="toc-how-this-ties-into-the-overall-course" class="nav-link" data-scroll-target="#how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</a></li>
-  <li><a href="#lab-files" id="toc-lab-files" class="nav-link" data-scroll-target="#lab-files">Lab Files</a>
-  <ul class="collapse">
-  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
-  </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
-  <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes">Additional Notes</a></li>
-  </ul></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#video" id="toc-video" class="nav-link" data-scroll-target="#video">Video</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-measurement-scale.html">**Measurement &amp; Factor Analysis**</a></li><li class="breadcrumb-item"><a href="./11-efa.html"><span class="chapter-title">EFA</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ass1writeup.html"><strong>Assignment Solutions</strong></a></li><li class="breadcrumb-item"><a href="./assign2.html"><span class="chapter-title">Assignment 2</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">EFA</span></h1>
+<h1 class="title"><span class="chapter-title">Assignment 2</span></h1>
 </div>
 
 
@@ -419,91 +386,25 @@ div.csl-indent {
 </header>
 
 
-<section id="week-13-march-31-2025" class="level1">
-<h1>Week 13: March 31, 2025</h1>
-<section id="reading" class="level2">
-<h2 class="anchored" data-anchor-id="reading">Reading</h2>
+<section id="instructions" class="level1">
+<h1>Instructions</h1>
+<p><a href="slides/assignment 2.docx">Assignment 2</a> uses several datasets. Please read the instructions carefully. There are five questions. The first question asks you to perform a multiple linear regression analysis. The second question asks you to conduct a logistic regression. The third question is a latent class analysis. The fourth question is a factor analysis. And finally, a mediation, moderation, and mediated moderation (the last of which is optional).</p>
+</section>
+<section id="data" class="level1">
+<h1>Data</h1>
 <ul>
-<li>Pituch et al.&nbsp;Chapter 9: <a href="slides/factoranalysis/Applied Multivariate Statistics for the Social Sciences_ Analyses with SAS and IBM's SPSS.pdf">Exploratory Factor Analysis</a>, from pp 339</li>
-<li>Hahs-Vaughn. Chapter 9: <a href="slides/factoranalysis/Applied Multivariate Statistical Concepts.pdf">Applied Multivariate Statistical Concepts</a>, from pp 362</li>
-<li>Yong and Pearce - 2013 - <a href="slides/factoranalysis/Yong and Pearce - 2013 - A beginner’s guide to factor analysis Focusing on exploratory factor analysis.pdf">A beginner’s guide to factor analysis</a></li>
+<li>Question 1: <a href="data/data for assignment/social2.sav">social2.sav</a></li>
+<li>Question 2: <a href="data/data for assignment/depress.sav">depress.sav</a></li>
+<li>Question 3: <a href="data/data for assignment/lca1.csv">lca.csv</a></li>
+<li>Question 4: <a href="data/data for assignment/WISCSEM.sav">wiscsem.sav</a></li>
+<li>Question 5: <a href="data/data for assignment/employee.sav">employee.sav</a></li>
 </ul>
 </section>
-<section id="introduction-to-the-topic" class="level2">
-<h2 class="anchored" data-anchor-id="introduction-to-the-topic">Introduction to the Topic</h2>
-<p>This week, we focus on <strong>Exploratory Factor Analysis (EFA)</strong>, a statistical method used to uncover the underlying structure of a set of observed variables. EFA is a critical tool for identifying latent constructs in datasets.</p>
-<hr>
-</section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts:</h2>
-<ul>
-<li><strong>Latent Variables</strong>: Unobserved factors inferred from observed variables.</li>
-<li><strong>Factor Loadings</strong>: The relationship between observed variables and underlying factors.</li>
-<li><strong>Eigenvalues and Scree Plots</strong>: Tools for determining the number of factors to retain.</li>
-<li><strong>Rotation Methods</strong>: Techniques (e.g., Varimax, Promax) to simplify factor structure.</li>
-</ul>
-<hr>
-</section>
-<section id="relevance" class="level2">
-<h2 class="anchored" data-anchor-id="relevance">Relevance:</h2>
-<ul>
-<li>Students will learn how to conduct EFA to explore latent structures in data.</li>
-<li>Students will gain skills to evaluate factor solutions and interpret factor loadings.</li>
-</ul>
-<hr>
-</section>
-<section id="why-this-is-important" class="level2">
-<h2 class="anchored" data-anchor-id="why-this-is-important">Why This Is Important:</h2>
-<ul>
-<li>EFA helps researchers identify patterns and groupings in data without predefined hypotheses.</li>
-<li>It is widely used in psychology, education, and social sciences to develop and validate measurement tools.</li>
-</ul>
-<hr>
-</section>
-<section id="how-this-ties-into-the-overall-course" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-ties-into-the-overall-course">How This Ties Into the Overall Course:</h2>
-<ul>
-<li>Builds upon prior topics like correlations and covariance by introducing latent structures.</li>
-<li>Prepares students for Confirmatory Factor Analysis (CFA), where hypothesized factor structures are tested.</li>
-</ul>
-</section>
-<section id="lab-files" class="level2">
-<h2 class="anchored" data-anchor-id="lab-files">Lab Files</h2>
-<ul>
-<li><p><strong>SAQ-8</strong>: First, we illustrate factor analysis with a simple example from UCLA which you can read more about <a href="https://stats.oarc.ucla.edu/spss/seminars/introduction-to-factor-analysis/a-practical-introduction-to-factor-analysis/">here</a>. It uses the <a href="slides/factoranalysis/SAQ8.sav">SAQ-8</a> to examine the latent structure of LOVING statistics.</p></li>
-<li><p><strong>PIAAC</strong>: Then, we will use read data from the Program for the International Assessment of Adult Competencies (PIAAC) located <a href="https://www.oecd.org/en/about/programmes/piaac/piaac-data.html">here</a>. From the website, the PIAAC survey seeks to answer the following policy questions:</p>
-<ul>
-<li>How are skills distributed? A comparison of skill levels, skill requirements, investments in education and training across countries, investment mismatches across countries, as well as of investments and mismatches within countries, across demographic categories, regions, sectors of industry, levels and fields of schooling.</li>
-</ul></li>
-<li><p>Why are skills important? The relation of skills to relevant labor market outcomes such as employment opportunities, earnings, job security, and skill utilization, as well as to other outcomes such as health, civic engagement, and social trust.</p></li>
-<li><p>What factors are related to skill acquisition and decline? The relation between various learning activities – education, training, informal learning activities – and skill acquisition. The relation of experiences at work, in education and everyday life to skill decline among older individuals.</p></li>
-</ul>
-<p>We are using a subsetted spss file from the USA that you can download <a href="slides/factoranalysis/sub_prgusap1_2017.sav">here</a> and I also created a JASP file of the same data that is fully annotated <a href="slides/factoranalysis/CH10_PIAAC_FA.jasp">here</a>. The final, reduced model output with the variables that did not load highly on the factors is <a href="slides/factoranalysis/CH10_PIAAC_FA_FINAL.jasp">here</a> in case you are interested.</p>
-<ul>
-<li><strong>Generations: A Study of the Life and Health of LGB People in a Changing Society</strong>: We will conduct a full FA using a dataset called <a href="slides/factoranalysis/life and health of lgbt people study.sav">Generations:A Study of the Life and Health of LGB People in a Changing Society</a> We will use these data wo explore the factor structure of an ethnic identity scale and differences in the structure across race. The analysis is based on a paper by <span class="citation" data-cites="johnson2022group">Johnson et al. (<a href="#ref-johnson2022group" role="doc-biblioref">2022</a>)</span> that you can download <a href="slides/factoranalysis/s12954-022-00635-3.pdf">here</a> called <em>The Group-Based Law Enforcement Mistrust Scale: Psychometric Properties of an Adapted Scale and Implications for Public Health and Harm Reduction Research</em></li>
-</ul>
-<section id="lecture-notes" class="level3">
-<h3 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h3>
-<ul>
-<li>Download today’s slides <a href="slides/factoranalysis/lecture.pptx">here</a></li>
-</ul>
-</section>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<hr>
-</section>
-<section id="additional-notes" class="level2">
-<h2 class="anchored" data-anchor-id="additional-notes">Additional Notes</h2>
-<p>Stay calm and and let your life unfold one factor at a time.</p>
+<section id="video" class="level1">
+<h1>Video</h1>
+<p>After our review session, I will post the video here.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-johnson2022group" class="csl-entry" role="listitem">
-Johnson, L. M., Devereux, P. G., &amp; Wagner, K. D. (2022). The group-based law enforcement mistrust scale: Psychometric properties of an adapted scale and implications for public health and harm reduction research. <em>Harm Reduction Journal</em>, <em>19</em>(1), 60.
-</div>
-</div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -929,14 +830,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./08-measurement-scale.html" class="pagination-link" aria-label="Measurement and Scale Creation">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Measurement and Scale Creation</span></span>
+      <a href="./ass1writeup.html" class="pagination-link" aria-label="Assignment 1 Write-up">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Assignment 1 Write-up</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./12-cfa.html" class="pagination-link" aria-label="CFA">
-        <span class="nav-page-text"><span class="chapter-title">CFA</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
