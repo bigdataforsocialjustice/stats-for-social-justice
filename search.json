@@ -16,7 +16,8 @@
     "section": "",
     "text": "Week 6: February 10, 2025",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -26,7 +27,8 @@
     "section": "Introduction to the Topic",
     "text": "Introduction to the Topic\nThis week, we delve into the critical concepts of effect sizes and confidence intervals, two foundational elements in interpreting statistical results. These tools play a central role in assessing the strength of relationships and the precision of estimates, bridging the gap between raw statistical outputs and meaningful real-world insights.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -36,7 +38,8 @@
     "section": "Key Concepts:",
     "text": "Key Concepts:\n\nEffect Sizes: Quantify the magnitude of a relationship or difference, providing context beyond mere statistical significance.\nConfidence Intervals (CIs): Represent the range within which a population parameter is likely to fall, offering a measure of result precision.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -46,7 +49,8 @@
     "section": "Relevance:",
     "text": "Relevance:\n\nStudents will learn how to interpret and calculate effect sizes, understanding their role in evaluating practical significance.\nStudents will explore confidence intervals as tools for assessing the reliability and variability of parameter estimates.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -56,7 +60,8 @@
     "section": "Why This Is Important:",
     "text": "Why This Is Important:\n\nEffect sizes complement p-values by answering how much rather than just if there is an effect.\nConfidence intervals provide critical information about the certainty of results, promoting better decision-making and interpretation.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -66,7 +71,8 @@
     "section": "How This Ties Into the Overall Course:",
     "text": "How This Ties Into the Overall Course:\n\nBuilds upon last week’s exploration of hypothesis testing and statistical significance.\nPrepares students for future modules on meta-analysis and advanced modeling techniques, where effect sizes and confidence intervals are integral.\n\nBy the end of this week, students will have the skills to interpret effect sizes and confidence intervals confidently, ensuring they can evaluate research findings critically and apply these concepts to their own analyses.\n\nLecture Notes\n\nEffect Sizes, Confidence Intervals, Assumptions\n\n\n\nR Code\n\nSimple and Multiple Linear Regression\nCalculating Cohen’s D: The full explanation of the code is here. This file calculates Cohen’s D effect size with the added bones of also demonstrating how to download the Area Deprivation Index (ADI) which is frequently used in Social Work and Public Health. Even bettern there is a county-level map of the ADI! See Barboza-Salerno (2023).\n\n\n\nData Sets\n\nAdmissions Data (in lecture notes)\nGRE and graduate student GPA Data (in lecture notes)",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -86,7 +92,8 @@
     "section": "Resources",
     "text": "Resources\nI have put together a detailed explanation about simple and multiple linear regression in R.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -96,7 +103,8 @@
     "section": "Today’s Reading",
     "text": "Today’s Reading\nToday’s in class assignment is going to ask you to run a multiple linear regression using the National Survey of Child and Adolescent Well-Being (NSCAW I) survey. I used this data in a couple of manuscripts “Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model” Barboza et al. (2017) and “Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type” See Barboza & Dominguez (2017).",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -116,7 +124,8 @@
     "section": "Additional Notes",
     "text": "Additional Notes\n\nKeep calm and DO NOT be normal.\n\n\n\n\n\nBarboza, G. E., & Dominguez, S. (2017). Longitudinal growth of post-traumatic stress and depressive symptoms following a child maltreatment allegation: An examination of violence exposure, family risk and placement type. Children and Youth Services Review, 81, 368–378.\n\n\nBarboza, G. E., Dominguez, S., & Pinder, J. (2017). Trajectories of post-traumatic stress and externalizing psychopathology among maltreated foster care youth: A parallel process latent growth curve model. Child Abuse & Neglect, 72, 370–382.\n\n\nBarboza-Salerno, G. E. (2023). The neighborhood deprivation gradient and child physical abuse and neglect: A bayesian spatial model. Child Abuse & Neglect, 146, 106501.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect Sizes</span>"
+      "**Regression Mechanics**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Effect Sizes</span>"
     ]
   },
   {
@@ -2060,8 +2069,151 @@
     "section": "",
     "text": "Instructions\nAssignment 2 uses several datasets. Please read the instructions carefully. There are five questions. The first question asks you to perform a multiple linear regression analysis. The second question asks you to conduct a logistic regression. The third question is a latent class analysis. The fourth question is a factor analysis. And finally, a mediation, moderation, and mediated moderation (the last of which is optional).\n\n\nData\n\nQuestion 1: social2.sav\nQuestion 2: depress.sav\nQuestion 3: lca.csv\nQuestion 4: wiscsem.sav\nQuestion 5: employee.sav\n\n\n\nVideo\nAfter our review session, I will post the video here.",
     "crumbs": [
-      "**Assignment\nSolutions**",
-      "<span class='chapter-number'>31</span>  <span class='chapter-title'>Assignment 2</span>"
+      "**Assignments**",
+      "<span class='chapter-number'>30</span>  <span class='chapter-title'>Assignment 2</span>"
+    ]
+  },
+  {
+    "objectID": "efa_R.html",
+    "href": "efa_R.html",
+    "title": "EFA in R",
+    "section": "",
+    "text": "Prelims\nBefore interpreting the results of an exploratory factor analysis (EFA), it is essential to consider whether the assumptions underlying the method are reasonably met. One key assumption is that the observed variables are continuous and approximately normally distributed. While EFA is somewhat robust to violations of normality, particularly when using large sample sizes or estimation methods like principal axis factoring, violations can still impact the accuracy of factor loadings and model fit statistics. In this study, the six racial/ethnic identity items (RE1–RE6) were measured on a 7-point Likert scale, which, although technically ordinal, can often be treated as continuous in practice—especially when items have five or more categories and exhibit approximately symmetric distributions.\nAnother important assumption is multivariate normality, especially when using estimation methods such as maximum likelihood (ML), which relies on normality to produce unbiased estimates and valid fit indices. Although ML estimation was used in this analysis, the relatively large sample size may mitigate concerns about non-normality. If substantial departures from normality were present, alternative estimation methods—such as principal axis factoring or robust maximum likelihood—could offer more reliable results.\nIn addition to distributional assumptions, EFA assumes that the variables included are conceptually coherent and intercorrelated, such that they are likely to reflect common latent constructs. This assumption is supported in the present analysis, as the six items were explicitly designed to capture theoretically distinct but related dimensions of racial/ethnic identity. Prior research supports a multidimensional structure of racial and ethnic identity, particularly models that distinguish between exploration (active engagement in learning about one’s racial or ethnic group) and commitment or affirmation (a sense of belonging or attachment). These dual processes are foundational in Phinney’s (1992) Multigroup Ethnic Identity Measure (MEIM) and further validated by studies that replicate two-factor or higher-order factor structures across diverse racial/ethnic groups (Roberts et al., 1999; Yip, 2005). Theoretical and empirical support for these dimensions provides a strong rationale for modeling racial/ethnic identity as multifactorial and reinforces the construct validity of the current EFA findings.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA in R</span>"
+    ]
+  },
+  {
+    "objectID": "efa_R.html#introduction",
+    "href": "efa_R.html#introduction",
+    "title": "EFA in R",
+    "section": "Introduction",
+    "text": "Introduction\nAcross multiple studies, ethnic identity (EI) has consistently been conceptualized as a multidimensional construct encompassing both affective and behavioral components. While specific factor labels varied, each study identified two primary dimensions: one reflecting a sense of affirmation, belonging, or identification with one’s ethnic group, and the other capturing exploration, participation, or engagement in ethnic behaviors. Roberts et al., Spencer et al., and Yancey et al. all found support for this two-factor structure among adolescents, reinforcing the view that EI involves both internalized group attachment and active efforts to understand and engage with one’s cultural background.\nThis analysis explores the underlying structure of six race/ethnic identity items from the Multigroup Ethnic Identity Measure using the Life and Health of LGBT People Study. These items are measured on a 7-point Likert scale ranging from 1 (“Strongly disagree”) to 7 (“Strongly agree”) and include:\n\nExploration\nThese items reflect behavioral and cognitive efforts to learn more about one’s racial/ethnic background:\n\nRE1: I have spent time trying to find out more about my race/ethnic group, such as its history, traditions, and customs.\nRE4: I have often done things that will help me understand my race/ethnic background better.\nRE5: I have often talked to other people in order to learn more about my race/ethnic group.\n\n\n\nCommitment/Belonging\nThese items express a sense of attachment, emotional connection, or identification with the group:\n\nRE2: I have a strong sense of belonging to my own race/ethnic group.\nRE3: I understand pretty well what my race/ethnic group membership means to me.\nRE6: I feel a strong attachment towards my own race/ethnic group.\n\nThese items reflect cognitive, behavioral, and emotional dimensions of racial/ethnic identity exploration and commitment.\nBased on their content and alignment with established ethnic identity frameworks such as Phinney’s MEIM, the six items should be categorized into two dimensions: Exploration and Commitment/Belonging. This categorization is consistent with empirical studies that distinguish between active engagement in learning about one’s ethnicity (Exploration) and emotional or attitudinal connection to the group (Commitment/Belonging).\n\n# Load dataset\ndata_path &lt;- \"C:/Users/barboza-salerno.1/Downloads/life and health of lgbt people study.sav\"\ndf &lt;- read_sav(data_path)\n\nre_items &lt;- df %&gt;%\n  select(RE1, RE2, RE3, RE4, RE5, RE6) \n\n\nsummary(re_items)\n\n      RE1             RE2             RE3             RE4       \n Min.   :1.000   Min.   :1.000   Min.   :1.000   Min.   :1.000  \n 1st Qu.:2.000   1st Qu.:2.000   1st Qu.:3.000   1st Qu.:2.000  \n Median :4.000   Median :3.000   Median :4.000   Median :3.000  \n Mean   :3.355   Mean   :3.205   Mean   :3.722   Mean   :3.253  \n 3rd Qu.:4.000   3rd Qu.:4.000   3rd Qu.:4.000   3rd Qu.:4.000  \n Max.   :5.000   Max.   :5.000   Max.   :5.000   Max.   :5.000  \n NA's   :15      NA's   :19      NA's   :19      NA's   :22     \n      RE5             RE6       \n Min.   :1.000   Min.   :1.000  \n 1st Qu.:2.000   1st Qu.:2.000  \n Median :3.000   Median :3.000  \n Mean   :3.179   Mean   :3.097  \n 3rd Qu.:4.000   3rd Qu.:4.000  \n Max.   :5.000   Max.   :5.000  \n NA's   :18      NA's   :18     \n\n\n\ncolSums(is.na(re_items))\n\nRE1 RE2 RE3 RE4 RE5 RE6 \n 15  19  19  22  18  18 \n\n\n\n# Select the six RE variables\nre_items &lt;- re_items %&gt;%\n   drop_na()  # Remove rows with missing values\n\n\n\nKMO and Bartlett’s Test\n\n# Check correlation matrix and Bartlett’s test\ncor_matrix &lt;- cor(re_items, use = \"pairwise.complete.obs\")\nKMO(cor_matrix)\n\nKaiser-Meyer-Olkin factor adequacy\nCall: KMO(r = cor_matrix)\nOverall MSA =  0.82\nMSA for each item = \n RE1  RE2  RE3  RE4  RE5  RE6 \n0.86 0.77 0.88 0.81 0.82 0.81 \n\ncortest.bartlett(cor_matrix, n = nrow(re_items))\n\n$chisq\n[1] 4215.477\n\n$p.value\n[1] 0\n\n$df\n[1] 15\n\n\n\nNote: All MSA’s here were acceptable. If they were not, you would want to eliminate those variables with MSA’s below a certain value, perhaps .50 at minimum. You can do this easily as follows:\n\n\nmydat &lt;- cor_matrix[, KMO(cor_matrix)$MSAi&gt;0.50] \n\n\nNote: Bartlett’s test compares the correlation matrix to the identity matrix and the null hypothesis is:\n\n\\[H_0: I_{mat} = Corr_{mat}\\] #### Determine the number of Factors to Extract This is the most important determination for EFA. The goal is to examine the latent structure for a certain number of variables that are coherent, or highly correlated. Therefore, we want to find factors that explain a substantial proportion of variation within the data. Recall there are numerous ways to make such a determination, and none of them are wrong. However, some are more correct than others, and the gold standard is to use parallel analysis as demonstrated below:\n\nfa.parallel(re_items, fa = \"fa\", n.iter = 100, show.legend = TRUE)\n\n\n\n\n\n\n\n\nParallel analysis suggests that the number of factors =  2  and the number of components =  NA \n\n\nLovely, we don’t have to guess, according to the code, we should select 2 factors.\n\n\nExtract (and rotate) factors\nUnless the correlation between factors is low, we want use oblique rotation. Oblique rotations will provide a correlation matrix that describes the relationships between factors. There are two primary selections: Oblique option 1: promax - Promax rotation is better able to handle large datasets and results in greater correlation values between factors.\nOblique option 2: oblimin The direct oblimin rotation approach is less efficient with large datasets, but produces a simpler factor structure.\n\n# Suppose parallel analysis suggests 2 factors\nefa_result &lt;- fa(re_items, nfactors = 2, rotate = \"oblimin\", fm = \"ml\")  # or \"pa\"\nprint(efa_result, sort = TRUE)\n\nFactor Analysis using method =  ml\nCall: fa(r = re_items, nfactors = 2, rotate = \"oblimin\", fm = \"ml\")\nStandardized loadings (pattern matrix) based upon correlation matrix\n    item   ML1   ML2   h2   u2 com\nRE4    4  0.85  0.03 0.76 0.24 1.0\nRE5    5  0.84  0.00 0.70 0.30 1.0\nRE1    1  0.74 -0.01 0.54 0.46 1.0\nRE2    2 -0.07  0.95 0.82 0.18 1.0\nRE6    6  0.18  0.66 0.62 0.38 1.2\nRE3    3  0.16  0.52 0.40 0.60 1.2\n\n                       ML1  ML2\nSS loadings           2.13 1.70\nProportion Var        0.36 0.28\nCumulative Var        0.36 0.64\nProportion Explained  0.56 0.44\nCumulative Proportion 0.56 1.00\n\n With factor correlations of \n    ML1 ML2\nML1 1.0 0.6\nML2 0.6 1.0\n\nMean item complexity =  1.1\nTest of the hypothesis that 2 factors are sufficient.\n\ndf null model =  15  with the objective function =  2.84 with Chi Square =  4215.48\ndf of  the model are 4  and the objective function was  0.02 \n\nThe root mean square of the residuals (RMSR) is  0.01 \nThe df corrected root mean square of the residuals is  0.03 \n\nThe harmonic n.obs is  1487 with the empirical chi square  9.41  with prob &lt;  0.052 \nThe total n.obs was  1487  with Likelihood Chi Square =  27.13  with prob &lt;  1.9e-05 \n\nTucker Lewis Index of factoring reliability =  0.979\nRMSEA index =  0.062  and the 90 % confidence intervals are  0.041 0.086\nBIC =  -2.09\nFit based upon off diagonal values = 1\nMeasures of factor score adequacy             \n                                                   ML1  ML2\nCorrelation of (regression) scores with factors   0.94 0.94\nMultiple R square of scores with factors          0.88 0.88\nMinimum correlation of possible factor scores     0.75 0.75\n\n\n\n# Extract the factor loadings (2 factors)\nload &lt;- as.matrix(efa_result$loadings[, 1:2])\n\n# Assign variable names as rownames if they are missing\nrownames(load) &lt;- colnames(re_items)\n\n# Plot the loadings\nplot(load, type = \"n\", xlab = \"Factor 1\", ylab = \"Factor 2\", main = \"Factor Loading Plot\")\ntext(load, labels = rownames(load), cex = 0.8)\n\n\n\n\n\n\n\n\n\nfa.diagram(efa_result, simple = FALSE, digits = 2)\n\n\n\n\n\n\n\n\n\n\nColumn Definitions\n\nML1 and ML2: Standardized factor loadings on Factor 1 and Factor 2, respectively.\nh2 (Communality): Proportion of each item’s variance explained by the two factors combined.\nu2 (Uniqueness): Proportion of each item’s variance not explained by the factors (i.e., residual variance).\n\n\n\nInterpretation of Each Item\n\nFactor 1 (ML1): Ethnic Identity Exploration\n\nRE4 (“…help me understand my race/ethnic background better”) loads very strongly (0.85) on ML1, suggesting this item taps into active exploration.\nRE5 (“…talked to other people…”) loads very strongly (0.84) on ML1—again, an exploratory behavior.\nRE1 (“…find out more about my race/ethnic group…”) loads strongly (0.74) on ML1 and near-zero on ML2, reinforcing its alignment with exploration.\n\n\nThese three items all reflect actions taken to explore racial/ethnic identity, justifying labeling this factor Exploration.\n\nFactor 2 (ML2): Ethnic Identity Commitment/Belonging\n\nRE2 (“…strong sense of belonging…”) loads very strongly (0.95) on ML2 and has virtually no loading on ML1, indicating it is a strong indicator of commitment or attachment.\nRE6 (“…strong attachment…”) loads moderately on ML2 (0.66) and weakly on ML1 (0.18), suggesting it primarily reflects commitment but with some overlap.\nRE3 (“…understand what race/ethnic group membership means…”) loads moderately on ML2 (0.52), weakly on ML1 (0.16), suggesting a somewhat conceptual but still committed aspect.\n\n\nTogether, these items reflect commitment, attachment, and clarity of identity, aligning factor 2 with Commitment/Belonging to racial identity.\n\n\nCommunalities and Uniqueness\n\nHighest communality: RE2 (0.82) — well-explained by the factors.\nLowest communality: RE3 (0.40) — less well-explained, possibly more complex or ambiguous in meaning.\nUniqueness is highest for RE3 (0.60), suggesting additional variance not captured by the two-factor model (possibly due to conceptual ambiguity or measurement noise).",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA in R</span>"
+    ]
+  },
+  {
+    "objectID": "efa_R.html#summary-of-factor-structure",
+    "href": "efa_R.html#summary-of-factor-structure",
+    "title": "EFA in R",
+    "section": "Summary of Factor Structure",
+    "text": "Summary of Factor Structure\nThe exploratory factor analysis revealed a clear two-factor solution, aligning with theoretical models of racial/ethnic identity development. The first factor, which we interpret as Exploration, includes items RE1, RE4, and RE5. These items reflect active efforts to learn about one’s racial or ethnic background, such as seeking out cultural knowledge, engaging in learning activities, and conversing with others to deepen understanding. The second factor, labeled Commitment/Belonging, comprises items RE2, RE6, and RE3. These items center on emotional attachment, a sense of belonging, and internal clarity regarding one’s racial or ethnic identity.\nThis factor structure supports a multidimensional model of racial/ethnic identity, consistent with developmental frameworks such as Phinney’s model. These models conceptualize identity as composed of both exploratory behaviors and a stable sense of affiliation or commitment, recognizing these as distinct yet interrelated domains. The presence of both factors in the data provides empirical support for treating racial/ethnic identity as more than a unidimensional construct.\n\nAre the factors correlated?\n\n(efa_result$Phi)\n\n          ML1       ML2\nML1 1.0000000 0.5957431\nML2 0.5957431 1.0000000\n\n\nThe use of oblique rotation in the factor analysis was both theoretically and statistically appropriate, as the constructs of exploration and commitment are expected to be correlated. In practice, individuals who engage in active exploration of their racial or ethnic heritage may also develop stronger feelings of attachment and belonging, reflecting the developmental trajectory of identity formation. The factor correlation matrix confirms this relationship: the correlation between the two factors was 0.60, indicating a moderate positive association. This supports the conceptualization of exploration and commitment as distinct yet meaningfully related dimensions of racial/ethnic identity.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA in R</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html",
+    "href": "13-lca.html",
+    "title": "LCA",
+    "section": "",
+    "text": "Week 15: April 14, 2025",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#introduction-to-the-topic",
+    "href": "13-lca.html#introduction-to-the-topic",
+    "title": "LCA",
+    "section": "Introduction to the Topic",
+    "text": "Introduction to the Topic\nThis week, we dive into Latent Class Analysis (LCA), a method used to identify subgroups or classes within a population based on observed data. LCA is essential for uncovering hidden heterogeneity in data.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#key-concepts",
+    "href": "13-lca.html#key-concepts",
+    "title": "LCA",
+    "section": "Key Concepts:",
+    "text": "Key Concepts:\n\nLatent Classes: Unobserved subgroups identified through patterns in the data.\nClass Membership Probabilities: The likelihood that an individual belongs to a specific class.\nModel Fit: Using tools like BIC and AIC to determine the optimal number of classes.\nInterpreting Profiles: Understanding differences between identified classes.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#relevance",
+    "href": "13-lca.html#relevance",
+    "title": "LCA",
+    "section": "Relevance:",
+    "text": "Relevance:\n\nStudents will learn how to use LCA to identify meaningful subgroups in their data.\nStudents will explore applications of LCA in areas like health disparities, education, and consumer behavior.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#why-this-is-important",
+    "href": "13-lca.html#why-this-is-important",
+    "title": "LCA",
+    "section": "Why This Is Important:",
+    "text": "Why This Is Important:\n\nLCA provides insights into population heterogeneity, allowing researchers to identify distinct subgroups with unique characteristics.\nIt is a powerful tool for tailoring interventions and understanding diverse outcomes.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#how-this-ties-into-the-overall-course",
+    "href": "13-lca.html#how-this-ties-into-the-overall-course",
+    "title": "LCA",
+    "section": "How This Ties Into the Overall Course:",
+    "text": "How This Ties Into the Overall Course:\n\nBuilds upon prior topics like EFA by extending latent variable modeling to categorical data.\nPrepares students for advanced mixture modeling techniques and combining LCA with SEM.\n\nBy the end of this week, students will be able to perform LCA, interpret latent class solutions, and use these insights to answer research questions about population heterogeneity.\n\nClass files\n\nDownload today’s slides here\nDownload the data for today from the National Child Health Survey (NCHS) in SPSS and CSV to import into JASP.\nHere is my example excel file to create a chart of the conditional item probabilities",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "efa_R.html#reliability",
+    "href": "efa_R.html#reliability",
+    "title": "EFA in R",
+    "section": "Reliability",
+    "text": "Reliability\nThe next logical question is: How good are these factors? We are interested in whether the variables in each factor form a coherent whole when used together. In other words, are the variances internally consistent between variables in a factor?\nOne of the most commonly used measures of reliability is Cronbach’s alpha (α), which assesses the internal consistency among a set of items—that is, how closely related the items are as a group. While it is not necessary to conduct an exploratory factor analysis (EFA) in order to calculate Cronbach’s alpha, EFA provides a useful context for introducing this concept. After identifying factors through EFA, Cronbach’s alpha can be used to evaluate the reliability of each factor by assessing how consistently the items within that factor measure the same underlying construct. This helps ensure that the grouped items form a coherent and reliable scale.\nTo run alpha on your factors you will first need to specify which variables belong to each factor.\n\nf1 &lt;- re_items %&gt;% select(RE1, RE4, RE5)\nf2 &lt;- re_items %&gt;% select(RE2, RE3, RE6)\n\nSo, we simply created two objects corresponding to each of our factors, \\(f1\\) and \\(f2\\) with the variables that loaded on each.\nCronbach’s alpha ranges between zero and 1.0. To evaluate the level of reliability, you are looking for values &gt; 0.70 at a minimum. Values between 0.70 and 0.80 are adequate to fair, between 0.80 and 0.90 are good and above .90 are considered excellent.\n\npsych::alpha(f1)\n\n\nReliability analysis   \nCall: psych::alpha(x = f1)\n\n  raw_alpha std.alpha G6(smc) average_r S/N    ase mean sd median_r\n      0.85      0.85     0.8      0.66 5.8 0.0067  3.3  1     0.64\n\n    95% confidence boundaries \n         lower alpha upper\nFeldt     0.84  0.85  0.86\nDuhachek  0.84  0.85  0.86\n\n Reliability if an item is dropped:\n    raw_alpha std.alpha G6(smc) average_r S/N alpha se var.r med.r\nRE1      0.84      0.84    0.72      0.72 5.2   0.0083    NA  0.72\nRE4      0.76      0.76    0.61      0.61 3.2   0.0124    NA  0.61\nRE5      0.78      0.78    0.64      0.64 3.6   0.0113    NA  0.64\n\n Item statistics \n       n raw.r std.r r.cor r.drop mean  sd\nRE1 1487  0.86  0.86  0.73   0.68  3.4 1.2\nRE4 1487  0.89  0.90  0.83   0.76  3.2 1.1\nRE5 1487  0.89  0.89  0.81   0.74  3.2 1.2\n\nNon missing response frequency for each item\n       1    2    3    4    5 miss\nRE1 0.10 0.18 0.18 0.36 0.18    0\nRE4 0.08 0.18 0.30 0.31 0.13    0\nRE5 0.09 0.23 0.22 0.32 0.14    0\n\n\n\npsych::alpha(f2)\n\n\nReliability analysis   \nCall: psych::alpha(x = f2)\n\n  raw_alpha std.alpha G6(smc) average_r S/N    ase mean   sd median_r\n      0.81      0.81    0.75      0.58 4.1 0.0085  3.3 0.94     0.55\n\n    95% confidence boundaries \n         lower alpha upper\nFeldt     0.79  0.81  0.82\nDuhachek  0.79  0.81  0.82\n\n Reliability if an item is dropped:\n    raw_alpha std.alpha G6(smc) average_r S/N alpha se var.r med.r\nRE2      0.65      0.66    0.50      0.50 2.0   0.0174    NA  0.50\nRE3      0.82      0.82    0.69      0.69 4.5   0.0095    NA  0.69\nRE6      0.70      0.71    0.55      0.55 2.4   0.0151    NA  0.55\n\n Item statistics \n       n raw.r std.r r.cor r.drop mean   sd\nRE2 1487  0.89  0.88  0.81   0.73  3.2 1.15\nRE3 1487  0.78  0.80  0.63   0.57  3.7 0.97\nRE6 1487  0.88  0.86  0.77   0.68  3.1 1.20\n\nNon missing response frequency for each item\n       1    2    3    4    5 miss\nRE2 0.08 0.20 0.30 0.29 0.14    0\nRE3 0.03 0.08 0.23 0.46 0.20    0\nRE6 0.11 0.19 0.32 0.23 0.14    0\n\n\n\nInterpretation\nWe are concerned with the “raw-alpha” value for the entire factor. This is what is reported in manuscripts as “Cronbach’s α.” That tells us how consistent a set of variables are in generaly. In this case, we are exploring item consistency within each factor. Here, the reliability coefficient (i.e., Cronbach’s α) for Factor 1 (f1) is 0.851 and for f2 its 0.805. This means that the variables that load onto each factor have excellent internally consistency.\nThe next thing to consider is how internal consistency might change after removing any single variable. To better understand this, we focus on the column titled “raw_alpha” under “Reliability if an iterm is dropped.” For example, the consistency of variables loading on f2 would be higher if we removed RE3 - the effect would be to increase alpha to 0.817. In this case, there is no need to remove a variable to increase reliability because reliability is good with the variable included.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>EFA in R</span>"
+    ]
+  },
+  {
+    "objectID": "13-lca.html#additional-notes",
+    "href": "13-lca.html#additional-notes",
+    "title": "LCA",
+    "section": "Additional Notes",
+    "text": "Additional Notes\nStay Calm… This is the Last Latent Class.\nWe’ve reached model convergence. The entropy is high. The fit is good. And yes… this is the final class.\nFor some of you (and for me), the fun is over. For others, the fun is just beginning. If that’s true, we’ve officially detected a latent subgroup of students.\nLet’s hope the class proportions are: - Class 1 – “Loved Every Minute”: 99.1% - Class 2 – “Thrilled It’s Over”: 0.9%\nModel fit? Impeccable. Classification? Accurate. Emotion? Mixed. But this… this was a class worth identifying.",
+    "crumbs": [
+      "**Measurement & Factor Analysis**",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>LCA</span>"
+    ]
+  },
+  {
+    "objectID": "14-final-project.html",
+    "href": "14-final-project.html",
+    "title": "Final Project",
+    "section": "",
+    "text": "Week 16: April 21, 2025",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Final Project</span>"
+    ]
+  },
+  {
+    "objectID": "14-final-project.html#final-project-presentations",
+    "href": "14-final-project.html#final-project-presentations",
+    "title": "Final Project",
+    "section": "Final Project Presentations",
+    "text": "Final Project Presentations",
+    "crumbs": [
+      "**Applications**",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Final Project</span>"
     ]
   }
 ]
